@@ -1,0 +1,63 @@
+.contact-hero-container{
+  background-image: url("../../assets/contactPagemeshBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.singapore ::after {
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border: 8px solid #BDAAEC;
+  border-radius: 50%;
+  animation-name: intervalCountryBorder;
+  animation-duration: 1.2s;
+  -webkit-animation-name: intervalCountryBorder;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+}
+.filipino::after {
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border: 8px solid #BDAAEC;
+    border-radius: 50%;
+    animation-name: intervalCountryBorder;
+    animation-duration: 1.2s;
+    -webkit-animation-name: intervalCountryBorder;
+  
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  
+  }
+
+@keyframes intervalCountryBorder{
+0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+80% {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+}
+100% {
+    opacity: 0;
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+}}

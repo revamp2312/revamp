@@ -1,0 +1,11 @@
+.technology-partner-container
+  .technology-partner-wrapper
+  .top
+  .right
+  .partner-btn
+  button {
+  background: var(
+    --gradient-400,
+    linear-gradient(135deg, #693ed4 0%, #a31ebe 100%)
+  );
+}

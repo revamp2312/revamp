@@ -1,0 +1,11 @@
+.hero-container {
+  background: linear-gradient(
+    270deg,
+    rgba(247, 245, 255, 0.75) 0%,
+    rgba(255, 255, 255, 0.75) 100%
+  );
+}
+
+.hero-container .hero-wrapper .left-wrapper .cta-btns .first-btn button {
+  background: linear-gradient(135deg, #693ed4 0%, #a31ebe 100%);
+}

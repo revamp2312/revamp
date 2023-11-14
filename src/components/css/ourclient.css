@@ -1,0 +1,123 @@
+.ourclient-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 180px;
+
+  .ourclient-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      max-width: 700px;
+    }
+
+    .bottom {
+      display: flex;
+      border-radius: 8px;
+
+      .left {
+        padding: 16px;
+       
+        width: 75%;
+
+        border-radius: 8px;
+        background: #f7f5ff;
+        box-shadow: 0px 2px 20px 0px rgba(26, 26, 26, 0.1);
+        .client-information{
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            padding: 32px 24px;
+            background: #fff;
+            .client-content {
+          
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+             
+      
+                .heading {
+                  color: #313131;
+                  font-family: Sora;
+                  font-size: 25px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 150%; /* 37.5px */
+                }
+      
+                .content {
+                  color: #313131;
+                  font-family: Sora;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 150%; /* 24px */
+                }
+              }
+      
+              .client-detail {
+                display: flex;
+                gap: 16px;
+      
+                .client-icon {
+                  width: 50px;
+                }
+      
+                .data {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 4px;
+      
+                  .name {
+                    color: #333;
+                    font-family: Sora;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 21px */
+                  }
+                  .position {
+                    color: #333;
+                    font-family: Sora;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 21px */
+                  }
+                }
+              }
+            }
+        }
+        
+      .right {
+        display: flex;
+        border-radius: 0 8px 8px 0;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.8;
+        background: linear-gradient(135deg, #693ed4 0%, #a31ebe 100%);
+
+        .client-company-img img {
+          transform: scale(1);
+          transition: all 250ms linear;
+        }
+        .client-company-img img:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
