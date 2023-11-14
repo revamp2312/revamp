@@ -1,4 +1,4 @@
-import { partnerdata } from "../constants/Partnerdata";
+import { partnerdata } from "../constants/partnerdata";
 import { cxright, tiltedArrow } from "../constants/utils";
 
 const EachPartner = () => {
