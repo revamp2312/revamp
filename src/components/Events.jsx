@@ -1,4 +1,3 @@
-import "./css/events.css"
 import { events } from "../constants/utils"
 
 

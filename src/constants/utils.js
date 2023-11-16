@@ -93,7 +93,15 @@ import aboutusHero from "../assets/aboutusHero.png"
 import aboutSubHero from "../assets/aboutSubHero.png"
 import teamcardf from "../assets/TeamMembers/teamcardf.png"
 import teamcardm from "../assets/TeamMembers/teamcardm.png"
+import teamcardlinkedin from "../assets/TeamMembers/teamcardlinkedin.png"
+import infocentricLogo from "../assets/logos/infocentric-logo.png"
+import appcentricLogo from "../assets/logos/appcentric-logo.png"
+import ourofficebg from "../assets/ourofficebg.png"
 export {
+  ourofficebg,
+  appcentricLogo,
+  infocentricLogo,
+  teamcardlinkedin,
   teamcardm,
   teamcardf,
   aboutSubHero,

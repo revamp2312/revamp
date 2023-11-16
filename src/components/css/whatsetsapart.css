@@ -5,3 +5,9 @@
     background-size: cover;
 }
 
+.ourOffice-container{
+    background-image: url("../../assets/ourofficebg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
