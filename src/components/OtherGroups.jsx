@@ -2,7 +2,7 @@ import { appcentricLogo, infocentricLogo } from "../constants/utils"
 
 const OtherGroups = () => {
   return (
-    <div className="flex justify-center items-center m-auto max-w-[1440px] px-[70px] py-20" style={{background: "linear-gradient(180deg, #F7F5FF 0%, #FFF 100%)"}}>
+    <div className="flex justify-center items-center m-auto max-w-[1440px] px-[70px] py-28" style={{background: "linear-gradient(180deg, #F7F5FF 0%, #FFF 100%)"}}>
         <div className="flex h-full justify-around items-center gap-4">
             <div className="flex flex-col gap-4">
             <div><h2>We are part of a bigger and more exciting group</h2></div>
@@ -21,7 +21,7 @@ const OtherGroups = () => {
                 </div>
             </div>
 
-            <div className="relative max-w-[367px] h-[320px]  flex justify-center items-center py-14 px-[30px] bg-white rounded-lg border-[1px] border-solid border-[#E9EAEC]">
+            <div className="info-card relative  max-w-[367px] h-[320px]  flex justify-center items-center py-14 px-[30px] bg-white rounded-lg border-[1px] border-solid border-[#E9EAEC]">
                 <div className="flex flex-col gap-12">
                     <div><p>The Identity Access Management Leader in the Philippines. Trusted by the top Enterprises in the country.</p></div>
                     <div className="text-[16px]">Visit website</div>

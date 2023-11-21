@@ -97,7 +97,24 @@ import teamcardlinkedin from "../assets/TeamMembers/teamcardlinkedin.png"
 import infocentricLogo from "../assets/logos/infocentric-logo.png"
 import appcentricLogo from "../assets/logos/appcentric-logo.png"
 import ourofficebg from "../assets/ourofficebg.png"
+import SettingtheBaseline from "../assets/engagementcardicons/SettingtheBaseline.png"
+import bg2018 from "../assets/BlinkStory/2018.png"
+import automatedatacollection from "../assets/engagementcardicons/automatedatacollection.png"
+import continuousfeedback from "../assets/engagementcardicons/continuousfeedback.png"
+import designanddeploycx from "../assets/engagementcardicons/designanddeploycx.png"
+import settingbaseline from "../assets/engagementcardicons/settingbaseline.png"
+import unlockinginsights from "../assets/engagementcardicons/unlockinginsights.png"
+
+
+
 export {
+  unlockinginsights,
+  settingbaseline,
+  designanddeploycx,
+  continuousfeedback,
+  automatedatacollection,
+  bg2018,
+  SettingtheBaseline,
   ourofficebg,
   appcentricLogo,
   infocentricLogo,
