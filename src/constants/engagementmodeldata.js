@@ -3,6 +3,7 @@ import { automatedatacollection, continuousfeedback, designanddeploycx, settingb
 export const engagementmodeldata =[
     {
         id:"1",
+        isFisrst:true,
         bgcolor:"#E1D8F6",
         imgsrc:settingbaseline,
         title:"Setting the Baseline",
@@ -10,6 +11,7 @@ export const engagementmodeldata =[
     },
     {
         id:"2",
+        isFisrst:false,
         bgcolor:"#A58BE5",
         imgsrc:automatedatacollection,
         title:"Automate Data Collection",
@@ -17,6 +19,7 @@ export const engagementmodeldata =[
     },
     {
         id:"3",
+        isFisrst:false,
         bgcolor:"#8765DD",
         imgsrc:unlockinginsights,
         title:"Unlocking Insights",
@@ -24,6 +27,7 @@ export const engagementmodeldata =[
     },
     {
         id:"4",
+        isFisrst:false,
         bgcolor:"#3F257F",
         imgsrc:designanddeploycx,
         title:"Design and Deploy CX Programs",
@@ -31,6 +35,7 @@ export const engagementmodeldata =[
     },
     {
         id:"5",
+        isFisrst:false,
         bgcolor:"#3F257F",
         imgsrc:continuousfeedback,
         title:"Continuous Feedback and Iteration",

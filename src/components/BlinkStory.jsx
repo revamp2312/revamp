@@ -3,9 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/effect-fade";
+// import "swiper/css/effect-fade";
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/scrollbar';
+import { Scrollbar } from 'swiper/modules';
 // import required modules
-import { EffectFade } from "swiper/modules";
+import { EffectCoverflow } from "swiper/modules";
 import { useRef } from "react";
 import { cxDownArrrow } from "../constants/utils";
 
@@ -16,16 +19,29 @@ const BlinkStory = () => {
   return (
     <div className="h-[700px] ">
       <Swiper
-        effect={"fade"}
+        effect={'coverflow'}
+        scrollbar={{
+          hide: true,
+        }}
         
+      mousewheel={"true"}
         direction={"vertical"}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
+  
+        coverflowEffect={{
+          scale:0.9,
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
         // pagination={{
         //   clickable: true,
         // }}
-        modules={[EffectFade]}
+        modules={[EffectCoverflow,Scrollbar]}
         className="mySwiper  "
       >
         <SwiperSlide>
