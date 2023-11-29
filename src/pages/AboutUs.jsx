@@ -8,11 +8,16 @@ import OtherGroups from "../components/OtherGroups"
 import OurOffices from "../components/OurOffices"
 import OurTeam from "../components/OurTeam"
 import { herosectiondata } from "../constants/herosectiondata"
+import { motion } from "framer-motion"
 
 
 const AboutUs = () => {
   return (
-    <div>
+    <motion.div 
+    initial={{opacity:0}}
+  animate={{opacity:1}}
+  transition={{duration:0.5}}
+  exit={{opacity:0}}>
        <HeroHome  {...herosectiondata[2]}/>
        <AboutUsSubHero />
        <BlinkStory />
@@ -23,7 +28,7 @@ const AboutUs = () => {
        <OtherGroups />
        <ContactPageCTA />
     
-    </div>
+    </motion.div>
   )
 }
 

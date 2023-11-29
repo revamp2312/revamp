@@ -104,10 +104,37 @@ import continuousfeedback from "../assets/engagementcardicons/continuousfeedback
 import designanddeploycx from "../assets/engagementcardicons/designanddeploycx.png"
 import settingbaseline from "../assets/engagementcardicons/settingbaseline.png"
 import unlockinginsights from "../assets/engagementcardicons/unlockinginsights.png"
-
+import vision from "../assets/vision.png"
+import inactiveArrow from "../assets/arrows/inactiveArrow.png"
+import activeArrow from "../assets/arrows/activeArrow.png"
+import eventsupdateshero from "../assets/events-updates-hero.png"
+import eventfb from "../assets/eventspage/fb.png"
+import eventlinkedin from "../assets/eventspage/linkedin.png"
+import eventtwitter from "../assets/eventspage/twitter.png"
+import eventyoutube from "../assets/eventspage/youtube.png"
+import eventarrow from "../assets/eventspage/arrow.png"
+import yt1 from "../assets/eventspage/yt1.png"
+import yt2 from "../assets/eventspage/yt2.png"
+import yt3 from "../assets/eventspage/yt3.png"
+import yt4 from "../assets/eventspage/yt4.png"
+import eventcard from "../assets/eventspage/event-card.png"
 
 
 export {
+  eventcard,
+  yt4,
+  yt3,
+  yt2,
+  yt1,
+  eventarrow,
+  eventyoutube,
+  eventtwitter,
+  eventlinkedin,
+  eventfb,
+  eventsupdateshero,
+  activeArrow,
+  inactiveArrow,
+  vision,
   unlockinginsights,
   settingbaseline,
   designanddeploycx,

@@ -1,9 +1,15 @@
 import Logo from "./Logo";
 import "./css/header.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HeaderAbout1, HeaderAbout2, HeaderAbout3, HeaderAbout4, events } from "../constants/utils";
 import { useHeaderdata } from "../constants/useHeaderdata"; //custom Hook
+import { useEffect } from "react";
 const Header = () => {
+  // let {pathname} = useLocation();
+  // useEffect(()=>{
+  //   window.scrollTo({top:0});
+   
+  // },[pathname]);
   const {
     showSubHeader,
     setShowSubHeade,
@@ -116,6 +122,8 @@ const Header = () => {
                 </div>
               </div>
            </Link>   
+
+           <Link to="/eventsandupdates">
               <div
                 className="p-[15px] flex flex-col gap-1 cursor-pointer hover:bg-[#F7F5FF] hover:rounded-md"
                 style={
@@ -134,6 +142,7 @@ const Header = () => {
                   <br /> news and events.
                 </div>
               </div>
+              </Link>
             
             </div>
           </div>

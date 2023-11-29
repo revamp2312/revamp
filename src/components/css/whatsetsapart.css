@@ -10,46 +10,64 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
+.blink-slides::-webkit-scrollbar {
+    display: none;
+  }
 .story-main{
     background-image: url("../../assets/BlinkStory/storyMain.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+/* background-attachment: fixed; */
 }
 .story-2018{
     background-image: url("../../assets/BlinkStory/2018.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+background-attachment: fixed;
 }
 .story-2019{
     background-image: url("../../assets/BlinkStory/2019.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+background-attachment: fixed;
 }
 .story-2020{
     background-image: url("../../assets/BlinkStory/2020.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+background-attachment: fixed;
 }
 .story-2021{
     background-image: url("../../assets/BlinkStory/2021.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+background-attachment: fixed;
 }
 .story-2022{
     background-image: url("../../assets/BlinkStory/2022.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+background-attachment: fixed;
 }
 .story-2023{
     background-image: url("../../assets/BlinkStory/2023.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+}
+.events-updates-hero-container{
+    background-image: url("../../assets/events-updates-hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }

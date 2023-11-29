@@ -10,7 +10,9 @@ import Company from './pages/Company.jsx'
 import Error from './pages/Error.jsx'
 import ContactUs from './pages/ContactUs.jsx'
 import AboutUs from './pages/AboutUs.jsx'
-
+import BlinkStorySlides from './components/BlinkStorySlides.jsx'
+import EventsAndUpdates from './pages/EventsAndUpdates.jsx'
+import { AnimatePresence } from 'framer-motion'
 
 const appRouter=createBrowserRouter([
   {
@@ -48,6 +50,16 @@ const appRouter=createBrowserRouter([
             path:"/aboutus",
             element:<AboutUs />
           }
+          ,
+          {
+            path:"/blinkstory",
+            element:<BlinkStorySlides />
+          }
+          ,
+          {
+            path:"/eventsandupdates",
+            element:<EventsAndUpdates />
+          }
       ],
       errorElement:<Error />
       
@@ -57,7 +69,9 @@ const appRouter=createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+  <AnimatePresence mode='wait'>
    <RouterProvider router={appRouter} />
+   </AnimatePresence>
   </React.StrictMode>,
 )
 
