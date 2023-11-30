@@ -13,6 +13,7 @@ import AboutUs from './pages/AboutUs.jsx'
 import BlinkStorySlides from './components/BlinkStorySlides.jsx'
 import EventsAndUpdates from './pages/EventsAndUpdates.jsx'
 import { AnimatePresence } from 'framer-motion'
+import { PlanContextProvider } from './constants/useContext.jsx'
 
 const appRouter=createBrowserRouter([
   {
@@ -69,9 +70,11 @@ const appRouter=createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+  <PlanContextProvider>
   <AnimatePresence mode='wait'>
    <RouterProvider router={appRouter} />
    </AnimatePresence>
+   </PlanContextProvider>
   </React.StrictMode>,
 )
 

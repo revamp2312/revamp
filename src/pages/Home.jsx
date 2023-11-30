@@ -11,6 +11,7 @@ import Events from "../components/Events";
 import { herosectiondata } from "../constants/herosectiondata";
 import { ctaHome } from "../constants/ctaBannerdata";
 import Footer from "../components/Footer";
+import PartnerWithUsPopout from "../components/PartnerWithUsPopout";
 const Home = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const Home = () => {
       <Welcome />
       <ExploreCardContainer />
       <TechnologyPartners />
+      <PartnerWithUsPopout />
       <OurClient />
       <Events />
       <StartJourney {...ctaHome[0]} />

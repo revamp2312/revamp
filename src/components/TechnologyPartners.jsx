@@ -10,6 +10,7 @@ import {
   partnerwithus,
 } from "../constants/utils";
 import "./css/technologypartners.css";
+import PartnerWithUs from "./PartnerWithUs";
 
 const TechnologyPartners = () => {
   return (
@@ -60,9 +61,7 @@ const TechnologyPartners = () => {
             <div className="each-partner max-w-[360px]">
               <img className="w-[100%]" src={asana} />
             </div>
-            <div className="each-partner max-w-[360px]">
-              <img className="w-[100%]" src={partnerwithus} />
-            </div>
+           <PartnerWithUs />
           </div>
         </div>
       </div>
