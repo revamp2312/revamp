@@ -5,21 +5,14 @@ import { HeaderAbout1, HeaderAbout2, HeaderAbout3, HeaderAbout4, events } from "
 import { useHeaderdata } from "../constants/useHeaderdata"; //custom Hook
 import { useEffect } from "react";
 const Header = () => {
-  // let {pathname} = useLocation();
-  // useEffect(()=>{
-  //   window.scrollTo({top:0});
-   
-  // },[pathname]);
-  const {
-    showSubHeader,
-    setShowSubHeade,
-    event,
-    about,
+  let {pathname} = useLocation();
+  const {showSubHeader, setShowSubHeade, event,about, mouseOnEvent, mouseOnAbout,} = useHeaderdata();
 
-    mouseOnEvent,
-    mouseOnAbout,
- 
-  } = useHeaderdata();
+  useEffect(()=>{
+    window.scrollTo({top:0});
+    setShowSubHeade(false)
+   
+  },[pathname]);
 
   return (
     <>
