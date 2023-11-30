@@ -10,6 +10,7 @@ import NeedHelp from "../components/NeedHelp";
 import Events from "../components/Events";
 import { herosectiondata } from "../constants/herosectiondata";
 import { ctaHome } from "../constants/ctaBannerdata";
+import Footer from "../components/Footer";
 const Home = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const Home = () => {
       <OurClient />
       <Events />
       <StartJourney {...ctaHome[0]} />
+      <Footer />
      
     </>
   );

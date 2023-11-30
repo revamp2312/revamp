@@ -1,4 +1,5 @@
 import EachPartner from "../components/EachPartner"
+import Footer from "../components/Footer"
 import OtherPartners from "../components/OtherPartners"
 import PartnerHeroSection from "../components/PartnerHeroSection"
 import StartJourney from "../components/StartJourney"
@@ -13,7 +14,7 @@ const Partners = () => {
     <OtherPartners />
     <WhatSetsApart />
     <StartJourney   {...ctaPartner[0]}/>
- 
+    <Footer />
    </>
   )
 }

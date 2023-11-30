@@ -1,4 +1,5 @@
 import AllServices from "../components/AllServices"
+import Footer from "../components/Footer";
 import HeroHome from "../components/HeroHome"
 import StartJourney from "../components/StartJourney";
 import { ctaService } from "../constants/ctaBannerdata";
@@ -14,6 +15,7 @@ const Services = () => {
           <img className="w-full" src={Framework} />
          </div>
          <StartJourney {...ctaService[0]} />
+         <Footer />
     </div>
   )
 }

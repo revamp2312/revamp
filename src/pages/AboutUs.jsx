@@ -6,6 +6,7 @@ import EngagementModelHero from "../components/EngagementModelHero"
 import HeroHome from "../components/HeroHome"
 import OtherGroups from "../components/OtherGroups"
 import OurOffices from "../components/OurOffices"
+import Footer from "../components/Footer"
 import OurTeam from "../components/OurTeam"
 import { herosectiondata } from "../constants/herosectiondata"
 import { motion } from "framer-motion"
@@ -27,6 +28,7 @@ const AboutUs = () => {
        <OurOffices />
        <OtherGroups />
        <ContactPageCTA />
+       <Footer />
     
     </motion.div>
   )
