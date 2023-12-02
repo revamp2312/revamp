@@ -8,6 +8,7 @@ import Accordion from "./Accordion";
 import AccordionSecond from "./AccordionSecond";
 import AccordionImage from "./AccordionImage";
 import { cxaccordianimages } from "../constants/accordianimages";
+import { motion } from "framer-motion";
 
 const CXServiceAccordions = () => {
   const [showAccordion, setShowAccordion] = useState(null);
@@ -21,7 +22,8 @@ const CXServiceAccordions = () => {
           </div>
           <div className="flex">
             <div className="w-6/12">
-              <div className="max-w-[532px]">
+              <div
+               className="max-w-[532px]">
                 <AccordionImage
                   setImg={
                     showAccordion === null

@@ -1,5 +1,6 @@
 import AllServices from "../components/AllServices"
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import HeroHome from "../components/HeroHome"
 import StartJourney from "../components/StartJourney";
 import { ctaService } from "../constants/ctaBannerdata";
@@ -9,6 +10,7 @@ import { Framework } from "../constants/utils";
 const Services = () => {
   return (
     <div>
+           <Header />
          <HeroHome  {...herosectiondata[1]}/>
          <AllServices />
          <div className="w-full max-w-[1440px] m-auto">  

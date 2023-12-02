@@ -10,10 +10,12 @@ import Footer from "../components/Footer"
 import OurTeam from "../components/OurTeam"
 import { herosectiondata } from "../constants/herosectiondata"
 import { motion } from "framer-motion"
+import Header from "../components/Header"
 
 
 const AboutUs = () => {
-  return (
+  return (<>
+    <Header />
     <motion.div 
     initial={{opacity:0}}
   animate={{opacity:1}}
@@ -31,6 +33,7 @@ const AboutUs = () => {
        <Footer />
     
     </motion.div>
+    </>
   )
 }
 

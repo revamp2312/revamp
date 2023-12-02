@@ -12,9 +12,11 @@ import { herosectiondata } from "../constants/herosectiondata";
 import { ctaHome } from "../constants/ctaBannerdata";
 import Footer from "../components/Footer";
 import PartnerWithUsPopout from "../components/PartnerWithUsPopout";
+import Header from "../components/Header";
 const Home = () => {
   return (
     <>
+     <Header />
     <NeedHelp />
       <HeroHome  {...herosectiondata[0]}/>
       <TrustedCompany />
