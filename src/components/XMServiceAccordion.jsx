@@ -17,7 +17,7 @@ const XMServiceAccordion = () => {
   useEffect(() => {
     controls.set({ opacity: 0 });
     controls.start({ opacity: 1 });
-  }, [showAccordion]);
+  }, [showAccordion,controls]);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -35,7 +35,7 @@ const XMServiceAccordion = () => {
             <div className="w-6/12">
               <motion.div
                 animate={controls}
-                transition={{ duration: 1 }}
+                transition={{ duration: 1 ,delay:0}}
                 exit={{ opacity: 0 }}
                 className="max-w-[532px]"
               >
