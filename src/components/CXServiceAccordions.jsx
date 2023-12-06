@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   cxaccordioandata,
   cxaccordioandata2,
@@ -8,16 +8,11 @@ import Accordion from "./Accordion";
 import AccordionSecond from "./AccordionSecond";
 import AccordionImage from "./AccordionImage";
 import { cxaccordianimages } from "../constants/accordianimages";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 const CXServiceAccordions = () => {
   const [showAccordion, setShowAccordion] = useState(null);
   const [showAccordion2, setShowAccordion2] = useState(null);
-  const controls=useAnimation()
-  useEffect(()=>{
-    controls.set({opacity:0})
-    controls.start({opacity:1})
-  },[showAccordion,controls])
   return (
     <motion.div
     initial={{ opacity: 0 }}
@@ -32,11 +27,7 @@ const CXServiceAccordions = () => {
           </div>
           <div className="flex">
             <div className="w-6/12">
-              <motion.div
-
-      animate={controls}
-      transition={{ duration: 1 ,delay:0}}
-      exit={{ opacity: 0 }}
+              <div
                className="max-w-[532px] overflow-hidden">
                 <AccordionImage
                   setImg={
@@ -45,7 +36,7 @@ const CXServiceAccordions = () => {
                       : cxaccordianimages[showAccordion].setImg
                   }
                 />
-              </motion.div>
+              </div>
             </div>
             <div className="w-6/12">
               <div className="flex justify-center items-center">

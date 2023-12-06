@@ -2,11 +2,11 @@ import { motion,useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
 const AccordionImage = ({setImg}) => {
-  // const controls=useAnimation()
-  // useEffect(()=>{
-  //   controls.set({opacity:0})
-  //   controls.start({opacity:1})
-  // },[setImg])
+  const controls=useAnimation()
+  useEffect(()=>{
+    controls.set({opacity:0})
+    controls.start({opacity:1})
+  },[setImg,controls])
 
   return (
     <div
@@ -15,9 +15,9 @@ const AccordionImage = ({setImg}) => {
     
      <motion.img 
     
-      // animate={controls}
-      // transition={{ duration: 1 }}
-      // exit={{ opacity: 0 }}
+      animate={controls}
+      transition={{ duration: 1.2 }}
+      exit={{ opacity: 0 }}
      className="w-full" src={setImg} /> 
 
     </div>
