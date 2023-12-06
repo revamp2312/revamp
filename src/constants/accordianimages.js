@@ -2,20 +2,20 @@ import { cxAcc2, cxAcc3, cxAcc4, cxAcc5, serviceAccordion, xmAcc1, xmAcc2, xmAcc
 
 export const cxaccordianimages=[
     {
-        setImg:serviceAccordion
+        setImge:serviceAccordion
     },
     {
-        setImg:cxAcc2
+        setImge:cxAcc2
     },
     {
-        setImg:cxAcc3
+        setImge:cxAcc3
     }
     ,
     {
-        setImg:cxAcc4
+        setImge:cxAcc4
     },
     {
-        setImg:cxAcc5
+        setImge:cxAcc5
     },
 ]
 

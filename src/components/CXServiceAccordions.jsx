@@ -33,7 +33,7 @@ const CXServiceAccordions = () => {
                   setImg={
                     showAccordion === null
                       ? serviceAccordion
-                      : cxaccordianimages[showAccordion].setImg
+                      : cxaccordianimages[showAccordion].setImge
                   }
                 />
               </div>
