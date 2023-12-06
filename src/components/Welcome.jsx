@@ -29,12 +29,12 @@ const Welcome = () => {
       <div className="welcome-wrapper">
         <div className="left">
           <div className="upper">
-            <div className="title">welcome to blink cx</div>
+            <div className="title text-[#666666]">welcome to blink cx</div>
             <div className="heading">
               <h2>Curious about the people and passion that power Blink CX?</h2>
             </div>
             <div className="description">
-              <p>
+              <p className="tect-[#666666]">
                 Meet our team and uncover the core of our customer-centric
                 approach.
               </p>
@@ -58,12 +58,12 @@ const Welcome = () => {
             spaceBetween={10}
             loop={true}
             effect="slide"
-            speed={3000}
+            speed={1300}
             centeredSlides={true}
             autoplay={{
-              delay: 1,
+              delay: 0,
               pauseOnMouseEnter: true,
-              disableOnInteraction: true,
+              disableOnInteraction: false,
             }}
             modules={[Autoplay]}
             className="mySwiper"
@@ -72,8 +72,8 @@ const Welcome = () => {
             welcomedata.map((member,index)=>{
               return(
                 <SwiperSlide key={index}>
-              <div className="each-team-member">
-                <img className="each-team-member-img" src={member.imgSrc} />
+              <div className="each-team-member w-[355px]">
+                <img className="each-team-member-img w-full" src={member.imgSrc} />
 
                 <div
                   className="tag"

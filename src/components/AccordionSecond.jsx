@@ -3,7 +3,7 @@ import { accodionarrow } from "../constants/utils"
 const AccordionSecond = ({heading,content,showAc,setAcc,hideAcc}) => {
    
   return (
-    <div onClick={showAc?hideAcc:setAcc} className="bg-white rounded p-6 cursor-pointer"
+    <div onClick={showAc?hideAcc:setAcc} className="bg-white rounded-b p-6 cursor-pointer"
     style={
       showAc
             ? {
@@ -27,7 +27,24 @@ const AccordionSecond = ({heading,content,showAc,setAcc,hideAcc}) => {
             : {
               transform:"rotate(0deg)"
               }
-        }><img src={accodionarrow} /></div>
+        }>
+         <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M16.9652 9.51721L11.9997 14.4827L7.03418 9.51721"
+                stroke="#693ED4"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+        </div>
       </div>
       <div
         className="grid transition-[grid-template-rows]  duration-[400ms]"

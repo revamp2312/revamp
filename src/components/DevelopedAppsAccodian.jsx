@@ -7,13 +7,18 @@ import { daAcc, daAccSecond } from "../constants/utils";
 import Accordion from "./Accordion";
 import AccordionSecond from "./AccordionSecond";
 import AccordionImage from "./AccordionImage";
+import { motion } from "framer-motion";
 
 
 const DevelopedAppsAccodian = () => {
     const [showAccordion, setShowAccordion] = useState(null);
     const [showAccordion2, setShowAccordion2] = useState(null);
     return (
-      <div className="flex justify-center items-center">
+      <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1}}
+      exit={{ opacity: 0 }}  className="flex justify-center items-center">
         <div className="wrapper flex flex-col gap-20">
           <div className="flex flex-col gap-12 justify-center items-center rounded-3xl bg-[#F7F5FF] p-12">
             <div className="heading">
@@ -89,7 +94,7 @@ const DevelopedAppsAccodian = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
 }
 

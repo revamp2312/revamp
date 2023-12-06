@@ -2,12 +2,14 @@ import { useState } from "react";
 import "./css/explorecard.css";
 
 const ExploreCard = (props) => {
+  console.log(props);
   const {
     title,
     number,
     content,
     icon,
     backgroundC,
+    boxSHADOW,
     arrow,
     whatwedeiver,
     right,
@@ -41,7 +43,7 @@ const ExploreCard = (props) => {
   // }
   //   }
   // ];
-
+console.log(boxSHADOW);
   const topsideropen={
     background: backgroundC,
         transform: "rotate(0deg)",
@@ -61,7 +63,12 @@ const ExploreCard = (props) => {
     paddingTop: "0px",
   }
     
-
+  const wholecardclose={
+    boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)"
+  } 
+const wholecardopen={
+  boxShadow:boxSHADOW
+}
   
   
  
@@ -74,6 +81,7 @@ const ExploreCard = (props) => {
       onMouseLeave={() => {
         setShowCard(false);
       }}
+      style={showCard ? wholecardopen:wholecardclose}
       className="card-container"
     >
       <div className="card-wrapper">

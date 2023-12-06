@@ -7,8 +7,11 @@ const HeroHome = (props) => {
       <div className="hero-wrapper w-[100%] flex justify-center">
         <div className="left-wrapper w-[50%] flex flex-col gap-16 justify-start items-start py-[80px] pr-0 pl-[70px] ">
           <div className="heading flex flex-col gap-6">
+          <div className="flec flex-colgap-2">
+{props.isPageName && <p className="text-[#666]">{props.pageName}</p>}
             <div className="title">
-              <h1 className="leading-[72px]">{props.title}</h1>
+
+              <h1 className="leading-[72px] text-[#333333]">{props.title}</h1>
               <HomeText  textanimation={props.textanimation}/>
               {/* <div className="gradient">
                 <ul>
@@ -19,6 +22,7 @@ const HeroHome = (props) => {
                 </ul>
               </div> */}
             </div>
+          </div>
 
             <p className="max-w-[594px]">
             {props.suntitle}
@@ -37,7 +41,7 @@ const HeroHome = (props) => {
           </div>}
         </div>
         <div className="right-wrapper w-[50%] max-h-[600px]">
-          <img className= " max-w-[664px] w-[100%] h-[100%] object-contain" src={props.imgurl} />
+          <img className= " max-w-[664px] w-[100%] h-[100%] object-cover" src={props.imgurl} />
         </div>
       </div>
     </div>

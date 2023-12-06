@@ -7,6 +7,7 @@ export const exploredata = [
     arrow: cxDownArrrow,
     right:cxright,
     backgroundC: "#693ED4",
+    boxSHADOW:" 0px 4px 20px 0px rgba(105, 62, 212, 0.10)",
     number: 0o1,
     title: "Customer Experience",
     content:
@@ -35,6 +36,7 @@ export const exploredata = [
     arrow: xmDownArrrow,
     right:xmright,
     backgroundC: "#A31EBE",
+    boxSHADOW:"0px 4px 20px 0px rgba(163, 30, 190, 0.10)",
     number: 0o2,
     title: "Experience Management",
     content:
@@ -62,6 +64,7 @@ export const exploredata = [
     arrow: dsDownArrrow,
     right:dsright,
     backgroundC: "#A2CC00",
+    boxSHADOW:"0px 4px 20px 0px rgba(97, 122, 0, 0.10)",
     number: 0o3,
     title: "Data Science",
     content:

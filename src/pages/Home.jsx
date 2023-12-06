@@ -13,11 +13,34 @@ import { ctaHome } from "../constants/ctaBannerdata";
 import Footer from "../components/Footer";
 import PartnerWithUsPopout from "../components/PartnerWithUsPopout";
 import Header from "../components/Header";
+import { useEffect, useState } from "react";
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
+console.log("home coponent rerendered");
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+console.log(isVisible);
+      // Adjust the offset value based on your requirements
+      if (offset >= 400) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <>
+    <div>
      <Header />
-    <NeedHelp />
+   {isVisible && <NeedHelp />}
       <HeroHome  {...herosectiondata[0]}/>
       <TrustedCompany />
       <Welcome />
@@ -29,7 +52,7 @@ const Home = () => {
       <StartJourney {...ctaHome[0]} />
       <Footer />
      
-    </>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@ const OurClient = () => {
       <div className="ourclient-wrapper">
         <div className="top">
           <div className="heading">
-            <p>OUR CLIENTS</p>
+            <p className="text-[#666666]">OUR CLIENTS</p>
           </div>
           <div className="title">
             <h2>Let’s see what our clients say</h2>
@@ -17,7 +17,7 @@ const OurClient = () => {
           <div className="left">
             <div className="client-information">
             <div className="client-content">
-              <div className="heading">Excellent quality of service</div>
+              <div className="heading text-[#333333]">Excellent quality of service</div>
               <div className="content">
                 What we like about our engagement with Blink is their
                 flexibility. Blink’s team understood our requirements and

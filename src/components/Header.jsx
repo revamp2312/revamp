@@ -17,16 +17,17 @@ const Header = () => {
   return (
     <>
       <div className="header-container relative w-[100%] m-auto max-w-[1440px] h-[90px] flex justify-center items-center py-0 px-[70px] border-b-[1px] border-solid border-[#D6DEE5] ">
-        <div className="header-wrapper w-[100%] flex justify-between">
-          <div className="logo-and-menus flex justify-center items-center">
+        <div className="header-wrapper w-[100%] flex justify-between h-full">
+          <div className="logo-and-menus flex justify-center items-center h-full">
             <div className="logo">
               <Logo />
             </div>
-            <div className="all-menus">
-              <ul className=" flex gap-6 list-none">
-                <Link to="/">
-                  <li className="cursor-pointer text-[#333333] text-[14px] font-normal">
+            <div className="all-menus h-full">
+              <ul className=" flex gap-6 list-none h-full justify-center items-center">
+                <Link to="/" className="h-full ">
+                  <li className="h-full flex justify-center items-center  cursor-pointer text-[#333333] hover:text-[#693ED4] text-[14px] font-normal relative after:h-[2px] after:w-full after:absolute after:bg-transparent after:hover:bg-[#693ED4] after:bottom-0 after:left-0">
                     Home
+                 
                   </li>
                 </Link>
 
@@ -34,18 +35,18 @@ const Header = () => {
                   onClick={() => {
                     setShowSubHeade(!showSubHeader);
                   }}
-                  className="cursor-pointer text-[#333333] text-[14px] font-normal"
+                  className="cursor-pointer text-[#333333] h-full flex justify-center items-center  text-[14px] font-normal hover:text-[#693ED4] relative after:h-[2px] after:w-full after:absolute after:bg-transparent after:hover:bg-[#693ED4] after:bottom-0 after:left-0"
                 >
                   Company
                 </li>
 
-                <Link to="/services">
-                  <li className="cursor-pointer text-[#333333] text-[14px] font-normal">
+                <Link to="/services" className="h-full">
+                  <li className="h-full flex justify-center  items-center cursor-pointer text-[#333333] text-[14px] font-normal hover:text-[#693ED4] relative after:h-[2px] after:w-full after:absolute after:bg-transparent after:hover:bg-[#693ED4] after:bottom-0 after:left-0">
                     Services
                   </li>
                 </Link>
-                <Link to="/partners">
-                  <li className="cursor-pointer text-[#333333] text-[14px] font-normal">
+                <Link to="/partners" className="h-full">
+                  <li className="h-full flex justify-center  items-center cursor-pointer text-[#333333] text-[14px] font-normal hover:text-[#693ED4] relative after:h-[2px] after:w-full after:absolute after:bg-transparent after:hover:bg-[#693ED4] after:bottom-0 after:left-0">
                     Partners
                   </li>
                 </Link>

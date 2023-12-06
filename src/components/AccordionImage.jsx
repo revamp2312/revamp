@@ -16,7 +16,7 @@ const AccordionImage = ({setImg}) => {
      <motion.img 
     
       animate={controls}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
       exit={{ opacity: 0 }}
      className="w-full" src={setImg} /> 
 

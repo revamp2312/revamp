@@ -9,7 +9,7 @@ const ExploreCardContainer = () => {
       <div className="explore-wrapper">
         <div className="top">
           <div className="heading">
-            <p>EXPLORE OUR SERVICES</p>
+            <p className="text-[#666666]">EXPLORE OUR SERVICES</p>
           </div>
           <div className="title">
             <h2>
@@ -20,7 +20,7 @@ const ExploreCardContainer = () => {
 
         <div className="explore-card-container">
           {exploredata.map((card) => {
-            return <ExploreCard key={card.id} title={card.title} content={card.content} number={card.number} icon={card.icon} backgroundC={card.backgroundC} arrow={card.arrow} whatwedeiver={card.whatwedeiver} right={card.right}/>;
+            return <ExploreCard key={card.id} title={card.title} content={card.content} number={card.number} icon={card.icon} backgroundC={card.backgroundC} boxSHADOW={card.boxSHADOW} arrow={card.arrow} whatwedeiver={card.whatwedeiver} right={card.right}/>;
           })}
         </div>
 
