@@ -3,9 +3,9 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import OtherPartners from "../components/OtherPartners"
 import PartnerHeroSection from "../components/PartnerHeroSection"
-import StartJourney from "../components/StartJourney"
 import WhatSetsApart from "../components/WhatSetsApart"
 import { ctaPartner } from "../constants/ctaBannerdata"
+import PartnerCTA from "../components/PartnerCTA"
 
 const Partners = () => {
   return (
@@ -15,7 +15,7 @@ const Partners = () => {
     <EachPartner />
     <OtherPartners />
     <WhatSetsApart />
-    <StartJourney   {...ctaPartner[0]}/>
+    <PartnerCTA  {...ctaPartner[0]}/>
     <Footer />
    </>
   )

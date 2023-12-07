@@ -13,7 +13,7 @@ import { useRef } from "react";
 const AboutUsSubHero = () => {
   const swiperRef = useRef();
   return (
-    <div className="py-[100px]">
+    <div className="">
          <Swiper
        
         onSwiper={(swiper) => {

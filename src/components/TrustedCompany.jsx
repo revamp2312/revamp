@@ -53,6 +53,30 @@ const TrustedCompany = () => {
   //     };
   //   }
   // }, [swiperRef, swiperAutoplay]);
+  const [stopSlider, setStopSlider] = useState(false);
+  console.log("home coponent rerendered");
+    useEffect(() => {
+      const handleScroll = () => {
+        const offset = window.scrollY;
+  console.log(stopSlider);
+        // Adjust the offset value based on your requirements
+        if (offset >= 300) {
+          heighRef.current.swiper.autoplay.stop();
+          setStopSlider(true);
+        } else {
+          heighRef.current.swiper.autoplay.start();
+          setStopSlider(false);
+        }
+      };
+  
+      // Add the scroll event listener
+      window.addEventListener('scroll', handleScroll);
+  
+      // Cleanup the event listener when the component is unmounted
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
   return (
     <div ref={heighRef} className="trusted-company-container">
@@ -60,12 +84,12 @@ const TrustedCompany = () => {
         <div className="title">Trusted by <span className="gradient">Industry Leading </span>Organizations</div>
 
         <Swiper
-          // ref={swiperRef}
+          ref={heighRef}
           slidesPerView={6}
           spaceBetween={10}
           loop={true}
           effect="slide"
-         speed={1500}
+         speed={5000}
           centeredSlides={true}
           autoplay={{
             delay:0,

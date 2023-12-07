@@ -71,3 +71,9 @@ background-attachment: fixed;
     background-size: cover;
 
 }
+.partner-hero-section-container{
+    background-image: url("../../assets/contactPagemeshBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
