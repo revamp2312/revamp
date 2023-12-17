@@ -4,9 +4,9 @@ const StartJourney = (props) => {
   const { title, description, imageUsed } = props;
   console.log(props);
   return (
-    <div className="w-full max-w-[1440px] m-auto flex justify-center items-center py-20 px-[70px]   ">
-      <div className="start-journey-wrapper w-full h-[446px] rounded-3xl flex">
-        <div className="w-[60%] flex flex-col gap-12 p-[76px] ">
+    <div className="w-full max-w-[1440px] m-auto flex justify-center items-center py-20 px-6 laptop:px-[70px]   ">
+      <div className="start-journey-wrapper w-full rounded-3xl flex flex-col laptop:flex-row">
+        <div className="w-full laptop:w-[60%] flex flex-col justify-center  gap-12 p-6 laptop:p-[76px]  ">
           <div className="flex flex-col gap-6 ">
             <div className="relative">
               <h2 className="text-white">{title}</h2>
@@ -39,10 +39,10 @@ const StartJourney = (props) => {
             </div>
           </div>
         </div>
-        <div className="w-[40%] flex items-end">
+        <div className="w-full laptop:w-[40%] flex items-end">
           <div className="h-[100%] ">
             <img
-              className="w-full h-[100%] object-cover"
+              className="w-full rounded-3xl h-[100%] object-cover"
               src={imageUsed}
               alt=""
             />

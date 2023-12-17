@@ -1,17 +1,26 @@
-import { useState } from "react";
-import {cxaccordioandata, cxaccordioandata2,} from "../constants/accordiondata";
+import { useEffect, useState } from "react";
+import {
+  cxaccordioandata,
+  cxaccordioandata2,
+} from "../constants/accordiondata";
 import { serviceAccordion, serviceAccordion2 } from "../constants/utils";
 import Accordion from "./Accordion";
 import AccordionSecond from "./AccordionSecond";
 import AccordionImage from "./AccordionImage";
 import { cxaccordianimages } from "../constants/accordianimages";
-import { motion } from "framer-motion";
-
-
+import { motion, useAnimation } from "framer-motion";
 
 const CXServiceAccordions = () => {
   const [showAccordion, setShowAccordion] = useState(null);
+  const [showImgAccordion, setShowImgAccordion] = useState(0);
   const [showAccordion2, setShowAccordion2] = useState(null);
+  
+  const controls = useAnimation();
+  useEffect(() => {
+    controls.set({ opacity: 0 });
+    controls.start({ opacity: 1 });
+  }, [showImgAccordion]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -27,18 +36,28 @@ const CXServiceAccordions = () => {
           </div>
           <div className="flex">
             <div className="w-6/12">
-              <div className="max-w-[532px] overflow-hidden">
-              
-                <AccordionImage
-              
-                  setImg={
-                    showAccordion === null
-                      ? serviceAccordion
-                      : cxaccordianimages[showAccordion].setImge
-                  }
-                  
-                />
-              </div>
+              <motion.div
+                animate={controls}
+                transition={{ duration: 1.2 }}
+                exit={{ opacity: 0 }}
+                className="max-w-[532px] overflow-hidden"
+              >
+                {cxaccordianimages.map((each, index) => {
+                  return (
+                    <AccordionImage
+                      key={index}
+                      showImage={index === showImgAccordion}
+                      setImg={showImgAccordion}
+                      imgSrc={each.setImge}
+                      // setImg={
+                      //   showAccordion === null
+                      //     ? serviceAccordion
+                      //     : cxaccordianimages[showAccordion].setImge
+                      // }
+                    />
+                  );
+                })}
+              </motion.div>
             </div>
             <div className="w-6/12">
               <div className="flex justify-center items-center">
@@ -50,7 +69,8 @@ const CXServiceAccordions = () => {
                         heading={each.heading}
                         content={each.content}
                         showAc={index === showAccordion}
-                        setAcc={() => setShowAccordion(index)}
+                        setAcc={() => {setShowAccordion(index)
+                        setShowImgAccordion(index)}}
                         hideAcc={() => {
                           setShowAccordion(null);
                         }}

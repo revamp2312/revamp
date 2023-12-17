@@ -1,4 +1,4 @@
-import { cxAcc2, cxAcc3, cxAcc4, cxAcc5, serviceAccordion, xmAcc1, xmAcc2, xmAcc3, xmAcc4, xmAcc5, } from "./utils";
+import { cxAcc2, cxAcc3, cxAcc4, cxAcc5, daAcc, serviceAccordion, xmAcc1, xmAcc2, xmAcc3, xmAcc4, xmAcc5, } from "./utils";
 
 export const cxaccordianimages=[
     {
@@ -38,4 +38,10 @@ export const xmaccordianimages=[
     {
         setImg:xmAcc5
     },
+]
+
+export const developedAppsAccordianImages=[
+    {
+        setImg:daAcc
+    }
 ]

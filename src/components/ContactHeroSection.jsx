@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ContactPageHero,
   Philippinesflag,
@@ -6,6 +6,7 @@ import {
   contactPagemeshBG,
 } from "../constants/utils";
 import "./css/contacthero.css";
+import { Link } from "react-router-dom";
 
 const ContactHeroSection = () => {
   const [showSingapore, setShowSingapore] = useState(false);
@@ -18,7 +19,7 @@ const ContactHeroSection = () => {
   };
   const handleHideSingapore = () => {
     setShowSingapore(false);
-    setSigaporeadresscopied(false)
+    
   
   };
   const handleShowFilipino = () => {
@@ -26,11 +27,34 @@ const ContactHeroSection = () => {
   };
   const handleHideFilipino = () => {
     setShowFilipino(false);
-    setFilipinesadresscopied(false)
+
   };
+  const fcopytext=()=>{setTimeout(()=>{
+    console.log("address timeout");
+    setFilipinesadresscopied(false)
+  },2000)}
+
+  useEffect(()=>{
+    if(filipinesadresscopied===true){
+      fcopytext()
+    }
+    
+  },[filipinesadresscopied])
+
+  const scopytext=()=>{setTimeout(()=>{
+    console.log("address timeout");
+    setSigaporeadresscopied(false)
+  },2000)}
+
+  useEffect(()=>{
+    if(sigaporeadresscopied===true){
+    scopytext()
+    }
+    
+  },[sigaporeadresscopied])
 
   return (
-    <div className=" w-full max-w-[1440px] m-auto flex justify-center items-center  pb-20 ">
+    <div className=" w-full max-w-[1440px] m-auto flex justify-center items-center   ">
       <div className="w-full flex flex-col justify-center items-center">
         <div className="flex w-full contact-hero-container">
           <div className="w-6/12 flex flex-col gap-6 py-20 pl-[70px]">
@@ -78,12 +102,12 @@ const ContactHeroSection = () => {
                     );
                     setSigaporeadresscopied(true)
                   }}
-                  className="text-sm font-normal cursor-pointer relative"
+                  className="text-sm font-normal cursor-pointer relative hover:text-[#693ED4]"
                 >
                   10 Anson Road #22-02 International Plaza Singapore (079903)
                   {sigaporeadresscopied && (
-                    <div className="absolute bottom-[-20px] right-0 bg-[#693ED4] text-white p-2 rounded text-[10px]">
-                      Copied
+                    <div className="absolute top-[-120%] left-[30%]  bg-gray-400 text-white p-2 rounded text-[10px]">
+                      Copied!
                     </div>
                   )}
                 </div>
@@ -115,13 +139,13 @@ const ContactHeroSection = () => {
                     );
                     setFilipinesadresscopied(true)
                   }}
-                  className="text-sm font-normal cursor-pointer relative"
+                  className="text-sm font-normal cursor-pointer relative hover:text-[#693ED4]"
                 >
                   19th Floor, Marco Polo Ortigas Manila, Sapphire Road, Ortigas
                   Centre, Pasig City Manila, 1600, Philippines
                   {filipinesadresscopied && (
-                    <div className="absolute bottom-[-20px] right-0 bg-[#693ED4] text-white p-2 rounded text-[10px]">
-                      Copied
+                    <div className="absolute top-[-100%] left-[30%]  bg-gray-400 text-white p-2 rounded text-[10px]">
+                      Copied!
                     </div>
                   )}
                 </div>
@@ -129,7 +153,7 @@ const ContactHeroSection = () => {
             )}
           </div>
         </div>
-        <div className="flex gap-6 mt-[-70px]">
+        {/* <div className="flex gap-6 mt-[-70px]">
           <div
             className="max-w-[420px] px-6 py-8 bg-white rounded-2xl flex flex-col gap-12 z-10"
             style={{ boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.10)" }}
@@ -140,11 +164,13 @@ const ContactHeroSection = () => {
                 questions.
               </p>
             </div>
+            <Link to="/">
             <div className="flex justify-center items-center bg-[#693ED4] py-4 px-6 cursor-pointer  rounded-lg">
               <button className="text-white font-semiboldbold text-[16px]">
                 Submit an inquiry
               </button>
             </div>
+            </Link>
           </div>
           <div
             className="max-w-[420px] px-6 py-8 bg-white rounded-2xl flex flex-col gap-12 z-10"
@@ -163,7 +189,7 @@ const ContactHeroSection = () => {
               </div>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

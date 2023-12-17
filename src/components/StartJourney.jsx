@@ -24,7 +24,7 @@ const StartJourney = (props) => {
                     strokeWidth="3.47708"
                     strokeLinecap="round"
                   />
-                </svg>{" "}
+                </svg>
               </div>
             </div>
             <div>

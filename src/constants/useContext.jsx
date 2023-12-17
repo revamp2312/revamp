@@ -6,10 +6,12 @@ export const planContext=createContext({
 export function PlanContextProvider({children}){
    
     const [showPop,setShowPop]=useState(false)
-    return <planContext.Provider value={{showPop,setShowPop}}>{children}</planContext.Provider>
+    const [activePastEvent, setActivePastEvent] = useState(false);
+    const [activeUpcomingEvents, setActiveUpcomingEvents] = useState(true);
+    return <planContext.Provider value={{showPop,setShowPop,activePastEvent,setActivePastEvent,activeUpcomingEvents,setActiveUpcomingEvents}}>{children}</planContext.Provider>
 }
 
 export function UseplanContext(){
-    const {showPop,setShowPop}=useContext(planContext);
-    return {showPop,setShowPop}
+    const {showPop,setShowPop,activePastEvent,setActivePastEvent,activeUpcomingEvents,setActiveUpcomingEvents}=useContext(planContext);
+    return {showPop,setShowPop,activePastEvent,setActivePastEvent,activeUpcomingEvents,setActiveUpcomingEvents}
 }

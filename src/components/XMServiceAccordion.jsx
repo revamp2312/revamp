@@ -12,12 +12,13 @@ import { motion, useAnimation } from "framer-motion";
 
 const XMServiceAccordion = () => {
   const [showAccordion, setShowAccordion] = useState(null);
+  const [showImgAccordion, setShowImgAccordion] = useState(0);
   const [showAccordion2, setShowAccordion2] = useState(null);
   const controls = useAnimation();
   useEffect(() => {
     controls.set({ opacity: 0 });
     controls.start({ opacity: 1 });
-  }, [showAccordion,controls]);
+  }, [showImgAccordion]);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -35,17 +36,24 @@ const XMServiceAccordion = () => {
             <div className="w-6/12">
               <motion.div
                 animate={controls}
-                transition={{ duration: 1 ,delay:0}}
+                transition={{ duration: 1.2 ,delay:0}}
                 exit={{ opacity: 0 }}
                 className="max-w-[532px]"
-              >
-                <AccordionImage
-                  setImg={
-                    showAccordion === null
-                      ? xmAcc1
-                      : xmaccordianimages[showAccordion].setImg
-                  }
-                />
+              > {xmaccordianimages.map((each, index) => {
+                  return (
+                    <AccordionImage
+                      key={index}
+                      showImage={index === showImgAccordion}
+                      setImg={showImgAccordion}
+                      imgSrc={each.setImg}
+                      // setImg={
+                      //   showAccordion === null
+                      //     ? serviceAccordion
+                      //     : cxaccordianimages[showAccordion].setImge
+                      // }
+                    />
+                  );
+                })}
               </motion.div>
             </div>
             <div className="w-6/12">
@@ -58,7 +66,12 @@ const XMServiceAccordion = () => {
                         heading={each.heading}
                         content={each.content}
                         showAc={index === showAccordion}
-                        setAcc={() => setShowAccordion(index)}
+                        setAcc={() =>
+                         {
+                          setShowAccordion(index)
+                          setShowImgAccordion(index)
+                          }
+                         }
                         hideAcc={() => {
                           setShowAccordion(null);
                         }}

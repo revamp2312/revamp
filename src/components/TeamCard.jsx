@@ -11,7 +11,7 @@ const TeamCard = (props) => {
     setFirstLayerOpen(false)
    }
   return (
-    <div onMouseEnter={handleshowdetail} onMouseLeave={handlehidedetail} className="max-h-[320px] w-[287px] overflow-hidden  cursor-pointer relative py-8 px-[30px] flex justify-center items-center"style={{boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)"}} >
+    <div onMouseEnter={handleshowdetail} onMouseLeave={handlehidedetail} className="h-[324px] w-[287px] overflow-hidden  cursor-pointer relative py-8 px-[30px] flex justify-center items-center"style={{boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)"}} >
       <div className="flex flex-col gap-6 z-10 justify-center items-center ">
         <div className="max-w-[160px]">
           <img className="w-full" src={teamcardm} />

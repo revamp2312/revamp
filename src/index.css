@@ -29,6 +29,14 @@ h2 {
 h3 {
   color: #101828;
   font-family: Sora;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 37.5px */
+}
+h4{
+  color: #101828;
+  font-family: Sora;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -43,6 +51,38 @@ p {
   line-height: 150%; /* 27px */
 }
 
+@media screen and (max-width:1280px){
+  h1{
+    font-size: 46px;
+    font-weight: bold;
+
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width:640px){
+  h1{
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+}}
 
 
 /* :root {

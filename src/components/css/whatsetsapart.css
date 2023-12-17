@@ -1,79 +1,146 @@
-.setsapart-container{
-    background-image: url("../../assets/apart.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.setsapart-container::before{
+  background-image: url("../../assets/apart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  z-index: 1;
 }
 
-.ourOffice-container{
-    background-image: url("../../assets/ourofficebg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
+.ourOffice-container {
+  background-image: url("../../assets/ourofficebg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .blink-slides::-webkit-scrollbar {
-    display: none;
-  }
-.story-main{
-    background-image: url("../../assets/BlinkStory/storyMain.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-/* background-attachment: fixed; */
+  display: none;
 }
-.story-2018{
-    background-image: url("../../assets/BlinkStory/2018.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-background-attachment: fixed;
+.story-main {
+  background-image: url("../../assets/BlinkStory/storyMain.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
 }
-.story-2019{
-    background-image: url("../../assets/BlinkStory/2019.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-background-attachment: fixed;
+.story-2018 {
+  background-image: url("../../assets/BlinkStory/2018.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.story-2020{
-    background-image: url("../../assets/BlinkStory/2020.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-background-attachment: fixed;
+.story-2019 {
+  background-image: url("../../assets/BlinkStory/2019.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.story-2021{
-    background-image: url("../../assets/BlinkStory/2021.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-background-attachment: fixed;
+.story-2020 {
+  background-image: url("../../assets/BlinkStory/2020.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.story-2022{
-    background-image: url("../../assets/BlinkStory/2022.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-background-attachment: fixed;
+.story-2021 {
+  background-image: url("../../assets/BlinkStory/2021.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.story-2023{
-    background-image: url("../../assets/BlinkStory/2023.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+.story-2022 {
+  background-image: url("../../assets/BlinkStory/2022.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.events-updates-hero-container{
-    background-image: url("../../assets/events-updates-hero.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.story-2023 {
+  background-image: url("../../assets/BlinkStory/2023.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.events-updates-hero-container {
+  background-image: url("../../assets/events-updates-hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.partner-hero-section-container {
+  background-image: url("../../assets/contactPagemeshBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+#check-box-1:hover ~ .check-1-bg {
+  scale: 1.7;
 }
-.partner-hero-section-container{
-    background-image: url("../../assets/contactPagemeshBG.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+/* for checkbox-1
+
+
+#check-box-1:checked ~ .check-1{
+    opacity: 1;
 }
+#check-box-1:checked ~ .check-1-bg{
+    scale: 1.7;
+}
+
+#check-box-1:checked{
+    background-color: #693ED4;
+}
+
+/* for checkbox-2 */
+/* #check-box-2:checked ~ .check-2{
+    opacity: 1;
+}
+#check-box-2:checked ~ .check-2-bg{
+    scale: 1.7;
+}
+#check-box-2:hover ~ .check-2-bg{
+    scale: 1.7;
+}
+#check-box-2:checked{
+    background-color: #693ED4;
+} */
+
+/* for checkbox-3 */
+/* #check-box-3:checked ~ .check-3{
+    opacity: 1;
+}
+#check-box-3:checked ~ .check-3-bg{
+    scale: 1.7;
+}
+#check-box-3:hover ~ .check-3-bg{
+    scale: 1.7;
+}
+#check-box-3:checked{
+    background-color: #693ED4;
+} */
+
+/* for checkbox-4 */
+/* #check-box-4:checked ~ .check-4{
+    opacity: 1;
+}
+#check-box-4:checked ~ .check-4-bg{
+    scale: 1.7;
+}
+#check-box-4:hover ~ .check-4-bg{
+    scale: 1.7;
+}
+#check-box-4:checked{
+    background-color: #693ED4;
+}  */

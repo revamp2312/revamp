@@ -3,9 +3,9 @@ import PartnerHeroSlider from "./PartnerHeroSlider";
 
 const PartnerHeroSection = () => {
   return (
-    <div className="partner-hero-section-container flex justify-center items-center w-full max-w-[1440px] m-auto px-[70px]">
-      <div className="flex w-full">
-        <div className="w-7/12 flex flex-col gap-6 py-24">
+    <div className="partner-hero-section-container flex justify-center items-center w-full max-w-[1440px] m-auto px-6 laptop:px-[70px]">
+      <div className="flex flex-col laptop:flex-row w-full">
+        <div className="w-full laptop:w-7/12 flex flex-col gap-6 py-24">
           <div className="flex flex-col gap-2">
             <div>
               <p className="text-[#666666]">PARTNERS</p>
@@ -32,7 +32,7 @@ const PartnerHeroSection = () => {
             </p>
           </div>
         </div>
-        <div className="w-5/12">
+        <div className="w-full laptop:w-5/12">
           <PartnerHeroSlider />
         </div>
       </div>

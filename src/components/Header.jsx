@@ -1,37 +1,55 @@
 import Logo from "./Logo";
 import "./css/header.css";
 import { Link, useLocation } from "react-router-dom";
-import { HeaderAbout1, HeaderAbout2, HeaderAbout3, HeaderAbout4, events } from "../constants/utils";
+import {
+  HeaderAbout1,
+  HeaderAbout2,
+  HeaderAbout3,
+  HeaderAbout4,
+  events,
+} from "../constants/utils";
 import { useHeaderdata } from "../constants/useHeaderdata"; //custom Hook
 import { useEffect } from "react";
 const Header = () => {
-  let {pathname} = useLocation();
-  const {showSubHeader, setShowSubHeade, event,about, mouseOnEvent, mouseOnAbout,} = useHeaderdata();
+  let { pathname } = useLocation();
+  const {
+    showSubHeader,
+    setShowSubHeade,
+    event,
+    about,
+    mouseOnEvent,
+    mouseOnAbout,
+  } = useHeaderdata();
 
-  useEffect(()=>{
-    window.scrollTo({top:0});
-    setShowSubHeade(false)
-   
-  },[pathname]);
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    setShowSubHeade(false);
+  }, [pathname]);
 
   return (
     <>
       <div className="header-container relative w-[100%] m-auto max-w-[1440px] h-[90px] flex justify-center items-center py-0 px-[70px] border-b-[1px] border-solid border-[#D6DEE5] ">
         <div className="header-wrapper w-[100%] flex justify-between h-full">
-          <div className="logo-and-menus flex justify-center items-center h-full">
-            <div className="logo">
+          <div className="logo-and-menus flex  gap-12 justify-center items-center h-full">
+            <div className="w-24 logo">
               <Logo />
             </div>
             <div className="all-menus h-full">
               <ul className=" flex gap-6 list-none h-full justify-center items-center">
-                <Link to="/" className="h-full ">
+                <Link
+                  onMouseOver={()=>{
+                    setShowSubHeade(false)
+                  }}
+                 to="/" className="h-full ">
                   <li className="h-full flex justify-center items-center  cursor-pointer text-[#333333] hover:text-[#693ED4] text-[14px] font-normal relative after:h-[2px] after:w-full after:absolute after:bg-transparent after:hover:bg-[#693ED4] after:bottom-0 after:left-0">
                     Home
-                 
                   </li>
                 </Link>
 
                 <li
+                  onMouseOver={()=>{
+                    setShowSubHeade(true)
+                  }}
                   onClick={() => {
                     setShowSubHeade(!showSubHeader);
                   }}
@@ -40,12 +58,20 @@ const Header = () => {
                   Company
                 </li>
 
-                <Link to="/services" className="h-full">
+                <Link
+                   onMouseOver={()=>{
+                    setShowSubHeade(false)
+                  }}
+                 to="/services" className="h-full">
                   <li className="h-full flex justify-center  items-center cursor-pointer text-[#333333] text-[14px] font-normal hover:text-[#693ED4] relative after:h-[2px] after:w-full after:absolute after:bg-transparent after:hover:bg-[#693ED4] after:bottom-0 after:left-0">
                     Services
                   </li>
                 </Link>
-                <Link to="/partners" className="h-full">
+                <Link 
+                   onMouseOver={()=>{
+                    setShowSubHeade(false)
+                  }}
+                to="/partners" className="h-full">
                   <li className="h-full flex justify-center  items-center cursor-pointer text-[#333333] text-[14px] font-normal hover:text-[#693ED4] relative after:h-[2px] after:w-full after:absolute after:bg-transparent after:hover:bg-[#693ED4] after:bottom-0 after:left-0">
                     Partners
                   </li>
@@ -65,6 +91,9 @@ const Header = () => {
       </div>
 
       <div
+      onMouseLeave={()=>{
+        setShowSubHeade(false)
+      }}
         className="header-submenu absolute top-90px z-50 grid transition-[grid-template-rows]  duration-[600ms] max-w-[1440px] m-auto  w-[100%] bg-[#F7F5FF]  "
         style={
           showSubHeader
@@ -84,10 +113,34 @@ const Header = () => {
                 </div>
               </div>
               <div>
-                <div>
+                <div className="flex gap-2 justify-center items-center hover:underline hover:decoration-[#693ED4]">
                   <button className="text-[#693ED4] text-[16px] font-bold leading-6">
                     See job openings
                   </button>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M4.16675 10H15.8334"
+                        stroke="#693ED4"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M10 4.1665L15.8333 9.99984L10 15.8332"
+                        stroke="#693ED4"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,47 +150,46 @@ const Header = () => {
               <div className="text-[12px] font-semibold leading-5 text-[#999] tracking-[0.96px]">
                 COMPANY
               </div>
-           <Link to="/aboutus" >
-           <div
-                className="p-[15px] flex flex-col gap-1 cursor-pointer hover:bg-[] hover:rounded-md"
-                style={
-                  about
-                    ? { background: "#F7F5FF" }
-                    : { background: "transparent" }
-                }
-                onMouseOver={mouseOnAbout}
-              >
-                <div className="text-[#693ED4] text-[14px] font-semibold leading-6 tracking-[-0.28px]">
-                  About us
+              <Link to="/aboutus">
+                <div
+                  className="p-[15px] flex flex-col gap-1 cursor-pointer hover:bg-[] hover:rounded-md"
+                  style={
+                    about
+                      ? { background: "#F7F5FF",borderRadius:"6px" }
+                      : { background: "transparent" }
+                  }
+                  onMouseOver={mouseOnAbout}
+                >
+                  <div className="text-[#693ED4] text-[14px] font-semibold leading-6 tracking-[-0.28px]">
+                    About us
+                  </div>
+                  <div className="text-[#666] text-[14px] font-normal leading-6">
+                    Discover our story, mission and vision,
+                    <br /> and get to know our team.
+                  </div>
                 </div>
-                <div className="text-[#666] text-[14px] font-normal leading-6">
-                  Discover our story, mission and vision,
-                  <br /> and get to know our team.
-                </div>
-              </div>
-           </Link>   
-
-           <Link to="/eventsandupdates">
-              <div
-                className="p-[15px] flex flex-col gap-1 cursor-pointer hover:bg-[#F7F5FF] hover:rounded-md"
-                style={
-                  event
-                    ? { background: "#F7F5FF" }
-                    : { background: "transparent" }
-                }
-                onMouseOver={mouseOnEvent}
-                // onMouseLeave={mouseisOut}
-              >
-                <div className="text-[#693ED4] text-[14px] font-semibold leading-6 tracking-[-0.28px]">
-                  Events and Updates
-                </div>
-                <div className="text-[#666] text-[14px] font-normal leading-6">
-                  Stay updated with our latest company
-                  <br /> news and events.
-                </div>
-              </div>
               </Link>
-            
+
+              <Link to="/eventsandupdates">
+                <div
+                  className="p-[15px] flex flex-col gap-1 cursor-pointer hover:bg-[#F7F5FF] hover:rounded-md"
+                  style={
+                    event
+                      ? { background: "#F7F5FF",borderRadius:"6px" }
+                      : { background: "transparent" }
+                  }
+                  onMouseOver={mouseOnEvent}
+                  // onMouseLeave={mouseisOut}
+                >
+                  <div className="text-[#693ED4] text-[14px] font-semibold leading-6 tracking-[-0.28px]">
+                    Events and Updates
+                  </div>
+                  <div className="text-[#666] text-[14px] font-normal leading-6">
+                    Stay updated with our latest company
+                    <br /> news and events.
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -203,23 +255,24 @@ const Header = () => {
               </div>
             )}
 
-            {about && <div className="flex justify-center items-center gap-5">
-                  <div className="grid grid-cols-3 grid-rows-[50%]">
-                    <div className="col-span-2 row-end-2">
-                      <img src={HeaderAbout1} />
-                    </div>
-                    <div className="col-start-3 row-start-1 row-end-3">
-                      <img src={HeaderAbout3} />
-                    </div>
-                    <div className="col-span-2 row-start-3 row-end-4 ">
-                      <img src={HeaderAbout4} />
-                    </div>
-                    <div className="row-start-3 row-end-4 mt-3">
-                      <img src={HeaderAbout2} />
-                    </div>
+            {about && (
+              <div className="flex justify-center items-center gap-5">
+                <div className="grid gap-x-3  grid-cols-3 grid-rows-[40%,5%,10%,5%,34%] w-full h-full">
+                  <div className="col-span-2 row-end-2">
+                    <img className="w-full h-full object-cover rounded-lg"  src={HeaderAbout1} />
                   </div>
-            </div>}
-  
+                  <div className="col-start-3 row-start-1 row-end-4">
+                    <img className="w-full h-full object-cover rounded-lg" src={HeaderAbout3} />
+                  </div>
+                  <div className="col-span-2 row-start-3 row-end-6 ">
+                    <img className="w-full h-full object-cover rounded-lg"  src={HeaderAbout4} />
+                  </div>
+                  <div className="row-start-5 row-end-6 ">
+                    <img className="w-full h-full object-cover rounded-lg"  src={HeaderAbout2} />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

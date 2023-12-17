@@ -32,7 +32,7 @@ const HomeText = (props) => {
     <SwiperSlide><h1 className='gradient'>Data Intelligence</h1></SwiperSlide>
     <SwiperSlide><h1 className='gradient'>Employee Engagement</h1></SwiperSlide>
    
-  </Swiper> : <h1 className='gradient'>Prioritize Experience!</h1>}
+  </Swiper> : <h1 className='gradient'>Captured in a Blink</h1>}
         </div>
     </div>
    

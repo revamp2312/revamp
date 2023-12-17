@@ -118,9 +118,15 @@ import yt2 from "../assets/eventspage/yt2.png"
 import yt3 from "../assets/eventspage/yt3.png"
 import yt4 from "../assets/eventspage/yt4.png"
 import eventcard from "../assets/eventspage/event-card.png"
-
-
+import pastArticle from "../assets/eventspage/pastArticle.png"
+import noUpcomingEvents from "../assets//eventspage/noUpcomingEvents.png"
+import ytplay from "../assets/eventspage/ytplay.png"
+import ytblinklogo from "../assets/eventspage/ytblinklogo.png"
 export {
+  ytblinklogo,
+  ytplay,
+  noUpcomingEvents,
+  pastArticle,
   eventcard,
   yt4,
   yt3,

@@ -18,14 +18,14 @@ const EngagementModelCard = (props) => {
       >
         {!isFisrst && (
           <div
-            className="relative w-[100px]  h-[48px] "
+            className="relative w-[100px]  h-[48px] z-10 "
             style={{ background: bgcolor }}
           >
             <div className="absolute z-[1] bottom-0  left-0 w-0 h-0 border-l-[24px] border-l-white  border-solid border-t-[24px] border-t-transparent  border-b-[25px] border-b-transparent "></div>
           </div>
         )}
         <div
-          className="relative w-[160px]  h-[48px] "
+          className="relative w-[160px]  h-[48px] z-30"
           style={{ background: bgcolor }}
         >
           <div
@@ -43,14 +43,14 @@ const EngagementModelCard = (props) => {
             <img className="w-[32px] " src={imgsrc} />
           </div>
           <div
-            className="absoloue overflow-hidden ] w-[235px] left-0 top-0 engamenent-card  flex justify-center items-center py-6 pl-7 pr-4 bg-[#F7F5FF] border-[#6C52E3] border-l-4 border-solid   duration-500 origin-top-left  transition-all "
+            className="absoloue overflow-hidden  w-[235px] left-0 top-0 engamenent-card  flex justify-center items-start py-6 pl-7 pr-4 bg-[#F7F5FF] border-[#6C52E3] border-l-4 border-solid   duration-500 origin-top-left  transition-all "
             style={
               clicked
-                ? { height: "396px", visibility: "visible", opacity: "1" }
+                ? { height: "404px", visibility: "visible", opacity: "1" }
                 : { height: "200px", visibility: "hidden", opacity: "0.1" }
             }
           >
-            <div className=" mt-[80px] flex flex-col gap-2 justify-start items-start">
+            <div className=" mt-[100px] flex flex-col gap-2 justify-start items-start">
               <div
                 className="  text-xl font-semibold "
                 style={clicked ? { display: "block" } : { display: "none" }}

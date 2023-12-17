@@ -21,7 +21,7 @@ const PartnerHeroSlider = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="mySwiper "
+        className="mySwiper max-h-[500px]"
       >
         <SwiperSlide className="!bg-transparent h-[full]">
           <div className="h-[full]">

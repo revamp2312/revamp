@@ -14,6 +14,8 @@ import BlinkStorySlides from './components/BlinkStorySlides.jsx'
 import EventsAndUpdates from './pages/EventsAndUpdates.jsx'
 import { AnimatePresence } from 'framer-motion'
 import { PlanContextProvider } from './constants/useContext.jsx'
+import PastEvents from './pages/PastEvents.jsx'
+import ZendeskContactUs from './pages/ZendeskContactUs.jsx'
 
 const appRouter=createBrowserRouter([
   {
@@ -60,6 +62,16 @@ const appRouter=createBrowserRouter([
           {
             path:"/eventsandupdates",
             element:<EventsAndUpdates />
+          }
+          ,
+          {
+            path:"/pastevents",
+            element:<PastEvents />
+          }
+          ,
+          {
+            path:"/inquiry",
+            element:<ZendeskContactUs />
           }
       ],
       errorElement:<Error />

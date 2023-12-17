@@ -17,7 +17,7 @@ const BlinkStory = () => {
 //   const[onIntro,setonIntro]=useState(true)
 // const swiperRef =useRef()
   return (
-   <div id='blink'  className='h-[630px] overflow-y-auto relative px-[70px] rounded-3xl m-auto max-w-[1440px] w-full'>
+   <div id='blink'  className='h-[630px] overflow-y-auto relative px-6 laptop:px-[70px] rounded-3xl m-auto max-w-[1440px] w-full'>
 
 <div className=' h-[630px]'>
 
@@ -27,7 +27,7 @@ const BlinkStory = () => {
             <h2>Our Journey in Transforming CX and Innovating Together</h2>
           </div>
           <Link to="/blinkstory">
-
+<br />
           <div>
         
             <button 

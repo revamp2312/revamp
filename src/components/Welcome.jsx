@@ -7,22 +7,12 @@ import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 import { useState } from "react";
 import { welcomedata } from "../constants/welcomedata";
+import WelcomeSlides from "./WelcomeSlides";
 
 const Welcome = () => {
   const [showname, setShowname] = useState(false);
 
-  const style1 = [
-    {
-      show: {
-        display: "block",
-      },
-    },
-    {
-      hide: {
-        display: "none",
-      },
-    },
-  ];
+  
 
   return (
     <div className="welcome-container">
@@ -58,11 +48,11 @@ const Welcome = () => {
             spaceBetween={10}
             loop={true}
             effect="slide"
-            speed={1300}
+            speed={8000}
             centeredSlides={true}
             autoplay={{
               delay: 0,
-              pauseOnMouseEnter: true,
+             
               disableOnInteraction: false,
             }}
             modules={[Autoplay]}
@@ -72,17 +62,7 @@ const Welcome = () => {
             welcomedata.map((member,index)=>{
               return(
                 <SwiperSlide key={index}>
-              <div className="each-team-member w-[355px]">
-                <img className="each-team-member-img w-full" src={member.imgSrc} />
-
-                <div
-                  className="tag"
-                  style={showname ? style1.show : style1.hide}
-                >
-                  <div className="name">Name</div>
-                  <div className="position">Position</div>
-                </div>
-              </div>
+                 <WelcomeSlides {...member} />
             </SwiperSlide>
               )
             })

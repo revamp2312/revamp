@@ -21,13 +21,13 @@ const AboutUsSubHero = () => {
         }}
          modules={[]} className="mySwiper">
         <SwiperSlide>
-        <div className="w-full max-w-[1440px] m-auto flex justify-center items-center px-[70px] py-12">
-      <div className="flex gap-20 w-full">
-        <div className="w-6/12">
+        <div className="w-full max-w-[1440px] m-auto flex justify-center items-center px-6 laptop:px-[70px] py-12">
+      <div className="flex flex-col-reverse gap-4 laptop:flex-row laptop:gap-20 w-full">
+        <div className="w-full laptop:w-6/12">
           <img src={aboutSubHero} />
         </div>
 
-        <div className="w-6/12 flex justify-center items-center">
+        <div className="w-full laptop:w-6/12 flex justify-center items-center">
           <div className="flex flex-col gap-4 items-start">
             <div>
               <h2>Our Mission</h2>
@@ -62,13 +62,13 @@ const AboutUsSubHero = () => {
     </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="w-full max-w-[1440px] m-auto flex justify-center items-center px-[70px] py-12">
-      <div className="flex gap-20 w-full">
-        <div className="w-6/12">
+        <div className="w-full max-w-[1440px] m-auto flex justify-center items-center px-6 laptop:px-[70px] py-12">
+      <div className="flex flex-col-reverse gap-4 laptop:flex-row  laptop:gap-20 w-full">
+        <div className="w-full laptop:w-6/12">
           <img src={vision} />
         </div>
 
-        <div className="w-6/12 flex justify-center items-center">
+        <div className="w-full laptop:w-6/12 flex justify-center items-center">
           <div className="flex flex-col gap-4  items-start">
             <div>
               <h2>Our Vision</h2>

@@ -11,6 +11,7 @@ import OurTeam from "../components/OurTeam"
 import { herosectiondata } from "../constants/herosectiondata"
 import { motion } from "framer-motion"
 import Header from "../components/Header"
+import AboutUsHero from "../components/AboutUsHero"
 
 
 const AboutUs = () => {
@@ -21,16 +22,16 @@ const AboutUs = () => {
   animate={{opacity:1}}
   transition={{duration:0.5}}
   exit={{opacity:0}}>
-       <HeroHome  {...herosectiondata[2]}/>
+     <AboutUsHero />
        <AboutUsSubHero />
-       <BlinkStory />
+        <BlinkStory />
        <EngagementModelHero />
        <EngagementModelCardContainer /> 
        <OurTeam />
        <OurOffices />
        <OtherGroups />
        <ContactPageCTA />
-       <Footer />
+       <Footer /> 
     
     </motion.div>
     </>

@@ -1,4 +1,4 @@
-export  const teamdata =[
+export  const teamdataFirstRow =[
     {
         name:"Alexander Benavidez",
         position:"President & CEO"
@@ -11,6 +11,10 @@ export  const teamdata =[
         name:"Darwin Jacquez",
         position:"COO / VP For Sales And Marketing"
     },
+ 
+]
+
+export const teamdataSecondRow =[
     {
         name:"Charles Gomez",
         position:"Business Development Director "

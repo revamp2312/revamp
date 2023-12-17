@@ -1,5 +1,7 @@
 import ContactHeroSection from "../components/ContactHeroSection"
+import ContactInquiryFormConatainer from "../components/ContactInquiryFormConatainer"
 import ContactPageCTA from "../components/ContactPageCTA"
+import ContactPageSubHeroSection from "../components/ContactPageSubHeroSection"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import TrustedCompany from "../components/TrustedCompany"
@@ -10,7 +12,9 @@ const ContactUs = () => {
     <div>
      <Header />
       <ContactHeroSection />
+      <ContactPageSubHeroSection />
       <TrustedCompany />
+      <ContactInquiryFormConatainer />
       <ContactPageCTA />
       <Footer />
     </div>
