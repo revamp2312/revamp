@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./css/explorecard.css";
 
 const ExploreCard = (props) => {
-  console.log(props);
+ 
   const {
     title,
     number,
@@ -43,7 +43,7 @@ const ExploreCard = (props) => {
   // }
   //   }
   // ];
-console.log(boxSHADOW);
+
   const topsideropen={
     background: backgroundC,
         transform: "rotate(0deg)",

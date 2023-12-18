@@ -19,53 +19,24 @@ import { Autoplay } from "swiper/modules";
 import { useEffect, useRef, useState } from "react";
 
 const TrustedCompany = () => {
-  // const [swiperAutoplay, setSwiperAutoplay] = useState(true);
+  
   const heighRef = useRef(null);
   console.log(heighRef);
 
-  // useEffect(() => {
-  //   if (swiperRef.current) {
-  //     // Pause on mouseenter
-  //     const handleMouseEnter = () => {
-  //       if (swiperRef.current && swiperAutoplay) {
-  //         swiperRef.current.swiper.autoplay.stop();
-  //         setSwiperAutoplay(false);
-  //       }
-  //     };
 
-  //     // Resume on mouseleave
-  //     const handleMouseLeave = () => {
-  //       if (swiperRef.current && !swiperAutoplay) {
-  //         swiperRef.current.swiper.autoplay.start();
-  //         setSwiperAutoplay(true);
-  //       }
-  //     };
-
-  //     const container = swiperRef.current;
-  //     console.log(swiperRef);
-
-  //     container.addEventListener('mouseenter', handleMouseEnter);
-  //     container.addEventListener('mouseleave', handleMouseLeave);
-
-  //     return () => {
-  //       container.removeEventListener('mouseenter', handleMouseEnter);
-  //       container.removeEventListener('mouseleave', handleMouseLeave);
-  //     };
-  //   }
-  // }, [swiperRef, swiperAutoplay]);
-  const [stopSlider, setStopSlider] = useState(false);
   console.log("home coponent rerendered");
     useEffect(() => {
       const handleScroll = () => {
+        console.log("eventlistener applied");
         const offset = window.scrollY;
-  console.log(stopSlider);
+  
         // Adjust the offset value based on your requirements
         if (offset >= 300) {
           heighRef.current.swiper.autoplay.stop();
-          setStopSlider(true);
+   
         } else {
           heighRef.current.swiper.autoplay.start();
-          setStopSlider(false);
+     
         }
       };
   
@@ -75,6 +46,7 @@ const TrustedCompany = () => {
       // Cleanup the event listener when the component is unmounted
       return () => {
         window.removeEventListener('scroll', handleScroll);
+        console.log("eventlistenr removed");
       };
     }, []);
 

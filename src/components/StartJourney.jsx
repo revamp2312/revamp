@@ -2,7 +2,7 @@ import "./css/startjourney.css";
 
 const StartJourney = (props) => {
   const { title, description, imageUsed } = props;
-  console.log(props);
+
   return (
     <div className="w-full max-w-[1440px] m-auto flex justify-center items-center py-20 px-[70px]   ">
       <div className="start-journey-wrapper w-full h-[446px] rounded-3xl flex">

@@ -20,7 +20,6 @@ console.log("home coponent rerendered");
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-console.log(isVisible);
       // Adjust the offset value based on your requirements
       if (offset >= 400) {
         setIsVisible(true);
