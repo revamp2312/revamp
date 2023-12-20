@@ -16,7 +16,7 @@ export const herosectiondata = [
   {
     isPageName: true,
     pageName: "SERVICES",
-    title: "Protect Your Business from Poor CX Practices,",
+    title: "Enhance Your Business with Exceptional CX Strategies,",
     suntitle:"At Blink CX, we’re not just here to offer services; we’re your trusted partners in enhancing your customer experience (CX).",
     twobtns: false,
     isfirstbtn: true,

@@ -87,8 +87,8 @@ const wholecardopen={
       <div className="card-wrapper">
         <div className="upper">
           <div className="icon-and-number">
-            <div className="icon">
-              <img src={icon} />
+            <div className="icon w-12">
+              <img className="w-full" src={icon} />
             </div>
             <div className="number">0{number}</div>
           </div>

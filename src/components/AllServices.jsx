@@ -232,7 +232,7 @@ const AllServices = () => {
               </svg>
             </div>
             <div>
-              <button className="text-xl font-bold">Our Developed Apps</button>
+              <button className="text-xl font-bold">Blink CX Apps</button>
             </div>
           </div>
         </div>

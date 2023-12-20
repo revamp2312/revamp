@@ -15,11 +15,11 @@ const Welcome = () => {
   
 
   return (
-    <div className="welcome-container">
-      <div className="welcome-wrapper">
-        <div className="left">
-          <div className="upper">
-            <div className="title text-[#666666]">welcome to blink cx</div>
+    <div className="welcome-container w-full max-w-[1440px] m-auto flex justify-center items-center py-16 px-6 tablet:px-14 laptop:px-[70px]">
+      <div className="welcome-wrapper w-full flex flex-col gap-9 laptop:flex-row laptop:gap-0">
+        <div className="left w-full laptop:w-[60%] flex flex-col gap-16 ">
+          <div className="upper flex flex-col gap-2 max-w-[600px] ">
+            <div className="title text-[#666666] uppercase">welcome to blink cx</div>
             <div className="heading">
               <h2>Curious about the people and passion that power Blink CX?</h2>
             </div>
@@ -33,6 +33,8 @@ const Welcome = () => {
           <div className="lower">
             <div className="welcome-cta">
               <button
+              style={{background:"linear-gradient(135deg, #693ed4 0%, #a31ebe 100%)"}}
+              className="cursor-pointer text-[#f8fafc] text-center text-base font-bold capitalize tracking-[-0.32px] px-6 py-4 rounded-lg border-[1px] border-solid border-[#fff]"
                 onMouseOver={() => {
                   setShowname(true);
                 }}
@@ -42,7 +44,7 @@ const Welcome = () => {
             </div>
           </div>
         </div>
-        <div className="right">
+        <div className="right w-full laptop:w-[40%] ">
           <Swiper
             slidesPerView={"auto"}
             spaceBetween={10}

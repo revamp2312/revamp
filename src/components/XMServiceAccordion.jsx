@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {
-  cxaccordioandata2,
   xmaccordioandata,
+  xmaccordioandata2,
 } from "../constants/accordiondata";
 import { xmAcc1, xmAccSecond } from "../constants/utils";
 import Accordion from "./Accordion";
@@ -29,9 +29,9 @@ const XMServiceAccordion = () => {
     >
       <div className="wrapper flex flex-col gap-20">
         <div className="flex flex-col gap-12 justify-center items-center rounded-3xl bg-[#F7F5FF] p-12">
-          <div className="heading">
+          {/* <div className="heading">
             <h2>Our Services</h2>
-          </div>
+          </div> */}
           <div className="flex">
             <div className="w-6/12">
               <motion.div
@@ -56,8 +56,17 @@ const XMServiceAccordion = () => {
                 })}
               </motion.div>
             </div>
-            <div className="w-6/12">
-              <div className="flex justify-center items-center">
+            <div className="w-6/12 flex justify-center items-center">
+              <div className="flex flex-col gap-8  justify-center items-start">
+              <div className="flex flex-col gap-4">
+              <div className="flex gap-2 items-cente rounded bg-[#6C52E3] py-1 px-3 text-[#FAFCFE] w-fit">
+                  <div className="flex items-center">*</div>
+                  <div className="text-[14px] leading-6 font-semibold">
+                  Experience Management
+                  </div>
+                </div>
+                <div><h2>Services Offered</h2></div>
+              </div>
                 <div className="flex flex-col gap-4">
                   {xmaccordioandata.map((each, index) => {
                     return (
@@ -65,6 +74,7 @@ const XMServiceAccordion = () => {
                         key={index}
                         heading={each.heading}
                         content={each.content}
+                        keyBenefits={each.keyBenefits}
                         showAc={index === showAccordion}
                         setAcc={() =>
                          {
@@ -87,17 +97,12 @@ const XMServiceAccordion = () => {
           <div className="flex">
             <div className="w-6/12 flex flex-col gap-6 p-12 ">
               <div className="flex flex-col gap-4">
-                <div className="flex gap-2 items-cente rounded bg-[#6C52E3] py-1 px-3 text-[#FAFCFE] w-fit">
-                  <div className="flex items-center">*</div>
-                  <div className="text-[14px] leading-6 font-semibold">
-                    USE CASES AND KPIs
-                  </div>
-                </div>
-                <h2>Solutions</h2>
+              
+                <h2>Use Cases</h2>
               </div>
               <div className="flex justify-center items-center border-t-2">
                 <div className="flex flex-col ">
-                  {cxaccordioandata2.map((each, index) => {
+                  {xmaccordioandata2.map((each, index) => {
                     return (
                       <AccordionSecond
                         key={index}

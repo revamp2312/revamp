@@ -6,7 +6,7 @@ const StartJourney = (props) => {
   return (
     <div className="w-full max-w-[1440px] m-auto flex justify-center items-center py-20 px-6 laptop:px-[70px]   ">
       <div className="start-journey-wrapper w-full rounded-3xl flex flex-col laptop:flex-row">
-        <div className="w-full laptop:w-[60%] flex flex-col justify-center  gap-12 p-6 laptop:p-[76px]  ">
+        <div className="w-full laptop:w-[50%] flex  justify-center  items-center  p-6 laptop:p-[76px]  ">
           <div className="flex flex-col gap-6 ">
             <div className="relative">
               <h2 className="text-white">{title}</h2>
@@ -31,21 +31,66 @@ const StartJourney = (props) => {
               <p className="text-white">{description}</p>
             </div>
           </div>
-          <div>
-            <div>
-              <button className="py-4 px-5 rounded-lg bg-[#150c2a] text-[#f8fafc] text-center text-[16px] font-bold leading-6 tracking-[0.32px]  border-none ">
-                Talk to CX Experts
+       
+        </div>
+        <div className="w-full laptop:w-[50%] flex items-end p-12">
+          <div className="h-[100%] bg-white p-8 rounded-2xl">
+          <form
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+          action=""
+          className="flex flex-col gap-8"
+        >
+          <div className="flex flex-col gap-6">
+          <div className=" flex gap-6">
+          <div className="flex flex-col gap-2">
+              <label htmlFor="">Name</label>
+              <input
+                type="text"
+                placeholder="Your first name"
+                className="border-[1px] border-[#D0D5DD] border-solid rounded-lg py-3 px-4"
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="">Email Address*</label>
+              <input
+                type="email"
+                placeholder="you@company.com"
+                className="border-[1px] border-[#D0D5DD] border-solid rounded-lg py-3 px-4"
+              />
+            </div>
+          </div>
+           
+            <div className="flex flex-col gap-2">
+              <label htmlFor="">Company</label>
+              <input
+                type="text"
+                placeholder="Company name"
+                className="border-[1px] border-[#D0D5DD] border-solid rounded-lg py-3 px-4"
+              />
+            </div>
+           
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="text-[#666] text-xs ">
+              By submitting this form, you confirm that you agree to the storing
+              and processing of your personal data by Blink CX as described in
+              the Privacy Policy.
+            </div>
+            <div className="w-full">
+              <button
+                className="w-full py-4 px-6 rounded-lg text-[white]"
+                style={{
+                  background:
+                    " linear-gradient(135deg, #693ED4 0%, #A31EBE 100%)",
+                }}
+              >
+                Submit
               </button>
             </div>
           </div>
-        </div>
-        <div className="w-full laptop:w-[40%] flex items-end">
-          <div className="h-[100%] ">
-            <img
-              className="w-full rounded-3xl h-[100%] object-cover"
-              src={imageUsed}
-              alt=""
-            />
+        </form>
           </div>
         </div>
       </div>

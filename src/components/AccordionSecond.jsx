@@ -1,7 +1,7 @@
 import { accodionarrow } from "../constants/utils"
 
 const AccordionSecond = ({heading,content,showAc,setAcc,hideAcc}) => {
-   
+   console.log(content);
   return (
     <div onClick={showAc?hideAcc:setAcc} className="bg-white rounded-b p-6 cursor-pointer"
     style={
@@ -59,7 +59,13 @@ const AccordionSecond = ({heading,content,showAc,setAcc,hideAcc}) => {
         }
       >
         <div className="overflow-hidden">
-          <div><p className="font-normal pt-4">{content}</p></div>
+          <ul>
+          {content.map((each,index)=>{
+            return <li
+            style={{listStyle:"square"}} 
+             key={index} className="font-normal pt-4 ">{each.para}</li>
+          })}
+          </ul>
         </div>
       </div>
     </div>

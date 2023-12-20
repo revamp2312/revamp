@@ -18,8 +18,8 @@ export const ctaService=[
 
 export const ctaPartner=[
     {
-        title:"Start Your CX Journey Today!",
-        description:"Contact Blink CX for expert guidance and support. Our team of seasoned professionals is here to assist you every step of the way.",
+        title:"Partner with us for superior CX",
+        description:"Fill out the form to initiate a conversation with our experts. Together, let's craft a tailored CX strategy that propels your business towards unparalleled success.",
         imageUsed:partnerCTA
     }
 ]

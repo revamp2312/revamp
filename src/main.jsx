@@ -65,7 +65,7 @@ const appRouter=createBrowserRouter([
           }
           ,
           {
-            path:"/pastevents",
+            path:"/pastevents/:articleId",
             element:<PastEvents />
           }
           ,

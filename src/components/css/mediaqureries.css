@@ -1,0 +1,17 @@
+@media  (max-width:500px){
+
+    .contact-inquiry-buttons{
+        flex-direction: column;
+    }
+    .each-partners{
+        flex-direction: column !important;
+    }
+}
+
+@media  (max-width:1200px){
+
+  
+    .each-partners{
+        flex-direction: column !important;
+    }
+}

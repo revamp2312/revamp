@@ -74,7 +74,7 @@ const AboutUsSubHero = () => {
               <h2>Our Vision</h2>
             </div>
             <div>
-                <p className="text-left">To help you maximize the value from your CX technology investments at every step of the lifecycle and accelerate your success.</p>
+                <p className="text-left">To help you maximize the value from your Customer Experience technology investments at every step of the lifecycle and accelerate your success.</p>
             </div>
             <div className="flex gap-4 mt-9">
             <div className="cursor-pointer" onClick={() => swiperRef.current.slidePrev()} >

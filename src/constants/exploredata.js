@@ -66,7 +66,7 @@ export const exploredata = [
     backgroundC: "#A2CC00",
     boxSHADOW:"0px 4px 20px 0px rgba(97, 122, 0, 0.10)",
     number: 0o3,
-    title: "Data Science",
+    title: "Blink CX Apps",
     content:
       "Blink CX's Data Science Practice is your bridge to data-driven decision-making.",
     whatwedeiver: [{

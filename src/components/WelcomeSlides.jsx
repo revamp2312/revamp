@@ -11,7 +11,7 @@ const WelcomeSlides = ({ imgSrc }) => {
       onMouseLeave={() => {
         setShowNameandPosition(false);
       }}
-      className="each-team-member w-[355px]"
+      className="each-team-member w-[355px] relative"
     >
       <img className="each-team-member-img w-full" src={imgSrc} />
 
@@ -21,10 +21,10 @@ const WelcomeSlides = ({ imgSrc }) => {
             ? { visibility: "visible", opacity: "1" }
             : { visibility: "hidden", opacity: "0" }
         }
-        className="tag transition-all duration-1000"
+        className="tag transition-all duration-1000 h-[50px] absolute bottom-[10px] left-4 right-4 bg-white flex items-center"
       >
-        <div className="name">Name</div>
-        <div className="position">Position</div>
+        <div className="name w-1/2">Name</div>
+        <div className="position w-1/2">Position</div>
       </div>
     </div>
   );

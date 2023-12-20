@@ -32,7 +32,7 @@ const DevelopedAppsAccodian = () => {
       <div className="wrapper flex flex-col gap-20">
         <div className="flex flex-col gap-12 justify-center items-center rounded-3xl bg-[#F7F5FF] p-12">
           <div className="heading">
-            <h2>Our Services</h2>
+            <h2>Services Offered</h2>
           </div>
           <div className="flex">
             <div className="w-6/12">
@@ -68,6 +68,7 @@ const DevelopedAppsAccodian = () => {
                         key={index}
                         heading={each.heading}
                         content={each.content}
+                        keyBenefits={each.keyBenefits}
                         showAc={index === 0 || index === 1}
                         setAcc={() => {setShowAccordion(index)
                         setShowImgAccordion(index)}}

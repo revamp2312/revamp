@@ -1,81 +1,184 @@
 export const cxaccordioandata =[
     {
-        heading:"Asana Consulting and Implementation Services",
-        content:"Ensure that your workflow is customized to your specific needs, resulting in enhanced efficiency, streamlined processes, and optimized task management for your organization."
+        heading:"Customer Experience Consulting",
+        content:"Our team of experts provides in-depth consulting services to transform your customer experience strategy. We leverage our partnerships with leading CX tech providers like Zendesk and Qualtrics to offer personalized solutions that meet your unique business needs. ",
+        keyBenefits:[
+            {
+                eachBenefit:"Tailored Strategies"
+            },
+            {
+                eachBenefit:"Expert Insights"
+            },
+            {
+                eachBenefit:"Enhanced Customer Satisfaction"
+            }
+        ]
     },
     {
-        heading:"Zendesk Consulting and Implementation Services",
-        content:"Experience tailored setup and optimization of Zendesk support systems to enhance customer service, streamline operations, and maximize the benefits of Zendesk."
+        heading:"Implementation and Integration",
+        content:"We specialize in the seamless implementation and integration of cutting-edge CX technologies into your existing systems. Our process ensures minimal disruption to your operations while maximizing the efficiency and effectiveness of the new tools. ",
+        keyBenefits:[
+            {
+                eachBenefit:"Smooth transition"
+            },
+            {
+                eachBenefit:"System compatibility"
+            },
+            {
+                eachBenefit:" Increased operational efficiency"
+            }
+        ]
     },
     {
-        heading:"Integration and Migration Services",
-        content:"By seamlessly connecting and migrating data across platforms, unlock the benefits of improved data accessibility, enhanced collaboration, and increased operational efficiency."
+        heading:"Training and Support",
+        content:"Our comprehensive training programs are designed to empower your staff with the knowledge and skills needed to utilize CX technologies to their fullest potential. Ongoing support ensures any challenges are promptly addressed.",
+        keyBenefits:[
+            {
+                eachBenefit:"Employee empowerment"
+            },
+            {
+                eachBenefit:"Reduced learning curve"
+            },
+            {
+                eachBenefit:"Continuous assistance"
+            }
+        ]
     },
-    {
-        heading:"Custom Product Development Services",
-        content:"Through personalized design and development, we aspire to transform your customer experience, ensuring it aligns perfectly with your brand's identity and goals."
-    },
-    {
-        heading:"UI/UX Research Study Services",
-        content:"Discover how our in-depth user research transforms your interface and user experience, tailored to your needs."
-    },
+   
     
 ]
 export const cxaccordioandata2 =[
     {
-        heading:"Customer Support Transformation",
-        content:"Ensure that your workflow is customized to your specific needs, resulting in enhanced efficiency, streamlined processes, and optimized task management for your organization."
+        heading:"Enhancing Customer Support",
+        content:[
+            {
+                para:"For businesses seeking to improve response times and resolution rates for customer inquiries."
+            },
+            {
+                para:"Utilizing Zendesk's advanced ticketing system, we streamline your customer support workflow, ensuring quicker and more effective responses."
+            }
+        ]
     },
     {
-        heading:"Project and Task Management",
-        content:"Ensure that your workflow is customized to your specific needs, resulting in enhanced efficiency, streamlined processes, and optimized task management for your organization."
+        heading:"Customer Feedback Analysis",
+        content:[
+            {
+                para:"For companies needing deeper insights into customer satisfaction and feedback."
+            },
+            {
+                para:"Implementing Qualtrics' survey and feedback tools, we help you capture, analyze, and act on customer feedback to drive improvements in your service or product."
+            }
+        ]
     },
     {
-        heading:"Data Integration and Migration",
-        content:"Ensure that your workflow is customized to your specific needs, resulting in enhanced efficiency, streamlined processes, and optimized task management for your organization."
+        heading:"Personalized Customer Experiences",
+        content:[
+            {
+                para:"For brands aiming to provide personalized experiences to increase customer loyalty and sales. "
+            },
+            {
+                para:"For brands aiming to provide personalized experiences to increase customer loyalty and sales. "
+            }
+        ]
     },
-    {
-        heading:"Tailored CX Solutions",
-        content:"Ensure that your workflow is customized to your specific needs, resulting in enhanced efficiency, streamlined processes, and optimized task management for your organization."
-    },
-    {
-        heading:"Human-centered design",
-        content:"Ensure that your workflow is customized to your specific needs, resulting in enhanced efficiency, streamlined processes, and optimized task management for your organization."
-    },
-    
+   
     
 ]
 export const xmaccordioandata =[
     {
-        heading:"Qualtrics Consulting and Implementation Services",
-        content:"With our expert guidance and seamless setup, you'll optimize your XM programs, enhance customer engagement, and make data-driven decisions for lasting success."
+        heading:"Feedback Research and Analysis",
+        content:"Specializing in comprehensive feedback research, we gather and analyze customer feedback across various touchpoint to give you a detailed understanding of customer satisfaction and areas for improvement.",
+        keyBenefits:[
+            {
+                eachBenefit:"Insightful customer feedback"
+            },
+            {
+                eachBenefit:"Actionable data"
+            },
+            {
+                eachBenefit:"Enhanced customer understanding"
+            }
+        ]
     },
     {
-        heading:"Alida Consulting and Implementation Services",
-        content:"Enhance your operations with Alida Consulting and Implementation Services, providing tailored configuration and seamless integration of the Alida platform."
+        heading:"Custom Survey Development",
+        content:"Our team designs and implements custom surveys tailored to your specific business needs. Using platforms like Qualtrics, we ensure the collection of high-quality data for accurate customer insights.",
+        keyBenefits:[
+            {
+                eachBenefit:"Tailored survey design"
+            },
+            {
+                eachBenefit:"High response rates"
+            },
+            {
+                eachBenefit:"Precise customer insights"
+            }
+        ]
     },
     {
-        heading:"Customer Insights Managed Services",
-        content:"Our expert team takes care of the process, so you can concentrate on using those insights to enhance your customers' experiences and fuel your business growth."
+        heading:"Behavioral Research and Analytics",
+        content:"Utilizing advanced behavioral research techniques, we uncover the underlying factors driving customer behaviors. This helps in crafting strategies that resonate with your target audience.",
+        keyBenefits:[
+            {
+                eachBenefit:"Deep behavioral insights"
+            },
+            {
+                eachBenefit:"Effective strategy formulation"
+            },
+            {
+                eachBenefit:"Improved customer engagement"
+            }
+        ]
+    },
+
+]
+export const xmaccordioandata2 =[
+    {
+        heading:"Customer Satisfaction Tracking",
+        content:[
+            {
+                para:"For businesses needing to measure and track customer satisfaction over time."
+            },
+            {
+                para:"Custom-designed surveys to regularly assess customer satisfaction, providing valuable data to inform business decisions and strategies."
+            }
+        ]
     },
     {
-        heading:"XM Accelerator",
-        content:"A program designed to fast-track your journey in Experience Management."
+        heading:"Improving Product and Service Feedback Loop",
+        content:[
+            {
+                para:"For organizations looking to enhance their product or service based on customer feedback."
+            },
+            {
+                para:"Implementing a robust feedback research and analysis system to gather and act on customer insights, leading to improved product/service offerings."
+            }
+        ]
     },
     {
-        heading:"Research Services",
-        content:"Delve into in-depth research methods to uncover valuable insights that help you make informed decisions for your organization."
+        heading:"Understanding Customer Decision-Making",
+        content:[
+            {
+                para:"For companies interested in the deeper motivations and behaviors of their customers."
+            },
+            {
+                para:"Conducting detailed behavioral research to understand the factors influencing customer decisions, aiding in more effective marketing and product development."
+            }
+        ]
     },
+   
     
 ]
 export const daaccordioandata =[
     {
         heading:"Data Science Consulting Services",
-        content:"Benefit from a full-fledged data analysis and consulting package to harness the potential of your data. We simplify complex information for better decision-making in your organization."
+        content:"Benefit from a full-fledged data analysis and consulting package to harness the potential of your data. We simplify complex information for better decision-making in your organization.",
+       
     },
     {
         heading:"Data Science and Machine Learning Projects",
-        content:"Get personalized machine learning solutions and projects designed to meet your business requirements. We create tailored solutions that precisely fit your needs and enhance your business operations."
+        content:"Get personalized machine learning solutions and projects designed to meet your business requirements. We create tailored solutions that precisely fit your needs and enhance your business operations.",
+        
     },
    
     

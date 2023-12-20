@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
-
+import "./css/mediaqureries.css"
 
 const ContactPageSubHeroSection = () => {
   return (
-    <div className="flex justify-center gap-6 mt-[-70px] pb-20">
+    <div className="contact-subhero-container flex flex-wrap justify-center items-center  gap-x-6 gap-y-12 px-6 tablet:px-14  laptop:mt-[-70px] pb-20">
     <div
       className="max-w-[420px] px-6 py-8 bg-white rounded-2xl flex flex-col gap-12 z-10"
       style={{ boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.10)" }}

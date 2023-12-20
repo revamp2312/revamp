@@ -3,7 +3,7 @@ import { events } from "../constants/utils";
 const Events = () => {
   return (
     <div
-      className="events-container w-full max-w-[1440px] m-auto flex justify-center items-center p-[70px]"
+      className="events-container w-full max-w-[1440px] m-auto flex justify-center items-center p-6 tablet:p-14 laptop:p-[70px]"
       style={{ background: "linear-gradient(180deg, #f7f5ff 0%, #fff 100%)" }}
     >
       <div className="event-wrapper w-full flex flex-col gap-14">
@@ -15,9 +15,9 @@ const Events = () => {
             <h2>Stay in the Loop: Company Updates, News, Events, and More!</h2>
           </div>
         </div>
-        <div className="bottom flex gap-9 rounded">
+        <div className="bottom flex flex-col laptop:flex-row  gap-9 rounded">
           <div
-            className="left flex flex-col gap-9 bg-white w-6/12 rounded "
+            className="left flex flex-col gap-9 bg-white w-full laptop:w-6/12 rounded "
             style={{ boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)" }}
           >
             <div className="imgContainer">
@@ -73,9 +73,9 @@ const Events = () => {
             </div>
             </div>
           </div>
-          <div className="right w-6/12 flex flex-col items-center justify-between gap-6">
+          <div className="right w-full laptop:w-6/12 flex flex-col items-center justify-between gap-6">
             <div
-              className="each-event cursor-pointer w-full flex justify-between items-center bg-white py-6 px-[30px] rounded"
+              className="each-event cursor-pointer w-full flex justify-between items-center bg-white py-6 px-4 tablet:px-[30px] rounded"
               style={{ boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)" }}
             >
               <div className=" flex flex-col gap-4">
@@ -109,7 +109,7 @@ const Events = () => {
               </div>
             </div>
             <div
-              className="each-event cursor-pointer w-full flex justify-between items-center bg-white py-6 px-[30px] rounded"
+              className="each-event cursor-pointer w-full flex justify-between items-center bg-white py-6 px-4 tablet:px-[30px] rounded"
               style={{ boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)" }}
             >
               <div className=" flex flex-col gap-4">
@@ -143,7 +143,7 @@ const Events = () => {
               </div>
             </div>
             <div
-              className="each-event cursor-pointer w-full flex justify-between items-center bg-white py-6 px-[30px] rounded"
+              className="each-event cursor-pointer w-full flex justify-between items-center bg-white py-6 px-4 tablet:px-[30px] rounded"
               style={{ boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)" }}
             >
               <div className=" flex flex-col gap-4">

@@ -52,11 +52,20 @@ const Header = () => {
                   onMouseOver={() => {
                     setShowSubHeade(true);
                   }}
-                 style={showSubHeader?{color:"#693ED4"}:{color:"#333333"}}
+                  style={
+                    showSubHeader ? { color: "#693ED4" } : { color: "#333333" }
+                  }
                   className="cursor-pointer  text-[#333333] h-full flex justify-center items-center  text-[14px] font-normal hover:text-[#693ED4] relative after:h-[2px] after:w-full after:absolute after:bg-transparent after:hover:bg-[#693ED4] after:bottom-0 after:left-0"
                 >
                   Company
-                  <div style={showSubHeader?{background:"#693ED4"}:{background:"#fff"}} className="absolute bottom-0 w-full bg-[#693ED4] h-[2px]"></div>
+                  <div
+                    style={
+                      showSubHeader
+                        ? { background: "#693ED4" }
+                        : { background: "#fff" }
+                    }
+                    className="absolute bottom-0 w-full bg-[#693ED4] h-[2px]"
+                  ></div>
                 </li>
 
                 <Link
@@ -106,12 +115,13 @@ const Header = () => {
             : { gridTemplateRows: "0fr" }
         }
       >
-        <div className="overflow-hidden flex relative ">
-          <div 
-          onClick={()=>{
-            setShowSubHeade(false);
-          }}
-           className="absolute top-4 right-4 cursor-pointer">
+        <div className="overflow-hidden flex w-full relative flex-col-reverse laptop:flex-row ">
+          <div
+            onClick={() => {
+              setShowSubHeade(false);
+            }}
+            className="absolute top-4 right-4 cursor-pointer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -125,50 +135,55 @@ const Header = () => {
               />
             </svg>
           </div>
-          <div className="w-[28%] flex  items-start py-12 pl-[70px]">
-            <div className=" flex flex-col gap-12 ">
-              <div className="flex flex-col gap-2">
-                <div className="text-[16px] text-[#333] leading-5">Careers</div>
-                <div className="text-[14px] text-[#666] leading-5 max-w-[295px]">
-                  Join our passionate team and embark on a rewarding career
-                  journey with us, where innovation and growth are at the
-                  forefront of our culture.
+          <div className="w-full laptop:w-[28%]">
+            <div className="w-full flex  items-start py-12 pl-[70px]">
+              <div className=" flex flex-col gap-12 ">
+                <div className="flex flex-col gap-2">
+                  <div className="text-[16px] text-[#333] leading-5">
+                    Careers
+                  </div>
+                  <div className="text-[14px] text-[#666] leading-5 max-w-[295px]">
+                    Join our passionate team and embark on a rewarding career
+                    journey with us, where innovation and growth are at the
+                    forefront of our culture.
+                  </div>
                 </div>
-              </div>
-              <div>
-                <div className="flex gap-2 justify-center items-center hover:underline hover:decoration-[#693ED4]">
-                  <button className="text-[#693ED4] text-[16px] font-bold leading-6">
-                    See job openings
-                  </button>
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                    >
-                      <path
-                        d="M4.16675 10H15.8334"
-                        stroke="#693ED4"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M10 4.1665L15.8333 9.99984L10 15.8332"
-                        stroke="#693ED4"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                <div>
+                  <div className="flex gap-2 justify-center items-center hover:underline hover:decoration-[#693ED4]">
+                    <button className="text-[#693ED4] text-[16px] font-bold leading-6">
+                      See job openings
+                    </button>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.16675 10H15.8334"
+                          stroke="#693ED4"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M10 4.1665L15.8333 9.99984L10 15.8332"
+                          stroke="#693ED4"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-[32%] bg-white px-[70px] py-8 ">
+          <div className="w-full laptop:w-[72%] flex">
+          <div className="w-full bg-white px-14 laptop:px-[70px] py-8 ">
             <div className="flex flex-col gap-4">
               <div className="text-[12px] font-semibold leading-5 text-[#999] tracking-[0.96px]">
                 COMPANY
@@ -216,7 +231,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-[40%] px-[70px] py-8 bg-[white]">
+          <div className="w-full px-14 laptop:px-[70px] py-8 bg-[white]">
             {event && (
               <div className="events-and-updates flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
@@ -308,6 +323,7 @@ const Header = () => {
                 </div>
               </div>
             )}
+          </div>
           </div>
         </div>
       </div>

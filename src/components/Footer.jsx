@@ -3,15 +3,15 @@ import "./css/footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="footer-wrappper">
-        <div className="upper">
-          <div className="company-info">
-            <div className="company-logo w-24">
+    <div className="footer-container w-full max-w-[1440px] m-auto flex justify-center items-center px-6 tablet:px-14 laptop:px-[70px]">
+      <div className="footer-wrappper w-full flex flex-col gap-12">
+        <div className="upper pt-16 flex flex-col items-center laptop:flex-row gap-[100px]">
+          <div className="company-info flex flex-col justify-center items-center laptop:items-start gap-2 max-w-[350px]">
+            <div className="company-logo flex w-24">
               <Logo />
             </div>
-            <div className="company-desc">
-              <p>
+            <div className="company-desc ">
+              <p className="text-[#666] text-sm font-light text-center laptop:text-left">
                 Blink is a customer experience company and we help business
                 leaders to make data-driven decisions, convert those decisions
                 into meaningful actions, and help them keep and win more brand
@@ -19,39 +19,39 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="company-menus">
-            <div className="each-menu">
-              <div className="heading">Company</div>
-              <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Services</li>
-                <li>Events & Updates</li>
-                <li>Careers</li>
+          <div className="company-menus flex flex-col justify-center  gap-12 tablet:gap-0 tablet:flex-row w-full laptop:w-[60%] tablet:justify-between laptop:justify-around">
+            <div className="each-menu flex flex-col gap-4">
+              <div className="heading text-[#333] text-sm font-semibold">Company</div>
+              <ul className="list-none flex flex-col gap-3">
+                <li className="text-[#666] text-sm font-light">Home</li>
+                <li className="text-[#666] text-sm font-light">About us</li>
+                <li className="text-[#666] text-sm font-light">Services</li>
+                <li className="text-[#666] text-sm font-light">Events & Updates</li>
+                <li className="text-[#666] text-sm font-light">Careers</li>
               </ul>
             </div>
-            <div className="each-menu">
-              <div className="heading">Support</div>
-              <ul>
-                <li>Contact us</li>
-                <li>Help Center</li>
+            <div className="each-menu  flex flex-col gap-4">
+              <div className="heading text-[#333] text-sm font-semibold">Support</div>
+              <ul className="list-none flex flex-col gap-3">
+                <li className="text-[#666] text-sm font-light">Contact us</li>
+                <li className="text-[#666] text-sm font-light">Help Center</li>
               </ul>
             </div>
-            <div className="each-menu">
-              <div className="heading">Legal</div>
-              <ul>
-                <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
-                <li>Cookie Policy</li>
+            <div className="each-menu flex flex-col gap-4">
+              <div className="heading text-[#333] text-sm font-semibold">Legal</div>
+              <ul className="list-none flex flex-col gap-3">
+                <li className="text-[#666] text-sm font-light">Privacy Policy</li>
+                <li className="text-[#666] text-sm font-light">Terms & Conditions</li>
+                <li className="text-[#666] text-sm font-light">Cookie Policy</li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="lower">
+        <div className="lower flex flex-col-reverse gap-8 tablet:gap-0 tablet:flex-row  justify-between py-6 ">
           <div className="reserved-rights">
-            <p>© 2023 Blink CX Co. All rights reserved.</p>
+            <p className="text-sm font-normal text-[#666]">© 2023 Blink CX Co. All rights reserved.</p>
           </div>
-          <div className="socials">
+          <div className="socials flex gap-6 cursor-pointer">
             <div className="eact-social">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

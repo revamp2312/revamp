@@ -43,7 +43,7 @@ const TeamCard = (props) => {
           <div className="text-[#1C1548] font-semibold text-[19px] leading-7">{props.name}</div>
           <div className="text-[#6C52E3] text-base font-normal text-center">{props.position}</div>
           </div>
-          <div><p className="text-base text-center">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, </p></div>
+          <div><p className="text-base text-center">{props.description}</p></div>
         </div>
       </div>
      <div className="absolute right-0 top-0 w-10 z-40">

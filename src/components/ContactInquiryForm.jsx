@@ -32,7 +32,7 @@ const ContactInquiryForm = () => {
   return (
     <div className="max-w-[1400opx] w-full flex justify-center items-center m-auto  py-12 ">
       <div className="flex flex-col gap-12 justify-center items-center w-full">
-        <div className="flex gap-6 justify-center items-center">
+        <div className=" hidden tablet:flex gap-6 justify-center items-center">
           <div className="flex gap-2 cursor-pointer">
             <div
               style={
@@ -252,7 +252,7 @@ const ContactInquiryForm = () => {
         )}
 
         {reasonActive && (
-          <div className="flex flex-col gap-12 justify-center items-center">
+          <div className="flex flex-col gap-12 justify-center items-center w-full">
             <div>
               <div>
                 <h3>
@@ -261,16 +261,16 @@ const ContactInquiryForm = () => {
                 </h3>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-x-5 gap-y-8">
+            <div className="grid grid-cols-1  tablet:grid-cols-2 gap-x-5 gap-y-8 w-full">
               <div 
               style={reasonSelected==0?{borderColor:"#693ED4",background:"#F7F5FF"}:{borderColor:"#D6DEE5",background:"#FFF"}}
-               className=" flex justify-center items-center p-6 rounded-lg border-[1px] border-solid  ">
+               className=" flex justify-center items-center p-6 rounded-lg border-[1px] border-solid  w-full  ">
                 <label 
                 onClick={()=>{
                   setReasonSelected(0)
                 }}
-                  className="second relative cursor-pointer" htmlFor="check-box-1">
-                  <div className="third flex gap-2  items-center w-[372px]">
+                  className="second relative cursor-pointer w-full" htmlFor="check-box-1">
+                  <div className="third flex gap-2  items-center justify-start ">
                     <div className="fourth p-3 flex justify-center items-center relative">
                       <input
                        style={reasonSelected==0?{background:"#693ED4"}:{background:"white"}}
@@ -304,13 +304,13 @@ const ContactInquiryForm = () => {
               </div>
               <div
               style={reasonSelected==1?{borderColor:"#693ED4",background:"#F7F5FF"}:{borderColor:"#D6DEE5",background:"#FFF"}}
-               className="flex justify-center items-center p-6 rounded-lg border-[1px] border-solid  ">
+               className="flex justify-center items-center p-6 rounded-lg border-[1px] border-solid   ">
               <label 
                 onClick={()=>{
                   setReasonSelected(1)
                 }}
-               className="second relative cursor-pointer" htmlFor="check-box-2">
-                  <div className="third flex gap-2  items-center w-[372px]">
+               className="second relative cursor-pointer w-full" htmlFor="check-box-2">
+                  <div className="third flex gap-2  items-center justify-start  ">
                     <div className="fourth p-3 flex justify-center items-center relative">
                       <input
                        style={reasonSelected==1?{background:"#693ED4"}:{background:"white"}}
@@ -344,13 +344,13 @@ const ContactInquiryForm = () => {
               </div>
               <div 
               style={reasonSelected==2?{borderColor:"#693ED4",background:"#F7F5FF"}:{borderColor:"#D6DEE5",background:"#FFF"}}
-              className="flex justify-center items-center p-6 rounded-lg border-[1px] border-solid  ">
+              className="flex justify-center items-center p-6 rounded-lg border-[1px] border-solid   ">
               <label 
                 onClick={()=>{
                   setReasonSelected(2)
                 }}
-               className="second relative cursor-pointer" htmlFor="check-box-3">
-                  <div className="third flex gap-2  items-center w-[372px]">
+               className="second relative cursor-pointer w-full" htmlFor="check-box-3">
+                  <div className="third flex gap-2  items-center justify-start ">
                     <div className="fourth p-3 flex justify-center items-center relative">
                       <input
                       style={reasonSelected==2?{background:"#693ED4"}:{background:"white"}}
@@ -385,13 +385,13 @@ const ContactInquiryForm = () => {
            
               <div
               style={reasonSelected==3?{borderColor:"#693ED4",background:"#F7F5FF"}:{borderColor:"#D6DEE5",background:"#FFF"}}
-               className="flex justify-center items-center p-6 rounded-lg border-[1px] border-solid  ">
+               className="flex justify-center items-center p-6 rounded-lg border-[1px] border-solid   ">
               <label
                 onClick={()=>{
                   setReasonSelected(3)
                 }}
-                className="second relative cursor-pointer" htmlFor="check-box-4">
-                  <div className="third flex gap-2  items-center w-[372px]">
+                className="second relative cursor-pointer w-full" htmlFor="check-box-4">
+                  <div className="third flex gap-2  items-center justify-start  ">
                     <div className="fourth p-3 flex justify-center items-center relative">
                       <input
                        style={reasonSelected==3?{background:"#693ED4"}:{background:"white"}}
@@ -439,40 +439,18 @@ const ContactInquiryForm = () => {
             <div>
               <h3>Subject of inquiry</h3>
             </div>
-            <div className="flex flex-col gap-6">
-              <div>
+            <div className="flex  w-full tablet:w-[80%] justify-center items-center">
+              <div className="w-full">
                 <textarea
-                  className="w-[860px] px-5 py-3 rounded border-[#D6DEE5] border-[1px] border-solid "
+                  className="w-full min-h-[120px] px-5  py-3 rounded border-[#D6DEE5] border-[1px] border-solid "
                   name=""
                   id=""
                   placeholder="Feel free to use this space to provide us with more details to ensure your inquiry is tailored precisely to your needs."
                 ></textarea>
               </div>
-              <div>
-                <p>Attachments (optional)</p>
-              </div>
-              <div
-                onDrop={() => {
-                  console.log("file dropped");
-                }}
-                className="max-w-[860px] bg-[#F7F5FF] flex justify-center items-center px-4 py-5 border-[1px] border-dashed border-[#BAC4CC] rounded"
-              >
-                <div className="flex gap-1">
-                  <button
-                    onClick={() => {
-                      const input = document.querySelector(".file-input");
-                      input.click();
-                    }}
-                    className="text-[#693ED4] underline"
-                  >
-                    Add File
-                  </button>
-                  <input className="file-input" type="file" hidden />
-                  <p> or drop files here</p>
-                </div>
-              </div>
+             
             </div>
-            <div className="flex gap-6">
+            <div className="contact-inquiry-buttons flex gap-6">
               <button
                 onClick={handleReasonActive}
                 className="bg-[#F7F5FF] border-[1px] border-solid border-[#693ED4] px-12 py-4 rounded-lg text-[#693ED4] text-base font-semibold"
@@ -497,7 +475,7 @@ const ContactInquiryForm = () => {
               </div>
               <div className="w-full">
                 <form action="">
-                  <div className="grid grid-cols-2 gap-x-5 gap-y-8">
+                  <div className="grid grid-cols-1 tablet:grid-cols-2 gap-x-5 gap-y-8">
                     <div className="flex flex-col gap-[10px] ">
                       <div>
                         <p>
@@ -551,7 +529,7 @@ const ContactInquiryForm = () => {
                 described in the{" "}
                 <span className="underline cursor-pointer">Privacy Policy</span>
               </div>
-              <div className="flex gap-6">
+              <div className="contact-inquiry-buttons flex gap-6">
                 <button
                   onClick={handleInquiryActive}
                   className="bg-[#F7F5FF] border-[1px] border-solid border-[#693ED4] px-12 py-4 rounded-lg text-[#693ED4] text-base font-semibold"

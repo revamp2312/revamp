@@ -1,20 +1,25 @@
-import { useNavigate } from "react-router-dom";
-import { pastArticle } from "../constants/utils";
-
+import { useNavigate, useParams } from "react-router-dom";
+import { pastArticle1 } from "../constants/utils";
+import { pastevents } from "../constants/pastevents";
 
 const PastEventsArticle = () => {
+  const { articleId } = useParams();
+  console.log(articleId);
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-    const handleGoBackToEvents = () => {
-
+  const handleGoBackToEvents = () => {
     navigate(-1);
   };
+
+  const article = pastevents.filter((each) => each?.id == articleId);
 
   return (
     <div className="w-full max-w-[1440px] flex justify-center items-center m-auto pt-[35px] px-[70px]">
       <div className="flex flex-col  items-center justify-center gap-6 w-full">
         <div className="flex justify-start items-center w-full text-sm font-normal cursor-pointer">
-          <div onClick={handleGoBackToEvents} className="text-[#333]">Events and Updates</div>
+          <div onClick={handleGoBackToEvents} className="text-[#333]">
+            Events and Updates
+          </div>
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +46,9 @@ const PastEventsArticle = () => {
               </defs>
             </svg>
           </div>
-          <div onClick={handleGoBackToEvents}  className="text-[#333]">Past Events</div>
+          <div onClick={handleGoBackToEvents} className="text-[#333]">
+            Past Events
+          </div>
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,53 +75,23 @@ const PastEventsArticle = () => {
               </defs>
             </svg>
           </div>
-          <div className="text-[#693ED4]">
-            Gen AI Uncovered: Advancing CX & EX in the Philippines
-          </div>
+          <div className="text-[#693ED4]">{article[0].title}</div>
         </div>
 
         <div className="flex flex-col gap-10 justify-center items-center max-w-[640px]">
           <div>
-            <h2>Gen AI Uncovered: Advancing CX & EX in the Philippines</h2>
+            <h2> {article[0].title}</h2>
           </div>
           <div>
-            <img src={pastArticle} alt="" />
+            <img src={article[0].imgSrc} alt="" />
           </div>
-          <div>
-            <p>
-              Join this exclusive event with Zendesk "Gen AI Uncovered:
-              Advancing CX & EX in the Philippines" designed to explore the
-              magic of CX & EX + Generative AI through the latest technology
-              innovations released at "The Next Big AI Drop" in New York last
-              month.
-              <br />
-              <br />
-              In this session, you'll get the following key insights:
-              <br />
-              <br />
-              - How integration of CX is essential to thrive in the
-              experience-driven economy.
-              <br />
-              - Hear how Zendesk Generative AI is transforming customer service
-              experiences
-              <br />
-              - Explore the role of agents and how the combination of technology
-              + human touch can be the winning formula in 2024 and beyond.
-              <br />
-              <br />
-              Happening on November 24, 2023 | Friday 10:00AM to 2:00PM Fairmont
-              Makati 1, Raffles Drive, Makati Ave Makati City, Philippines.
-              <br />
-              <br />
-              REGISTER HERE:https://lnkd.in/g6vnr5A2
-              <br />
-              <br />
-              Network with your inspiring, like-minded community and gain
-              invaluable insights from local CX leaders in the Philippines.
-              <br />
-              <br />
-              Thank you and see you there!
-            </p>
+          <div className="flex flex-col gap-4">
+          {article[0].description.map((eachpara,index)=>{
+            return <p key={index}>{eachpara.para}</p>
+
+          })}
+         
+        
           </div>
         </div>
       </div>

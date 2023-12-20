@@ -4,7 +4,7 @@ const HeroHome = (props) => {
   return (
     <div className="hero-container flex justify-center items-center m-auto max-w-[1440px] w-[100%]">
       <div className="hero-wrapper w-[100%] flex flex-col justify-center laptop:flex-row">
-        <div className="left-wrapper w-full laptop:w-[50%] flex flex-col gap-16 justify-start items-start py-[80px] px-4 laptop:pr-0 laptop:pl-[70px] ">
+        <div className="left-wrapper w-full laptop:w-[55%] flex flex-col gap-16 justify-start items-start py-[80px] px-4 laptop:pr-0 laptop:pl-[70px] ">
           <div className="heading flex flex-col gap-6">
             <div className="flec flex-colgap-2">
               {props.isPageName && (
@@ -42,7 +42,7 @@ const HeroHome = (props) => {
             </div>
           )}
         </div>
-        <div className="right-wrapper  w-full laptop:w-[50%] max-h-[600px] flex justify-center items-center">
+        <div className="right-wrapper  w-full laptop:w-[45%] max-h-[600px] flex justify-center items-center">
           <img
             className=" max-w-[664px] w-[100%] h-[100%] object-contain"
             src={props.imgurl}

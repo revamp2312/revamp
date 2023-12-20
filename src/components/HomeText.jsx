@@ -29,10 +29,10 @@ const HomeText = (props) => {
     className="mySwiper"
   >
     <SwiperSlide><h1 className='gradient'>CX Revolution</h1></SwiperSlide>
-    <SwiperSlide><h1 className='gradient'>Data Intelligence</h1></SwiperSlide>
+    <SwiperSlide><h1 className='gradient'>Artificial Intelligence</h1></SwiperSlide>
     <SwiperSlide><h1 className='gradient'>Employee Engagement</h1></SwiperSlide>
    
-  </Swiper> : <h1 className='gradient'>Captured in a Blink</h1>}
+  </Swiper> : <h1 className='gradient'>Prioritize Experience!</h1>}
         </div>
     </div>
    

@@ -35,10 +35,13 @@ const BlinkStorySlides = () => {
       className="z-100 blink-slides sticky  overflow-y-auto top-0 h-[100vh] bg-w scroll-smooth max-w-[1440px] w-full m-auto"
     >
       <div className=" relative h-[100vh] story-2018 flex justify-center items-center w-full max-w-[1440px] text-center">
-        <div className="max-w-[621px] justify-center items-center flex flex-col gap-6">
-          <div className="text-[28px] text-[#333333] font-semibold">
-            In late 2018, Blink embarked on a remarkable journey as a Marketing
-            Consulting services company
+        <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
+          <div className=" text-[#333333] font-semibold">
+            <h2>
+              {" "}
+              In late 2018, Blink embarked on a remarkable journey as a
+              Marketing Consulting services company
+            </h2>
           </div>
           <div className="text-[16px] text-[#333333]">
             Initially serving Centric IT Group and esteemed partners like IBM,
@@ -93,7 +96,9 @@ const BlinkStorySlides = () => {
                 />
               </svg>
             </div>
-            <p className="text-base text-[#693ED4]">Discover more - Back to about us</p>
+            <p className="text-base text-[#693ED4]">
+              Discover more - Back to about us
+            </p>
           </div>
         </div>
       </div>
@@ -102,10 +107,13 @@ const BlinkStorySlides = () => {
         ref={section2019}
         className="relative h-[100vh] story-2019 flex justify-center items-center w-full max-w-[1440px] text-center"
       >
-        <div className="max-w-[621px] flex flex-col gap-6 justify-center items-center">
-          <div className="text-[28px] text-[#333333] font-semibold">
-            Recognizing the burgeoning CX landscape and the evolving needs of
-            our partners and clients, we made a pivotal decision in 2019.
+        <div className="max-w-[688px] flex flex-col gap-6 justify-center items-center">
+          <div className=" text-[#333333] font-semibold">
+            <h2>
+              We confidently executed a pivotal shift, considering the rise of
+              the CX landscape and the evolving needs of our partners and
+              clients.
+            </h2>
           </div>
           <div className="text-[16px] text-[#333333]">
             We shifted our focus towards CX Advisory services, building upon our
@@ -113,7 +121,7 @@ const BlinkStorySlides = () => {
             would redefine the value we brought to the table. Our journey took
             us beyond our comfort zone. We began engaging clients beyond our
             Centric IT Group and formed our first crucial partnerships with SAP
-            Customer Data Cloud and Qualtrics—a turning point in our evolution.
+            and Qualtrics—a turning point in our evolution.
           </div>
 
           <div
@@ -163,7 +171,9 @@ const BlinkStorySlides = () => {
                 />
               </svg>
             </div>
-            <p className="text-base text-[#693ED4]">Discover more - Back to about us</p>
+            <p className="text-base text-[#693ED4]">
+              Discover more - Back to about us
+            </p>
           </div>
         </div>
       </div>
@@ -173,10 +183,12 @@ const BlinkStorySlides = () => {
         id="2020"
         className="relative h-[100vh] story-2020 flex justify-center items-center w-full max-w-[1440px] text-center"
       >
-        <div className="max-w-[621px] justify-center items-center flex flex-col gap-6">
-          <div className="text-[28px] text-[#333333] font-semibold">
-            In the year 2020, we realized that true CX transformation required
-            more than advice; it required innovation.
+        <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
+          <div className="text-[#333333] font-semibold">
+            <h2>
+              In the year 2020, we realized that true CX transformation required
+              more than advice; it required innovation.
+            </h2>
           </div>
           <div className="text-[16px] text-[#333333]">
             We ventured into Innovations and mobile development, complementing
@@ -232,7 +244,9 @@ const BlinkStorySlides = () => {
                 />
               </svg>
             </div>
-            <p className="text-base text-[#693ED4]">Discover more - Back to about us</p>
+            <p className="text-base text-[#693ED4]">
+              Discover more - Back to about us
+            </p>
           </div>
         </div>
       </div>
@@ -241,10 +255,10 @@ const BlinkStorySlides = () => {
         ref={section2021}
         className="relative h-[100vh] story-2021 flex justify-center items-center w-full max-w-[1440px] text-center"
       >
-        <div className="max-w-[621px] flex justify-center items-center flex-col gap-6">
-          <div className="text-[28px] text-[#333333] font-semibold">
-            Blink's reputation as a leader in Customer Experience and Experience
-            Management grew stronger in 2021.
+        <div className="max-w-[688px] flex justify-center items-center flex-col gap-6">
+          <div className="text-[#333333] font-semibold">
+        <h2>Blink's reputation as a leader in Customer Experience and Experience
+            Management grew stronger in 2021.</h2>
           </div>
           <div className="text-[16px] text-[#333333]">
             We clinched major contracts with the top two telcos in the
@@ -297,7 +311,9 @@ const BlinkStorySlides = () => {
                 />
               </svg>
             </div>
-            <p className="text-base text-[#693ED4]">Discover more - Back to about us</p>
+            <p className="text-base text-[#693ED4]">
+              Discover more - Back to about us
+            </p>
           </div>
         </div>
       </div>
@@ -306,9 +322,9 @@ const BlinkStorySlides = () => {
         ref={section2022}
         className="relative h-[100vh] story-2022 flex justify-center items-center w-full max-w-[1440px] text-center"
       >
-        <div className="max-w-[621px] justify-center items-center flex flex-col gap-6">
-          <div className="text-[28px] text-[#333333] font-semibold">
-            The year 2022 was a defining moment.
+        <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
+          <div className=" text-[#333333] font-semibold">
+           <h2> The year 2022 was a defining moment.</h2>
           </div>
           <div className="text-[16px] text-[#333333]">
             We soared to new heights, experiencing hypergrowth in terms of
@@ -363,7 +379,9 @@ const BlinkStorySlides = () => {
                 />
               </svg>
             </div>
-            <p className="text-base text-[#693ED4]">Discover more - Back to about us</p>
+            <p className="text-base text-[#693ED4]">
+              Discover more - Back to about us
+            </p>
           </div>
         </div>
       </div>
@@ -372,17 +390,19 @@ const BlinkStorySlides = () => {
         ref={section2023}
         className="relative h-[100vh] story-2023 flex justify-center items-center w-full max-w-[1440px] text-center"
       >
-        <div className="max-w-[621px] justify-center items-center flex flex-col gap-6">
-          <div className="text-[28px] text-[#333333] font-semibold">
-            Today, we stand as Blink CX, a testament to the power of evolution
-            and partnership.
+        <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
+          <div className=" text-[#333333] font-semibold">
+            <h3>
+              Today, we proudly stand as Blink CX, reaching new heights by
+              extending our expertise globally.
+            </h3>
           </div>
           <div className="text-[16px] text-[#333333]">
-            Our journey continues, guided by our commitment to transforming
-            customer experiences, innovating tirelessly, and delivering results
-            that matter. We are honored to have you alongside us on this
-            extraordinary journey, and we look forward to shaping a brighter CX
-            future together.
+            Our journey continues, fueled by our commitment to transforming
+            customer experiences, innovating tirelessly, and delivering
+            meaningful results. We are thrilled to share that our path led us to
+            a new milestone in 2023—expanding our presence to Singapore.
+            Together, we anticipate shaping an even brighter CX future.
           </div>
           {/* <div onClick={() => swiperRef.current.slideNext()} className="absolute bottom-0  cursor-pointer flex flex-col justify-center items-center">
             <p className="text-base text-[#693ED4]">2020</p>
@@ -411,7 +431,9 @@ const BlinkStorySlides = () => {
                 />
               </svg>
             </div>
-            <p className="text-base text-[#693ED4]">Discover more - Back to about us</p>
+            <p className="text-base text-[#693ED4]">
+              Discover more - Back to about us
+            </p>
           </div>
         </div>
       </div>

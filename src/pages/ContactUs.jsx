@@ -12,9 +12,9 @@ const ContactUs = () => {
     <div>
      <Header />
       <ContactHeroSection />
-      <ContactPageSubHeroSection />
-      <TrustedCompany />
+      {/* <ContactPageSubHeroSection /> */}
       <ContactInquiryFormConatainer />
+      <TrustedCompany />
       <ContactPageCTA />
       <Footer />
     </div>
