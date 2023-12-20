@@ -392,10 +392,10 @@ const BlinkStorySlides = () => {
       >
         <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
           <div className=" text-[#333333] font-semibold">
-            <h3>
+            <h2>
               Today, we proudly stand as Blink CX, reaching new heights by
               extending our expertise globally.
-            </h3>
+            </h2>
           </div>
           <div className="text-[16px] text-[#333333]">
             Our journey continues, fueled by our commitment to transforming
