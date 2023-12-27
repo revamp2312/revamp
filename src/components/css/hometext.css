@@ -20,10 +20,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Sora;
-      font-size: 48px;
+      
       font-style: normal;
       font-weight: 700;
-      line-height: 150%;
+   
     }
     .swiper-slide {
         text-align: center;

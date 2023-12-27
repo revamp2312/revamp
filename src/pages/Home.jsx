@@ -1,17 +1,17 @@
 import HeroHome from "../components/HeroHome";
 import "../components/css/herohome.css";
-import ExploreCardContainer from "../components/ExploreCardContainer";
-import TechnologyPartners from "../components/TechnologyPartners";
-import OurClient from "../components/OurClient";
+import ExploreCardContainer from "../components/homePageComponents/ExploreCardContainer";
+import TechnologyPartners from "../components/homePageComponents/TechnologyPartners";
+import OurClient from "../components/homePageComponents/OurClient";
 import TrustedCompany from "../components/TrustedCompany";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/homePageComponents/Welcome";
 import StartJourney from "../components/StartJourney";
 import NeedHelp from "../components/NeedHelp";
-import Events from "../components/Events";
+import Events from "../components/homePageComponents/Events";
 import { herosectiondata } from "../constants/herosectiondata";
 import { ctaHome } from "../constants/ctaBannerdata";
 import Footer from "../components/Footer";
-import PartnerWithUsPopout from "../components/PartnerWithUsPopout";
+import PartnerWithUsPopout from "../components/homePageComponents/PartnerWithUsPopout";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 const Home = () => {

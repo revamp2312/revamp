@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export const useHeaderdata = () => {
   const [showSubHeader, setShowSubHeade] = useState(false);
+  const[showSideBar,setShowSideBar] =useState(false)
+  const[showCompanySubOption,setShowCompanySubOption] =useState(false)
   const [event, setEvent] = useState(false);
   const [about, setAbout] = useState(true);
 
@@ -15,7 +17,16 @@ export const useHeaderdata = () => {
 
     setAbout(true);
   };
- 
-return {showSubHeader,setShowSubHeade,event,about,mouseOnEvent,mouseOnAbout,}
+  const handleShowSideBar=()=>{
+    setShowSideBar(true)
+  }
+  const handleHideSideBar=()=>{
+    setShowSideBar(false)
+  }
+  const handleShowCompanySubOption=()=>{
+    setShowCompanySubOption(!showCompanySubOption)
+  }
+
+return {showSubHeader,setShowSubHeade,event,about,mouseOnEvent,mouseOnAbout,showSideBar,handleShowSideBar,handleHideSideBar,showCompanySubOption,handleShowCompanySubOption}
 
 };

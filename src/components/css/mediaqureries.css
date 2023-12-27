@@ -15,3 +15,12 @@
         flex-direction: column !important;
     }
 }
+@media (max-width:850px) {
+    
+    .large-device-header{
+    display: none;
+    }
+    .small-device-header{
+    display: flex;
+    }
+}

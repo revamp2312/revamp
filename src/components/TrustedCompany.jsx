@@ -49,7 +49,7 @@ const TrustedCompany = () => {
   return (
     <div ref={heighRef} className="trusted-company-container">
       <div className="trusted-company-slider">
-        <div className="title">
+        <div className="title text-sm tablet:text-xl">
           Trusted by <span className="gradient">Industry Leading </span>
           Organizations
         </div>

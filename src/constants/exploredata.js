@@ -12,6 +12,7 @@ export const exploredata = [
     title: "Customer Experience",
     content:
       "We understand that exceptional CX is not just a goal; it's a journey.",
+      deleverText:"What we deliver",
     whatwedeiver: [
       {
         data: "Zendesk Consulting and Implementation ​",
@@ -41,6 +42,7 @@ export const exploredata = [
     title: "Experience Management",
     content:
       "Experience Management (XM) is not just about gathering data; it's about turning insights into impact. ",
+      deleverText:"What we deliver",
     whatwedeiver: [
       {
         data: "Qualtrics Consulting and Implementation",
@@ -69,11 +71,19 @@ export const exploredata = [
     title: "Blink CX Apps",
     content:
       "Blink CX's Data Science Practice is your bridge to data-driven decision-making.",
+      deleverText:"What we developed ",
     whatwedeiver: [{
-        data:"Data Science Consulting"
+        data:"E-commerce Messaging App"
     },
     {
-        data:"Data Science and Machine Learning Projects"
-    }],
+        data:"E-commerce Transaction App​"
+    },
+    {
+      data:"Bulk Ticket Creation for campaigns and migration​"
+    },
+    {
+      data:"Telephony Integration (VoIP, click-to-call, SIP phones)​"
+    }
+  ],
   },
 ];

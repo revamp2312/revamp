@@ -18,6 +18,7 @@ export default {
       colors:{
         "teamcard-rgba":'rgba(247, 245, 255, 1)',
         "teamcard-border": 'rgba(108, 82, 227, 0.20)',
+        "purple-gardient-bg":'linear-gradient(135deg, rgb(105, 62, 212) 0%, rgb(163, 30, 190) 100%)'
       }
     },
   },

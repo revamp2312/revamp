@@ -1,11 +1,11 @@
-import EachPartner from "../components/EachPartner"
+import EachPartner from "../components/partnersPageComponents/EachPartner"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import OtherPartners from "../components/OtherPartners"
-import PartnerHeroSection from "../components/PartnerHeroSection"
-import WhatSetsApart from "../components/WhatSetsApart"
+import OtherPartners from "../components/partnersPageComponents/OtherPartners"
+import PartnerHeroSection from "../components/partnersPageComponents/PartnerHeroSection"
+import WhatSetsApart from "../components/partnersPageComponents/WhatSetsApart"
 import { ctaPartner } from "../constants/ctaBannerdata"
-import PartnerCTA from "../components/PartnerCTA"
+import PartnerCTA from "../components/partnersPageComponents/PartnerCTA"
 
 const Partners = () => {
   return (

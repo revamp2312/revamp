@@ -23,7 +23,8 @@ import cloudtalk from "../assets/tech-partners/cloudtalk.png";
 import qualtrics from "../assets/tech-partners/qualtrics.png";
 import asana from "../assets/tech-partners/asana.png";
 import zendesk from "../assets/tech-partners/zendesk.png";
-import partnerwithus from "../assets/tech-partners/partnerwithus.png";
+import PartnerWithUsImg from "../assets/tech-partners/PartnerWithUs.png";
+import PartnerWithUsOnHover from "../assets/tech-partners/PartnerWithUsOnHover.png"
 import globe from "../assets/globe.png";
 import megaworld from "../assets/megaworld.png";
 import pagcor from "../assets/pagcor.png";
@@ -124,7 +125,11 @@ import pastArticle3 from "../assets/pastArticleImages/pastArticle03.png"
 import noUpcomingEvents from "../assets/eventspage/noUpcomingEvents.png"
 import ytplay from "../assets/eventspage/ytplay.png"
 import ytblinklogo from "../assets/eventspage/ytblinklogo.png"
+
+
+
 export {
+  PartnerWithUsOnHover,
   ytblinklogo,
   ytplay,
   noUpcomingEvents,
@@ -248,7 +253,7 @@ export {
   qualtrics,
   asana,
   zendesk,
-  partnerwithus,
+  PartnerWithUsImg,
   pldt,
   client,
 };

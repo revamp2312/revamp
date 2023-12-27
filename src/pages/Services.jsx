@@ -1,4 +1,4 @@
-import AllServices from "../components/AllServices";
+import AllServices from "../components/servicePageComponents/AllServices";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeroHome from "../components/HeroHome";

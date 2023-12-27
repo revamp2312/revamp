@@ -77,7 +77,7 @@ export const cxaccordioandata2 =[
                 para:"For brands aiming to provide personalized experiences to increase customer loyalty and sales. "
             },
             {
-                para:"For brands aiming to provide personalized experiences to increase customer loyalty and sales. "
+                para:"Leveraging data analytics and AI-driven tools, we create personalized customer journeys that resonate with your audience, fostering loyalty and repeat business."
             }
         ]
     },

@@ -4,15 +4,15 @@ const HeroHome = (props) => {
   return (
     <div className="hero-container flex justify-center items-center m-auto max-w-[1440px] w-[100%]">
       <div className="hero-wrapper w-[100%] flex flex-col justify-center laptop:flex-row">
-        <div className="left-wrapper w-full laptop:w-[55%] flex flex-col gap-16 justify-start items-start py-[80px] px-4 laptop:pr-0 laptop:pl-[70px] ">
+        <div className="left-wrapper w-full laptop:w-[55%] flex flex-col gap-16 justify-start items-start py-12 laptop:py-[80px] px-4 tablet:px-14 laptop:pr-0 laptop:pl-[70px] ">
           <div className="heading flex flex-col gap-6">
-            <div className="flec flex-colgap-2">
+            <div className="flex flex-col gap-2">
               {props.isPageName && (
                 <p className="text-[#666]">{props.pageName}</p>
               )}
               <div className="title ">
-                <h1 className="leading-[72px] text-[#333333]">{props.title}</h1>
-                <HomeText textanimation={props.textanimation} />
+                <h1 className=" text-[#333333]">{props.title} <span>   <HomeText textanimation={props.textanimation} /></span></h1>
+             
                 {/* <div className="gradient">
                 <ul>
                   <li><h1>CX Revolution</h1></li>
@@ -28,15 +28,15 @@ const HeroHome = (props) => {
           </div>
 
           {props.isfirstbtn && (
-            <div className="cta-btns flex gap-6 items-center">
-              <div className="first-btn  ">
-                <button className="py-4 px-5 cursor-pointer rounded-lg text-[14px] font-bold leading-[20px] tracking-[-0.32px] border-none text-white ">
+            <div className="cta-btns flex flex-col tablet:flex-row gap-6 items-center w-full ">
+              <div className="first-btn w-full tablet:w-max">
+                <button className="w-full py-4 px-5 cursor-pointer rounded-lg text-[14px] font-bold leading-[20px] tracking-[-0.32px] border-none text-white ">
                   {props.firstbtn}
                 </button>
               </div>
               {props.twobtns && (
-                <div className="second-btn border-none text-[#333333] bg-transparent text-[16px] font-bold leading-5 tracking-[-0.32px]">
-                  <button>{props.secondbtn}</button>
+                <div className="w-full tablet:w-max second-btn border-[1px] border-solid border-[#693ED4] py-3 px-6 rounded-lg tablet:border-none text-[#333333] bg-transparent text-[16px] font-bold leading-5 tracking-[-0.32px]">
+                  <button className="w-full">{props.secondbtn}</button>
                 </div>
               )}
             </div>

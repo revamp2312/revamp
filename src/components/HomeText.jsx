@@ -12,8 +12,8 @@ const HomeText = (props) => {
   const {textanimation} =props;
   return (
 
-    <div className="hometext-container">
-        <div className="hometext-wrapper">
+    <div className="hometext-container text-center laptop:text-left">
+        <div className="hometext-wrapper ">
  {  textanimation ?     <Swiper
            slidesPerView={1}
     direction={'vertical'}
@@ -28,9 +28,9 @@ const HomeText = (props) => {
     modules={[Autoplay]}
     className="mySwiper"
   >
-    <SwiperSlide><h1 className='gradient'>CX Revolution</h1></SwiperSlide>
-    <SwiperSlide><h1 className='gradient'>Artificial Intelligence</h1></SwiperSlide>
-    <SwiperSlide><h1 className='gradient'>Employee Engagement</h1></SwiperSlide>
+    <SwiperSlide><h1 className='gradient text-center laptop:text-left'>CX Revolution</h1></SwiperSlide>
+    <SwiperSlide><h1 className='gradient text-center laptop:text-left'>Artificial Intelligence</h1></SwiperSlide>
+    <SwiperSlide><h1 className='gradient text-center laptop:text-left' >Employee Engagement</h1></SwiperSlide>
    
   </Swiper> : <h1 className='gradient'>Prioritize Experience!</h1>}
         </div>

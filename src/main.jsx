@@ -10,12 +10,14 @@ import Company from './pages/Company.jsx'
 import Error from './pages/Error.jsx'
 import ContactUs from './pages/ContactUs.jsx'
 import AboutUs from './pages/AboutUs.jsx'
-import BlinkStorySlides from './components/BlinkStorySlides.jsx'
+import BlinkStorySlides from './components/aboutUsPageComponents/BlinkStorySlides.jsx'
 import EventsAndUpdates from './pages/EventsAndUpdates.jsx'
 import { AnimatePresence } from 'framer-motion'
 import { PlanContextProvider } from './constants/useContext.jsx'
-import PastEvents from './pages/PastEvents.jsx'
-import ZendeskContactUs from './pages/ZendeskContactUs.jsx'
+import PastEvents from './components/eventsPageComponents/PastEvents.jsx'
+
+import { Provider } from 'react-redux'
+import appStore from './constants/appStore.js'
 
 const appRouter=createBrowserRouter([
   {
@@ -68,11 +70,7 @@ const appRouter=createBrowserRouter([
             path:"/pastevents/:articleId",
             element:<PastEvents />
           }
-          ,
-          {
-            path:"/inquiry",
-            element:<ZendeskContactUs />
-          }
+          
       ],
       errorElement:<Error />
       
@@ -81,12 +79,15 @@ const appRouter=createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+
   <React.StrictMode>
+  <Provider store={appStore}>
   <PlanContextProvider>
   <AnimatePresence mode='wait'>
    <RouterProvider router={appRouter} />
    </AnimatePresence>
    </PlanContextProvider>
+  </Provider>
   </React.StrictMode>,
 )
 
