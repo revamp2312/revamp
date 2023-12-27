@@ -23,7 +23,7 @@ import cloudtalk from "../assets/tech-partners/cloudtalk.png";
 import qualtrics from "../assets/tech-partners/qualtrics.png";
 import asana from "../assets/tech-partners/asana.png";
 import zendesk from "../assets/tech-partners/zendesk.png";
-import PartnerWithUsTechImg from "../assets/tech-partners/PartnerWithUs.png";
+// import PartnerWithUsTechImg from "../assets/tech-partners/PartnerWithUs.png";
 import PartnerWithUsOnHover from "../assets/tech-partners/PartnerWithUsOnHover.png"
 import globe from "../assets/globe.png";
 import megaworld from "../assets/megaworld.png";
@@ -258,7 +258,7 @@ export {
   qualtrics,
   asana,
   zendesk,
-  PartnerWithUsTechImg,
+  
   pldt,
   client,
 };
