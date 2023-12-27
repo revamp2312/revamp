@@ -3,12 +3,13 @@ import {
   xmaccordioandata,
   xmaccordioandata2,
 } from "../../constants/accordiondata";
-import { xmAcc1, xmAccSecond } from "../../constants/utils";
+import {  xmAccSecond } from "../../constants/utils";
 import Accordion from "./Accordion";
 import AccordionSecond from "./AccordionSecond";
 import AccordionImage from "./AccordionImage";
 import { xmaccordianimages } from "../../constants/accordianimages";
 import { motion, useAnimation } from "framer-motion";
+import AccordionForSmallDevice from "./AccordionForSmallDevice";
 
 const XMServiceAccordion = () => {
   const [showAccordion, setShowAccordion] = useState(null);
@@ -25,11 +26,13 @@ const XMServiceAccordion = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       exit={{ opacity: 0 }}
-      className="flex justify-center items-center"
+      className="flex flex-col gap-8 justify-center items-center"
     >
+        <div className="flex justify-center items-center laptop:hidden"><h1>Our Services</h1></div>
+
       <div className="wrapper flex flex-col gap-20">
-        <div className="flex flex-col gap-12 justify-center items-center rounded-3xl bg-[#F7F5FF] p-12">
-          <div className="flex">
+        <div className="flex flex-col gap-12 justify-center items-center rounded-3xl bg-[#F7F5FF] p-6 laptop:p-12">
+          <div className="hidden laptop:flex">
             <div className="w-6/12">
               <motion.div
                 animate={controls}
@@ -89,10 +92,31 @@ const XMServiceAccordion = () => {
               </div>
             </div>
           </div>
+          {xmaccordioandata.map((each, index) => {
+                    return (
+                      <AccordionForSmallDevice
+                        key={index}
+                        heading={each.heading}
+                        image={each.image}
+                        content={each.content}
+                        keyBenefits={each.keyBenefits}
+                        showAc={index === showAccordion}
+                        setAcc={() =>
+                         {
+                          setShowAccordion(index)
+                          setShowImgAccordion(index)
+                          }
+                         }
+                        hideAcc={() => {
+                          setShowAccordion(null);
+                        }}
+                      />
+                    );
+                  })}
         </div>
-        <div className="flex flex-col gap-12 justify-center items-center  ">
-          <div className="flex">
-            <div className="w-6/12 flex flex-col gap-6 p-12 ">
+        <div className="flex  justify-center items-center  ">
+          <div className="flex flex-col laptop:flex-row">
+            <div className="w-full laptop:w-6/12 flex flex-col gap-6 p-4 laptop:p-12 ">
               <div className="flex flex-col gap-4">
               
                 <h2>Use Cases</h2>
@@ -117,7 +141,7 @@ const XMServiceAccordion = () => {
               </div>
             </div>
 
-            <div className="w-6/12 flex justify-end pt-12">
+            <div className="w-full laptop:w-6/12 flex justify-end pt-12">
               <div>
                 <img className="w-full" src={xmAccSecond} />
               </div>

@@ -1,11 +1,11 @@
 const EventsandupdatesHero = () => {
   return (
     <div className="events-updates-hero-container relative  flex justify-center items-center w-full max-w-[1440px] m-auto ">
-    <div className="absolute top-0 right-0 bottom-0 left-0 z-10"><svg xmlns="http://www.w3.org/2000/svg" width="834" height="498" viewBox="0 0 834 498" fill="none">
-  <path d="M0.107422 22.1537C0.107422 9.91846 10.026 -0.00012207 22.2613 -0.00012207H811.782C826.575 -0.00012207 837.213 14.2207 833.034 28.4112L699.311 482.565C696.536 491.99 687.885 498.461 678.059 498.461H22.2613C10.0261 498.461 0.107422 488.543 0.107422 476.308V22.1537Z" fill="#4B4B4B" fill-opacity="0.45"/>
-</svg></div>
-      <div className="flex flex-col laptop:flex-row justify-center w-full items-center px-6 laptop:px-[70px] z-20">
-        <div className="flex justify-center items-center w-full laptop:w-6/12 py-[124px]">
+   <div style={{background:"rgba(75, 75, 75, 0.45)"}} className="absolute top-0 left-0 right-0 bottom-0 ">
+
+   </div>
+      <div className="flex flex-col gap-4 laptop:gap-0 laptop:flex-row justify-center w-full items-center px-6 py-12 laptop:px-[70px] laptop:py-0 z-20">
+        <div className="flex justify-center items-center w-full laptop:w-6/12 py-0 laptop:py-[124px]">
           <div className="flex flex-col gap-2 text-white">
             <div>
               <p className="text-white">EVENTS & UPDATES</p>

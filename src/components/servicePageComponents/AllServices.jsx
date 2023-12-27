@@ -2,7 +2,6 @@ import { useState } from "react";
 import CXServiceAccordions from "./CXServiceAccordions";
 import XMServiceAccordion from "./XMServiceAccordion";
 import DevelopedAppsAccodian from "./DevelopedAppsAccodian";
-import { cxservice, daservice, xmservice } from "../../constants/utils";
 
 const AllServices = () => {
   const [cxService, setCxService] = useState(true);
@@ -26,9 +25,9 @@ const AllServices = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center p-[70px] gap-20 w-full max-w-[1440px] m-auto">
-      <div className="flex justify-center items-center w-full gap-6 border-b-2 border-solid-[#F3F5FB]">
-        <div className="w-4/12 text-center cursor-pointer" onClick={SETCX}>
+    <div className="flex flex-col justify-center items-center px-6 py-12 tablet:px-14 laptop:p-[70px] gap-20 w-full max-w-[1440px] m-auto">
+      <div className="flex flex-col laptop:flex-row justify-center items-center w-full gap-6 border-b-2 border-solid-[#F3F5FB]">
+        <div className="w-full laptop:w-4/12 text-center cursor-pointer" onClick={SETCX}>
           <div
             className="flex gap-6 p-4 justify-center items-center  hover:border-b-2 hover:border-solid hover:border-[#6C52E3] hover:!text-[#693ED4]"
             style={
@@ -111,7 +110,7 @@ const AllServices = () => {
             </div>
           </div>
         </div>
-        <div className="w-4/12 text-center cursor-pointer" onClick={SETXM}>
+        <div className="w-full laptop:w-4/12 text-center cursor-pointer" onClick={SETXM}>
           <div
             className="flex gap-6 p-4 justify-center items-center hover:border-b-2 hover:border-solid hover:border-[#6C52E3] hover:!text-[#693ED4]"
             style={
@@ -184,7 +183,7 @@ const AllServices = () => {
             </div>
           </div>
         </div>
-        <div className="w-4/12 text-center cursor-pointer" onClick={SETDA}>
+        <div className="w-full laptop:w-4/12 text-center cursor-pointer" onClick={SETDA}>
           <div
             className="flex gap-6 p-4 justify-center items-center  hover:border-b-2 hover:border-solid hover:border-[#6C52E3] hover:!text-[#693ED4]"
             style={

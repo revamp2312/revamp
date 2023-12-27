@@ -1,6 +1,9 @@
+import { cxAcc2, cxAcc3, serviceAccordion, xmAcc1, xmAcc2, xmAcc3 } from "./utils"
+
 export const cxaccordioandata =[
     {
         heading:"Customer Experience Consulting",
+        image:serviceAccordion,
         content:"Our team of experts provides in-depth consulting services to transform your customer experience strategy. We leverage our partnerships with leading CX tech providers like Zendesk and Qualtrics to offer personalized solutions that meet your unique business needs. ",
         keyBenefits:[
             {
@@ -16,6 +19,7 @@ export const cxaccordioandata =[
     },
     {
         heading:"Implementation and Integration",
+        image:cxAcc2,
         content:"We specialize in the seamless implementation and integration of cutting-edge CX technologies into your existing systems. Our process ensures minimal disruption to your operations while maximizing the efficiency and effectiveness of the new tools. ",
         keyBenefits:[
             {
@@ -31,6 +35,7 @@ export const cxaccordioandata =[
     },
     {
         heading:"Training and Support",
+        image:cxAcc3,
         content:"Our comprehensive training programs are designed to empower your staff with the knowledge and skills needed to utilize CX technologies to their fullest potential. Ongoing support ensures any challenges are promptly addressed.",
         keyBenefits:[
             {
@@ -87,6 +92,7 @@ export const cxaccordioandata2 =[
 export const xmaccordioandata =[
     {
         heading:"Feedback Research and Analysis",
+        image:xmAcc1,
         content:"Specializing in comprehensive feedback research, we gather and analyze customer feedback across various touchpoint to give you a detailed understanding of customer satisfaction and areas for improvement.",
         keyBenefits:[
             {
@@ -102,6 +108,7 @@ export const xmaccordioandata =[
     },
     {
         heading:"Custom Survey Development",
+        image:xmAcc2,
         content:"Our team designs and implements custom surveys tailored to your specific business needs. Using platforms like Qualtrics, we ensure the collection of high-quality data for accurate customer insights.",
         keyBenefits:[
             {
@@ -117,6 +124,7 @@ export const xmaccordioandata =[
     },
     {
         heading:"Behavioral Research and Analytics",
+        image:xmAcc3,
         content:"Utilizing advanced behavioral research techniques, we uncover the underlying factors driving customer behaviors. This helps in crafting strategies that resonate with your target audience.",
         keyBenefits:[
             {

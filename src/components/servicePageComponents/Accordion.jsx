@@ -1,5 +1,3 @@
-import { accodionarrow } from "../../constants/utils";
-
 const Accordion = ({
   heading,
   content,
@@ -13,7 +11,7 @@ const Accordion = ({
   return (
     <div
       onClick={showAc ? hideAcc : setAcc}
-      className="bg-white rounded p-6 cursor-pointer"
+      className="bg-white rounded p-6 cursor-pointer "
       style={
         showAc
           ? {

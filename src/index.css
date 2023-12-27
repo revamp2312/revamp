@@ -68,13 +68,13 @@ p {
 } */
 @media screen and (max-width:640px){
   h1{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 30px;
 
   }
   h2 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     line-height: 30px;
   }
@@ -89,7 +89,7 @@ p {
     line-height: 30px;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
 }}
 
 

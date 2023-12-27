@@ -125,10 +125,15 @@ import pastArticle3 from "../assets/pastArticleImages/pastArticle03.png"
 import noUpcomingEvents from "../assets/eventspage/noUpcomingEvents.png"
 import ytplay from "../assets/eventspage/ytplay.png"
 import ytblinklogo from "../assets/eventspage/ytblinklogo.png"
-
+import DevelopedAppVideo1 from "../assets/DevelopedAppVideo1.png"
+import DevelopedAppVideo2 from "../assets/DevelopedAppVideo2.png"
+import DevelopedAppVideo3 from "../assets/DevelopedAppVideo3.png"
 
 
 export {
+  DevelopedAppVideo3,
+  DevelopedAppVideo2,
+  DevelopedAppVideo1,
   PartnerWithUsOnHover,
   ytblinklogo,
   ytplay,

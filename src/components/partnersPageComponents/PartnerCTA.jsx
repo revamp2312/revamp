@@ -33,7 +33,7 @@ const StartJourney = (props) => {
           </div>
        
         </div>
-        <div className="w-full laptop:w-[50%] flex items-end p-12">
+        <div className="w-full laptop:w-[50%] flex items-end p-6 tablet:p-12">
           <div className="h-[100%] bg-white p-8 rounded-2xl">
           <form
           onSubmit={(e) => {

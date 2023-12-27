@@ -85,9 +85,9 @@ const ExploreCard = (props) => {
             <ul>
               {whatwedeiver.map((each, index) => {
                 return (
-                  <li key={index} className="">
-                    <div className="righticon w-1/12">
-                      <img src={right} />
+                  <li key={index} className="flex gap-4 justify-start">
+                    <div className="righticon !w-4">
+                      <img className="w-full" src={right} />
                     </div>
                     <p>{each.data}</p>
                   </li>
