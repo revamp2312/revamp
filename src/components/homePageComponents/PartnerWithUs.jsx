@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { UseplanContext } from "../../constants/useContext.jsx";
-import { PartnerWithUsOnHover, PartnerWithUsTechImg } from "../../constants/utils.js";
+import { PartnerWithUsOnHover, PartnerWithUsTechImg } from "../../constants/utils";
 
 const PartnerWithUs = () => {
   const { setShowPop } = UseplanContext();
