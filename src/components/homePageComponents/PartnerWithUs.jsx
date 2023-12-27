@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { UseplanContext } from "../../constants/useContext.jsx";
-import { PartnerWithUsOnHover,PartnerWithUsImg } from "../../constants/utils.js";
+import { PartnerWithUsOnHover, PartnerWithUsTechImg } from "../../constants/utils.js";
 
 const PartnerWithUs = () => {
   const { setShowPop } = UseplanContext();
@@ -22,7 +22,7 @@ const PartnerWithUs = () => {
       className="cursor-pointer max-w-[360px] flex justify-center items-center "
      
     >
-     {onHover?<img src={PartnerWithUsOnHover}/>:<img src={PartnerWithUsImg} />}
+     {onHover?<img src={PartnerWithUsOnHover}/>:<img src={PartnerWithUsTechImg} />}
     </div>
   );
 };
