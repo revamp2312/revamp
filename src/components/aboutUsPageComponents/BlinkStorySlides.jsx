@@ -19,9 +19,9 @@ const BlinkStorySlides = () => {
       transition={{ duration: 1 }}
       exit={{ opacity: 0 }}
       id="story-first"
-      className="z-100 blink-slides sticky  overflow-y-auto top-0 h-[100vh] bg-w scroll-smooth max-w-[1440px] w-full m-auto"
+      className="z-100 blink-slides sticky  overflow-y-auto top-0 h-[100vh] bg-w scroll-smooth max-w-[1440px] w-full m-auto "
     >
-      <div className=" relative h-[100vh] story-2018 flex justify-center items-center w-full max-w-[1440px] text-center">
+      <div className=" relative h-[100vh] story-2018 flex justify-center items-center w-full max-w-[1440px] text-center px-6 tablet:px-14">
         <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
           <div className=" text-[#333333] font-semibold">
             <h2>
@@ -30,7 +30,7 @@ const BlinkStorySlides = () => {
               Marketing Consulting services company
             </h2>
           </div>
-          <div className="text-[16px] text-[#333333]">
+          <div className="text-base text-[#333333]">
             Initially serving Centric IT Group and esteemed partners like IBM,
             HP, SAP, Dell, and Sailpoint. Those early days laid the foundation
             for what Blink would become—a trusted name in the world of Customer
@@ -91,7 +91,7 @@ const BlinkStorySlides = () => {
 
       <div
         ref={section2019}
-        className="relative h-[100vh] story-2019 flex justify-center items-center w-full max-w-[1440px] text-center"
+        className="relative h-[100vh] story-2019 flex justify-center items-center w-full max-w-[1440px] text-center px-6 tablet:px-14"
       >
         <div className="max-w-[688px] flex flex-col gap-6 justify-center items-center">
           <div className=" text-[#333333] font-semibold">
@@ -101,7 +101,7 @@ const BlinkStorySlides = () => {
               clients.
             </h2>
           </div>
-          <div className="text-[16px] text-[#333333]">
+          <div className="text-base text-[#333333]">
             We shifted our focus towards CX Advisory services, building upon our
             extensive marketing experience. It was a bold step, but one that
             would redefine the value we brought to the table. Our journey took
@@ -165,7 +165,7 @@ const BlinkStorySlides = () => {
       <div
         ref={section2020}
         id="2020"
-        className="relative h-[100vh] story-2020 flex justify-center items-center w-full max-w-[1440px] text-center"
+        className="relative h-[100vh] story-2020 flex justify-center items-center w-full max-w-[1440px] text-center px-6 tablet:px-14"
       >
         <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
           <div className="text-[#333333] font-semibold">
@@ -174,7 +174,7 @@ const BlinkStorySlides = () => {
               more than advice; it required innovation.
             </h2>
           </div>
-          <div className="text-[16px] text-[#333333]">
+          <div className="text-base text-[#333333]">
             We ventured into Innovations and mobile development, complementing
             our CX offerings with cutting-edge solutions that pushed the
             boundaries of possibility. The turning point came when we secured
@@ -236,7 +236,7 @@ const BlinkStorySlides = () => {
 
       <div
         ref={section2021}
-        className="relative h-[100vh] story-2021 flex justify-center items-center w-full max-w-[1440px] text-center"
+        className="relative h-[100vh] story-2021 flex justify-center items-center w-full max-w-[1440px] text-center px-6 tablet:px-14"
       >
         <div className="max-w-[688px] flex justify-center items-center flex-col gap-6">
           <div className="text-[#333333] font-semibold">
@@ -245,7 +245,7 @@ const BlinkStorySlides = () => {
               Experience Management grew stronger in 2021.
             </h2>
           </div>
-          <div className="text-[16px] text-[#333333]">
+          <div className="text-base text-[#333333]">
             We clinched major contracts with the top two telcos in the
             Philippines, cementing our status as an industry frontrunner. Our
             ability to deliver exceptional CX and manage experiences became our
@@ -304,13 +304,13 @@ const BlinkStorySlides = () => {
 
       <div
         ref={section2022}
-        className="relative h-[100vh] story-2022 flex justify-center items-center w-full max-w-[1440px] text-center"
+        className="relative h-[100vh] story-2022 flex justify-center items-center w-full max-w-[1440px] text-center px-6 tablet:px-14"
       >
         <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
           <div className=" text-[#333333] font-semibold">
             <h2> The year 2022 was a defining moment.</h2>
           </div>
-          <div className="text-[16px] text-[#333333]">
+          <div className="text-base text-[#333333]">
             We soared to new heights, experiencing hypergrowth in terms of
             revenue and customer relationships, both in the private and public
             sectors. It was also the year we embarked on an exciting journey of
@@ -371,7 +371,7 @@ const BlinkStorySlides = () => {
 
       <div
         ref={section2023}
-        className="relative h-[100vh] story-2023 flex justify-center items-center w-full max-w-[1440px] text-center"
+        className="relative h-[100vh] story-2023 flex justify-center items-center w-full max-w-[1440px] text-center px-6 tablet:px-14"
       >
         <div className="max-w-[688px] justify-center items-center flex flex-col gap-6">
           <div className=" text-[#333333] font-semibold">
@@ -380,7 +380,7 @@ const BlinkStorySlides = () => {
               extending our expertise globally.
             </h2>
           </div>
-          <div className="text-[16px] text-[#333333]">
+          <div className="text-base text-[#333333]">
             Our journey continues, fueled by our commitment to transforming
             customer experiences, innovating tirelessly, and delivering
             meaningful results. We are thrilled to share that our path led us to

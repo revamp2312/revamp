@@ -1,9 +1,8 @@
-import React from "react";
-import {  pastArticle1 } from "../../constants/utils";
+
 import { Link } from "react-router-dom";
 
 const PastEventCard = (props) => {
-  console.log(props);
+
  const {id , title ,description,imgSrc,previewTitle} = props
   return (
     <div

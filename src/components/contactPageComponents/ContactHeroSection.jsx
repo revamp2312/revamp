@@ -8,7 +8,7 @@ const ContactHeroSection = () => {
     <div className=" w-full max-w-[1440px] m-auto flex justify-center items-center  ">
       <div className="w-full flex flex-col justify-center items-center">
         <div className="flex flex-col laptop:flex-row w-full contact-hero-container">
-          <div className="w-full laptop:w-6/12 flex items-center flex-col gap-6 py-20 px-6 tablet:px-14 laptop:pl-[70px] laptop:pr-0 ">
+          <div className="w-full laptop:w-6/12 flex items-center flex-col gap-6 py-12 tablet:py-20 px-6 tablet:px-14 laptop:pl-[70px] laptop:pr-0 ">
             <div className="flex  flex-col gap-2">
               <div>
                 <p className="text-[#666666]">CONTACT US</p>

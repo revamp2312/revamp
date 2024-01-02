@@ -16,7 +16,7 @@ import Header from "../components/Header";
 import { useEffect, useState } from "react";
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
-console.log("home coponent rerendered");
+
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;

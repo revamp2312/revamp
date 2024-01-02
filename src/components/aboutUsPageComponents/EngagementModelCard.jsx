@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-
 const EngagementModelCard = (props) => {
-  console.log(props);
   const { title, description, bgcolor, imgsrc, isFisrst } = props;
   const [clicked, setClicked] = useState(false);
   return (
@@ -18,14 +16,14 @@ const EngagementModelCard = (props) => {
       >
         {!isFisrst && (
           <div
-            className="relative w-[100px]  h-[48px] z-10 "
+            className="relative w-[90px]  h-[48px] z-10 "
             style={{ background: bgcolor }}
           >
-            <div className="absolute z-[1] bottom-0  left-0 w-0 h-0 border-l-[24px] border-l-white  border-solid border-t-[24px] border-t-transparent  border-b-[25px] border-b-transparent "></div>
+            <div className="absolute z-[1] bottom-0  left-0 w-0 h-0 border-l-[24px] border-l-[#F7F5FF]  border-solid border-t-[24px] border-t-transparent  border-b-[25px] border-b-transparent "></div>
           </div>
         )}
         <div
-          className="relative w-[160px]  h-[48px] z-30"
+          className="relative w-[150px]  h-[48px] z-30"
           style={{ background: bgcolor }}
         >
           <div
@@ -68,7 +66,7 @@ const EngagementModelCard = (props) => {
         </div>
       </div>
       <div className="self-end">
-        <p className="max-w-[160px]  text-[18px] font-semibold  ">{title}</p>
+        <p className="max-w-[150px]  text-[18px] font-semibold  ">{title}</p>
       </div>
     </div>
   );

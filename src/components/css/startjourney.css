@@ -7,3 +7,10 @@
 
 }
  
+@media  (max-width:1200px) {
+    .start-journey-wrapper {
+   
+        background-image: url(/public/MobileCTA.png);
+        background-size: cover;
+    }
+}

@@ -13,11 +13,12 @@ const EventsandupdatesCTA = () => {
       <div className="flex flex-col gap-12 laptop:flex-row laptop:gap-0 justify-center px-6 laptop:px-[70px] py-12 w-full "
         style={style}
       >
-        <div className="flex flex-col justify-center  gap-6 w-full laptop:w-6/12">
-          <div className="relative">
+        <div className="flex flex-col justify-center  gap-6 w-full laptop:w-6/12 relative">
+          <div className=" text-center">
             <h2 className="text-white">Stay in the Loop – Follow Us</h2>
-            <div className="absolute bottom-[-12px]">
+           
               <svg
+                 className="absolute left-0 right-0 mx-auto my-0 laptop:mx-0 "
                 xmlns="http://www.w3.org/2000/svg"
                 width="192"
                 height="16"
@@ -31,7 +32,7 @@ const EventsandupdatesCTA = () => {
                   strokeLinecap="round"
                 />
               </svg>
-            </div>
+          
           </div>
           <div>
             <p className="text-white text-center laptop:text-left">

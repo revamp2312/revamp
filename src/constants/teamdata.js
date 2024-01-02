@@ -26,7 +26,7 @@ export const teamdataSecondRow =[
     {
         name:"Mari Klaire Filio",
         position:"Sales Manager",
-        description:"By focusing on delivering exceptional customer experiences at [Your Company Name], we aim to build lasting relationships and meet our clients' needs, ensuring their success becomes our success. "
+        description:"By focusing on delivering exceptional customer experiences at Blink CX, we aim to build lasting relationships and meet our clients' needs, ensuring their success becomes our success. "
     },
     {
         name:"Kevin Rotairo",

@@ -13,8 +13,8 @@ const Services = () => {
       <Header />
       <HeroHome {...herosectiondata[1]} />
       <AllServices />
-      <div className="w-full max-w-[1440px] m-auto">
-        <img className="w-full" src={Framework} />
+      <div className="overflow-x-scroll m-auto max-w-[1440px]">
+        <img className="!max-w-[1440px]" src={Framework} />
       </div>
       <StartJourney {...ctaService[0]} />
       <Footer />

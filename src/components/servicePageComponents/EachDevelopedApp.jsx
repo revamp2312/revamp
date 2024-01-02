@@ -6,7 +6,7 @@ const {tag,heading,content,videoSrc,direction} = props
     <div className="w-full max-w-[1440px] flex justify-center items-center">
         <div style={direction?{flexDirection:"flex-row"}:{flexDirection:"row-reverse"}} className="eachDevelopedAppContainer flex  gap-6  laptop:flex-row justify-center laptop:gap-24 items-center w-full">
             <div className="w-full laptop:w-1/2 flex flex-col gap-10 justify-center items-center laptop:items-start laptop:justify-start">
-                <div className="bg-[#6C52E3] px-3 py-2 text-white rounded text-sm max-w-[364px]" >* {tag}​</div>
+                <div className="bg-[#6C52E3] px-3 py-2 text-white rounded text-sm max-w-[364px] text-center" >* {tag}​</div>
                 <div  className="flex flex-col gap-5 text-center laptop:text-left">
                     <div><h3>{heading}</h3></div>
                     <div><p>{content}</p></div>

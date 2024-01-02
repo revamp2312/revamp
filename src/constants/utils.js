@@ -130,6 +130,7 @@ import DevelopedAppVideo2 from "../assets/DevelopedAppVideo2.png"
 import DevelopedAppVideo3 from "../assets/DevelopedAppVideo3.png"
 
 
+
 export {
   DevelopedAppVideo3,
   DevelopedAppVideo2,

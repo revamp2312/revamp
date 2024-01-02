@@ -17,8 +17,8 @@ const Welcome = () => {
   return (
     <div className="welcome-container w-full max-w-[1440px] m-auto flex justify-center items-center py-16 px-6 tablet:px-14 laptop:px-[70px]">
       <div className="welcome-wrapper w-full flex flex-col gap-9 laptop:flex-row laptop:gap-0">
-        <div className="left w-full laptop:w-[60%] flex flex-col gap-16 items-center laptop:items-start ">
-          <div className="upper flex flex-col gap-2 max-w-[600px] items-center text-center laptop:items-start laptop:text-left  ">
+        <div className="left w-full laptop:w-[60%] flex flex-col gap-12 laptop:gap-16 items-start ">
+          <div className="upper flex flex-col gap-2 max-w-[600px] items-start text-left  ">
             <div className="title text-[#666666] uppercase">welcome to blink cx</div>
             <div className="heading">
               <h2>Curious about the people and passion that power Blink CX?</h2>

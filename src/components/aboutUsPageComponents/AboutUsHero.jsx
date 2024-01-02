@@ -5,7 +5,7 @@ const AboutUsHero = () => {
   return (
     <div className="hero-container flex justify-center items-center m-auto max-w-[1440px] w-[100%]">
       <div className="hero-wrapper w-[100%] flex flex-col gap-6 justify-center laptop:flex-row laptop:gap-0 ">
-        <div className="left-wrapper w-full laptop:w-[50%] flex flex-col gap-16 justify-start items-start pt-12 tablet:py-[80px] px-4 laptop:pr-0 laptop:pl-[70px] ">
+        <div className="left-wrapper w-full laptop:w-[50%] flex flex-col gap-16 justify-start items-start px-6  pt-12 tablet:py-[80px] laptop:pr-0 laptop:pl-[70px] ">
           <div className="heading flex flex-col gap-6">
             <div className="flec flex-col gap-2">
               <p className="text-[#666]">ABOUT US</p>

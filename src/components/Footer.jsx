@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import "./css/footer.css";
 
@@ -23,17 +24,19 @@ const Footer = () => {
             <div className="each-menu flex flex-col gap-4">
               <div className="heading text-[#333] text-sm font-semibold">Company</div>
               <ul className="list-none flex flex-col gap-3">
-                <li className="text-[#666] text-sm font-light">Home</li>
-                <li className="text-[#666] text-sm font-light">About us</li>
-                <li className="text-[#666] text-sm font-light">Services</li>
-                <li className="text-[#666] text-sm font-light">Events & Updates</li>
-                <li className="text-[#666] text-sm font-light">Careers</li>
+              <Link to="/" ><li className="text-[#666] text-sm font-light">Home</li></Link>
+            
+                <Link to="/aboutus" ><li className="text-[#666] text-sm font-light">About us</li></Link>
+                <Link to="/services"><li className="text-[#666] text-sm font-light">Services</li></Link>
+                <Link to="/eventsandupdates" > <li className="text-[#666] text-sm font-light">Events & Updates</li></Link>
+                <Link to="/careers"><li className="text-[#666] text-sm font-light">Careers</li></Link> 
               </ul>
             </div>
             <div className="each-menu  flex flex-col gap-4">
               <div className="heading text-[#333] text-sm font-semibold">Support</div>
               <ul className="list-none flex flex-col gap-3">
-                <li className="text-[#666] text-sm font-light">Contact us</li>
+              <Link to="/contact"><li className="text-[#666] text-sm font-light">Contact us</li></Link>
+                
                 <li className="text-[#666] text-sm font-light">Help Center</li>
               </ul>
             </div>

@@ -28,10 +28,10 @@ const XMServiceAccordion = () => {
       exit={{ opacity: 0 }}
       className="flex flex-col gap-8 justify-center items-center"
     >
-        <div className="flex justify-center items-center laptop:hidden"><h1>Our Services</h1></div>
+        <div className="flex justify-center items-center laptop:hidden"><h1>Services Offered</h1></div>
 
-      <div className="wrapper flex flex-col gap-20">
-        <div className="flex flex-col gap-12 justify-center items-center rounded-3xl bg-[#F7F5FF] p-6 laptop:p-12">
+      <div className="wrapper flex flex-col gap-12 tablet:gap-20">
+        <div className="flex flex-col gap-4 tablet:gap-12 justify-center items-center rounded-3xl bg-[#F7F5FF] p-4 laptop:p-12">
           <div className="hidden laptop:flex">
             <div className="w-6/12">
               <motion.div

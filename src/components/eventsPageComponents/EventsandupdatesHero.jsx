@@ -1,8 +1,9 @@
+import "../css/mediaqureries.css"
+
 const EventsandupdatesHero = () => {
   return (
     <div className="events-updates-hero-container relative  flex justify-center items-center w-full max-w-[1440px] m-auto ">
    <div style={{background:"rgba(75, 75, 75, 0.45)"}} className="absolute top-0 left-0 right-0 bottom-0 ">
-
    </div>
       <div className="flex flex-col gap-4 laptop:gap-0 laptop:flex-row justify-center w-full items-center px-6 py-12 laptop:px-[70px] laptop:py-0 z-20">
         <div className="flex justify-center items-center w-full laptop:w-6/12 py-0 laptop:py-[124px]">

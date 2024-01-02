@@ -1,4 +1,4 @@
-.setsapart-container::before{
+.setsapart-container::before {
   background-image: url("../../assets/apart.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -11,7 +11,7 @@
   bottom: 0;
   left: 0;
   right: 0;
- 
+
   z-index: 1;
 }
 
@@ -38,6 +38,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 .story-2019 {
   background-image: url("../../assets/BlinkStory/2019.png");
   background-repeat: no-repeat;
@@ -85,7 +86,36 @@
   background-position: center;
   background-size: cover;
 }
+.our-office-container {
+  background-image: url("../../assets/ourofficebg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+@media (max-width: 1200px) {
+  .story-2018 {
+    background-image: url("../../assets/BlinkStory/2018Small.png");
+  }
+  .story-2019 {
+    background-image: url("../../assets/BlinkStory/2019Small.png");
+  }
+  .story-2020 {
+    background-image: url("../../assets/BlinkStory/2020Small.png");
+  }
+  .story-2021 {
+    background-image: url("../../assets/BlinkStory/2021Small.png");
+  }
+  .story-2022 {
+    background-image: url("../../assets/BlinkStory/2022Small.png");
+  }
+  .story-2023 {
+    background-image: url("../../assets/BlinkStory/2023Small.png");
+  }
+  .events-updates-hero-container {
+    background-image: url("/event-small-hero.png");
+  }
+}
 #check-box-1:hover ~ .check-1-bg {
   scale: 1.7;
 }

@@ -11,7 +11,7 @@ const DevelopedAppsAccodian = () => {
       exit={{ opacity: 0 }}
       className="flex justify-center items-center"
     >
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-12 tablet:gap-20">
     {developedAppData.map((eachApp,index)=>{
       return   <EachDevelopedApp  key={index} {...eachApp}/>
     })}

@@ -3,7 +3,7 @@ import { pastevents } from "../../constants/pastevents";
 
 const PastEventsArticle = () => {
   const { articleId } = useParams();
-  console.log(articleId);
+
   const navigate = useNavigate();
 
   const handleGoBackToEvents = () => {

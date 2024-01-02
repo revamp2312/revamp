@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { yt1, yt2, yt3, yt4, ytblinklogo, ytplay } from "../../constants/utils";
+import { useSelector } from "react-redux";
 
 const SocialMedia = () => {
   const [bg, setbg] = useState(null);
+  const eventData =useSelector((store)=>store.events)
+  const activeWebinar=eventData.webinars
   const handleMouseOver = {
     background: "rgba(19, 19, 19, 0.80)",
     visibility: "visible",
@@ -15,12 +18,13 @@ const SocialMedia = () => {
   };
 
   return (
-    <div
+    <>
+ {!activeWebinar &&   <div
       className="flex justify-center items-center max-w-[1440px] m-auto w-full px-6 tablet:px-[70px] py-20"
       style={{ background: "linear-gradient(180deg, #F7F5FF 0%, #FFF 100%)" }}
     >
       <div className="flex flex-col gap-[42px]">
-        <div className="flex flex-col gap-2 justify-center items-center">
+        <div className="flex flex-col gap-2 justify-center items-center text-center">
           <div>
             <h2>Join Our Social Media Community</h2>
           </div>
@@ -31,7 +35,7 @@ const SocialMedia = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 grid-rows-[25%,25%,25%,25%] tablet:grid-rows-[50%,50%]  tablet:grid-cols-2 laptop:grid-rows-[100%] laptop:grid-cols-4 gap-5">
         <a target="blank" href="https://www.youtube.com/watch?v=JG9Jm5D0vo8">
           <div
             onMouseOver={() => {
@@ -107,9 +111,9 @@ const SocialMedia = () => {
             onMouseLeave={() => {
               setbg(null);
             }}
-            className="relative cursor-pointer"
+            className="relative h-full w-full cursor-pointer"
           >
-            <img src={yt3} alt="yt-image" />
+            <img className="h-full w-full object-cover" src={yt3} alt="yt-image" />
             <div
               className="p-6 absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center transition-all duration-500"
               style={bg === 3 ? handleMouseOver : handleMouseOut}
@@ -158,8 +162,8 @@ const SocialMedia = () => {
             onMouseLeave={() => {
               setbg(null);
             }}
-           className="relative cursor-pointer">
-            <img src={yt4} alt="yt-image" />
+           className="relative h-full w-full cursor-pointer">
+            <img className="h-full w-full object-cover" src={yt4} alt="yt-image" />
             <div
               className="p-6 absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center transition-all duration-500"
               style={bg === 4  ? handleMouseOver : handleMouseOut}
@@ -201,7 +205,8 @@ const SocialMedia = () => {
         </a>
         </div>
       </div>
-    </div>
+    </div>}
+    </>
   );
 };
 

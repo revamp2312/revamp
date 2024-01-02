@@ -5,13 +5,14 @@ const StartJourney = (props) => {
 
   return (
     <div className="w-full max-w-[1440px] m-auto flex justify-center items-center py-20 px-6 tablet:px-14 laptop:px-[70px]   ">
-      <div  className="start-journey-wrapper w-full h-full laptop:h-[446px] bg-[#8016d6] laptop:bg-none rounded-3xl flex flex-col laptop:flex-row">
+      <div  className="start-journey-wrapper w-full h-full laptop:h-[446px] laptop:bg-none rounded-3xl flex flex-col laptop:flex-row">
         <div  className="w-full laptop:w-[60%] flex flex-col gap-12 items-center laptop:items-start py-12 px-6 tablet:px-14 laptop:p-[76px] ">
-          <div className="flex flex-col gap-6 text-center laptop:text-left">
-            <div className="relative">
+          <div className="flex flex-col gap-6 text-center laptop:text-left relative">
+            <div className="">
               <h2 className="text-white">{title}</h2>
-              <div className="absolute bottom-[-12px] hidden laptop:block ">
+        
                 <svg
+                className="absolute left-0 right-0 mx-auto my-0 laptop:mx-0 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="192"
                   height="16"
@@ -25,7 +26,7 @@ const StartJourney = (props) => {
                     strokeLinecap="round"
                   />
                 </svg>
-              </div>
+              
             </div>
             <div>
               <p className="text-white">{description}</p>
@@ -42,7 +43,7 @@ const StartJourney = (props) => {
         <div className=" w-full laptop:w-[40%]">
           <div className="h-full flex items-end">
             <img
-              className="w-full h-[120%] object-contain"
+              className="w-full h-full laptop:h-[120%] object-contain"
               src={imageUsed}
               alt=""
             />

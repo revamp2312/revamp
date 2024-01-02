@@ -13,12 +13,13 @@ const ContactPageCTA = () => {
         className="flex flex-col gap-12 laptop:gap-0 laptop:flex-row justify-center items-center px-6 tablet:px-14 laptop:px-[70px] py-12 w-full "
         style={style}
       >
-        <div className="flex flex-col gap-12 w-full laptop:w-6/12 items-center">
-          <div className="flex flex-col justify-center items-center laptop:items-start gap-6 ">
-            <div className="relative">
+        <div className="flex flex-col gap-12 w-full laptop:w-6/12 items-center laptop:items-start">
+          <div className="flex flex-col justify-center items-center laptop:items-start gap-6 relative">
+            <div className="">
               <h2 className="text-white">Get started today!</h2>
-              <div className="absolute bottom-[-12px]">
+             
                 <svg
+                  className="absolute left-0 right-0 mx-auto my-0 laptop:mx-0 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="192"
                   height="16"
@@ -31,8 +32,8 @@ const ContactPageCTA = () => {
                     strokeWidth="3.47708"
                     strokeLinecap="round"
                   />
-                </svg>{" "}
-              </div>
+                </svg>
+              
             </div>
             <div>
               <p className="text-white text-center laptop:text-left">
@@ -50,7 +51,7 @@ const ContactPageCTA = () => {
           </div>
         </div>
         <div className="w-full laptop:w-6/12 flex justify-end">
-          <div className="flex flex-col gap-5 w-full laptop:w-10/12">
+          <div className="flex flex-col gap-4 tablet:gap-5 w-full laptop:w-10/12">
             <div className="px-4 py-6 bg-white rounded-lg flex items-center gap-4">
               <div className="w-6">
                 <img className="w-full" src={email} />
@@ -61,7 +62,7 @@ const ContactPageCTA = () => {
                 </div>
                 <div>
                   <a
-                    className="text-base font-normal text-[#693ED4]"
+                    className="text-sm tablet:text-base font-normal text-[#693ED4]"
                     href="mailto:hello@blink-digital.com"
                   >
                     hello@blink-digital.com
@@ -79,7 +80,7 @@ const ContactPageCTA = () => {
                 </div>
                 <div>
                   <a
-                    className="text-base font-normal text-[#693ED4]"
+                    className="text-sm tablet:text-base font-normal text-[#693ED4]"
                     href="tel:+632 8 883 5358"
                   >
                     +632 8 883 5358{" "}
@@ -100,7 +101,7 @@ const ContactPageCTA = () => {
                 </div>
                 <div>
                   <a
-                    className="text-base font-normal text-[#693ED4]"
+                    className="text-sm tablet:text-base font-normal text-[#693ED4]"
                     href="tel:+632 (xxxx-xxxx) "
                   >
                     +632 (xxxx-xxxx){" "}

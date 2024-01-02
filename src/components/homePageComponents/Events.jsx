@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import { events } from "../../constants/utils";
 
 const Events = () => {
   return (
     <div
-      className="events-container w-full max-w-[1440px] m-auto flex justify-center items-center p-6 tablet:p-14 laptop:p-[70px]"
+      className="events-container w-full max-w-[1440px] m-auto flex flex-col gap-16 justify-center items-center p-6 tablet:p-14 laptop:p-[70px]"
       style={{ background: "linear-gradient(180deg, #f7f5ff 0%, #fff 100%)" }}
     >
-      <div className="event-wrapper w-full flex flex-col gap-14">
+      <div className="event-wrapper w-full flex flex-col gap-8 tablet:gap-14">
         <div className="top flex flex-col gap-2">
           <div className="heading max-w-[750px]">
             <p className="text-[#666666]">WHAT'S NEW</p>
@@ -17,7 +18,7 @@ const Events = () => {
         </div>
         <div className="bottom flex flex-col laptop:flex-row  gap-9 rounded">
           <div
-            className="left flex flex-col gap-9 bg-white w-full laptop:w-6/12 rounded "
+            className="left flex flex-col gap-4 tablet:gap-9 bg-white w-full laptop:w-6/12 rounded "
             style={{ boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)" }}
           >
             <div className="imgContainer">
@@ -25,7 +26,7 @@ const Events = () => {
             </div>
             <div className="flex flex-col gap-2">
 
-            <div className="eventContainer pt-0 px-5 pb-6 flex flex-col gap-4 border-b-[1px] border-solid border-[#e8e7ee]">
+            <div className="eventContainer pt-0 px-5 pb-6 flex flex-col gap-2 tablet:gap-4 border-b-[1px] border-solid border-[#e8e7ee]">
               <div className="read-time w-max py-1 px-3 flex items-center gap-2 rounded bg-[#f7f5ff] mix-blend-multiply">
                 <div className="tag py-[2px] px-2 bg-white text-[#693ed4] text-center text-xs font-normal leading-5">
                   Event
@@ -73,7 +74,7 @@ const Events = () => {
             </div>
             </div>
           </div>
-          <div className="right w-full laptop:w-6/12 flex flex-col items-center justify-between gap-6">
+          <div className="right w-full laptop:w-6/12 flex flex-col items-center justify-between gap-4 tablet:gap-6">
             <div
               className="each-event cursor-pointer w-full flex justify-between items-center bg-white py-6 px-4 tablet:px-[30px] rounded"
               style={{ boxShadow: "0px 2px 20px 0px rgba(0, 0, 0, 0.05)" }}
@@ -179,6 +180,16 @@ const Events = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+      <Link to="/eventsandupdates" >
+      <button
+            style={{background:"linear-gradient(135deg, #693ed4 0%, #a31ebe 100%)"}}
+            className="cursor-pointer py-4 px-8 border-none rounded-lg text-[#fffdfa] text-base font-bold capitalize   "
+            >See more updates</button>
+      
+      </Link>
+    
       </div>
     </div>
   );

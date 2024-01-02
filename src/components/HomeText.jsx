@@ -8,11 +8,11 @@ import 'swiper/css/pagination';
 import {Autoplay } from 'swiper/modules';
 
 const HomeText = (props) => {
-  console.log(props);
+
   const {textanimation} =props;
   return (
 
-    <div className="hometext-container text-center laptop:text-left">
+    <div className="hometext-container inline-block  whitespace-nowrap h-[30px] tablet:h-[60px] text-center laptop:text-left">
         <div className="hometext-wrapper ">
  {  textanimation ?     <Swiper
            slidesPerView={1}

@@ -6,7 +6,9 @@ const WhatSetsApart = () => {
    
   return (
     <div 
-     className="setsapart-container  relative before:opacity-80 desktop:before:opacity-100 z  w-full  max-w-[1440px] m-auto  py-12 px-6 tablet:px-20 flex flex-col gap-[120px]">
+     className="setsapart-container  relative before:opacity-10 laptop:before:opacity-100 z  w-full  max-w-[1440px] m-auto  py-12 px-6 tablet:px-20 flex flex-col gap-12 tablet:gap-[120px]">
+       <div style={{background:"rgba(241, 231, 254,1)"}} className="laptop:hidden absolute top-0 left-0 right-0 bottom-0 ">
+   </div>
         <div className="flex z-10 flex-col justify-center items-center gap-6">
           <div><h2>What sets us apart?</h2></div>
           <div className="max-w-[640px] text-center"><p>We don't just collaborate; we co-create, innovating together to reach new frontiers in CX excellence.</p></div>

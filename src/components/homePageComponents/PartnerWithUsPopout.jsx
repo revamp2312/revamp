@@ -9,9 +9,9 @@ const PartnerWithUsPopout = () => {
   const company = useRef();
   const email = useRef();
   const dispatch = useDispatch();
-  console.log(name, company, email);
+
   const userData = useSelector((store) => store.partnerWithUs);
-  console.log(userData);
+
   const sendDatatoSHeet = () => {
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbw3SJ0pnPcr7sF_G4OPM5hzjGlDD1QSVfueHok_Zv3P8HrxRiVIUhbIGdqhj_slHwbq/exec";
@@ -27,7 +27,7 @@ const PartnerWithUsPopout = () => {
       },
       body:newform,
     }).then((response) => {
-      console.log(response);
+
     });
   };
   return (
@@ -40,7 +40,7 @@ const PartnerWithUsPopout = () => {
       }
     >
       <div
-        className="max-w-[450px] flex flex-col gap-6 px-4 py-8 tablet:p-8 rounded-2xl bg-white"
+        className="max-w-[450px] flex flex-col gap-6 px-4 py-8 tablet:p-8 rounded-2xl bg-white mx-6"
         style={{ boxShadow: "0px 1px 2px 0px rgba(16, 24, 40, 0.3)" }}
       >
         <div className="flex justify-between">

@@ -3,7 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const contactFormSlice =createSlice({
     name:"contactForm",
     initialState:{
-        setActiveForm:"reasonActive",
+        reasonForm:true,
+        inquiryFor:false,
+        informationForm:false,
         reason:null,
         subject:null,
         fullName:null,
@@ -13,7 +15,7 @@ const contactFormSlice =createSlice({
     },
     reducers:{
         changeActiveForm:(state,action)=>{
-            state.setActiveForm=action.payload
+            return action.payload
         },
         setData:(state,action)=>{
             state.fullName=action.payload

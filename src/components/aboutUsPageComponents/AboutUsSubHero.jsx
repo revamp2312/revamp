@@ -22,7 +22,7 @@ const AboutUsSubHero = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-full max-w-[1440px] m-auto flex justify-center items-center px-6 laptop:px-[70px] py-12">
+          <div className="w-full max-w-[1440px] m-auto flex justify-center items-center px-6 tablet:px-14 laptop:px-[70px] py-12">
             <div className="flex flex-col-reverse gap-4 laptop:flex-row laptop:gap-20 w-full">
               <div className="w-full laptop:w-6/12">
                 <img src={aboutSubHero} />

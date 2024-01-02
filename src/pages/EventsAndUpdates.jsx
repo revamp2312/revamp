@@ -4,6 +4,7 @@ import EventsandupdatesHero from "../components/eventsPageComponents/Eventsandup
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import SocialMedia from "../components/eventsPageComponents/SocialMedia"
+import EventsPageTopBar from "../components/eventsPageComponents/EventsPageTopBar"
 
 
 const EventsAndUpdates = () => {
@@ -11,6 +12,7 @@ const EventsAndUpdates = () => {
     <div>
      <Header />
     <EventsandupdatesHero />
+    <EventsPageTopBar />
     <EventCardContainer />
     <SocialMedia />
     <EventsandupdatesCTA  />

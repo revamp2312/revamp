@@ -1,7 +1,7 @@
 import { accodionarrow } from "../../constants/utils"
 
 const AccordionSecond = ({heading,content,showAc,setAcc,hideAcc}) => {
-   console.log(content);
+
   return (
     <div onClick={showAc?hideAcc:setAcc} className="bg-white rounded-b p-6 cursor-pointer"
     style={ showAc? { background:"#F7F5FF",borderTop: "2px solid  #693ED4",}: {  } }>   

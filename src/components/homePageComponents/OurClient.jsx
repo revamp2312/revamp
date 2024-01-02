@@ -9,16 +9,16 @@ const OurClient = () => {
           <div className="heading">
             <p className="text-[#666666]">OUR CLIENTS</p>
           </div>
-          <div className="title">
+          <div className="title text-center">
             <h2>Let’s see what our clients say</h2>
           </div>
         </div>
         <div 
         style={{boxShadow:"0px 2px 20px 0px rgba(26, 26, 26, 0.1)"}}
-        className="bottom flex flex-col-reverse laptop:flex-row rounded-lg p-1 tablet:p-4 bg-[#f7f5ff]">
+        className="bottom flex flex-col-reverse laptop:flex-row rounded-xl p-2 tablet:p-4 bg-[#f7f5ff]">
           <div className="left w-full laptop:w-[75%]  ">
-            <div className="client-information flex flex-col-reverse laptop:flex-col gap-[10px] laptop:gap-6 py-8 px-2 tablet:px-6 bg-[#fff]">
-            <div className="client-content flex flex-col gap-6">
+            <div className="client-information flex flex-col-reverse rounded laptop:flex-col gap-[10px] laptop:gap-6 py-8 px-2 tablet:px-6 bg-[#fff]">
+            <div className="client-content flex flex-col gap-2 tablet:gap-6">
               <div className="heading font-bold text-[#333333]"><h4>Excellent quality of service</h4></div>
               <div className="content text-sm tablet:text-base font-normal text-[#313131]">
                 What we like about our engagement with Blink is their

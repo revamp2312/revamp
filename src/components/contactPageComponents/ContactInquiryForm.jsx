@@ -3,20 +3,21 @@ import "../css/whatsetsapart.css"
 import { useDispatch, useSelector } from "react-redux";
 import { changeActiveForm, setData } from "../../constants/slices/contactFormSlice";
 const ContactInquiryForm = () => {
-const activeForm =useSelector((store)=>store.contactForm.setActiveForm)
-console.log(activeForm);
+const activeForm =useSelector((store)=>store.contactForm)
+const reasonActive=activeForm.reasonForm;
+const inquiryActive =activeForm.inquiryFor;
+const informationActive =activeForm.informationForm
+
 const dispatch =useDispatch()
  const [reasonSelected,setReasonSelected]=useState(null)
  const fullName=useRef();
-  const setActiveForm=(formName)=>{
-      dispatch(changeActiveForm(formName))
-  }
+
 
 
   return (
     <div className="max-w-[1400opx] w-full flex justify-center items-center m-auto  py-12 ">
-      <div className="flex flex-col gap-12 justify-center items-center w-full">
-        {/* <div className=" hidden tablet:flex gap-6 justify-center items-center">
+      <div className="flex flex-col gap-8 tablet:gap-12 justify-center items-center w-full">
+        <div className=" flex gap-6 justify-center items-center">
           <div className="flex gap-2 cursor-pointer">
             <div
               style={
@@ -58,7 +59,7 @@ const dispatch =useDispatch()
                     ? { color: "#693ED4", fontWeight: "600" }
                     : { color: "#666", fontWeight: "400" }
                 }
-                className="text-base"
+                className="text-base hidden laptop:block"
               >
                 Reason for contacting
               </div>
@@ -123,7 +124,7 @@ const dispatch =useDispatch()
                     ? { color: "#693ED4", fontWeight: "600" }
                     : { color: "#666", fontWeight: "400" }
                 }
-                className="text-base"
+                className="text-base  hidden laptop:block"
               >
                 Inquiry subject
               </div>
@@ -184,13 +185,13 @@ const dispatch =useDispatch()
                     ? { color: "#693ED4", fontWeight: "600" }
                     : { color: "#666", fontWeight: "400" }
                 }
-                className="text-base "
+                className="text-base  hidden laptop:block"
               >
                 Your information
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* {formSubmitted && (
           <div className="max-w-[637px] flex gap-2 justify-center items-center px-5 py-4 border-[#693ED4] border-solid border-[1px] bg-[#FCFBFF] rounded">
@@ -235,17 +236,17 @@ const dispatch =useDispatch()
           </div>
         )} */}
 
-        {activeForm==="reasonActive" && (
-          <div className="flex flex-col gap-12 justify-center items-center w-full">
+        {reasonActive && (
+          <div className="flex flex-col gap-8 tablet:gap-12 justify-center items-center w-full">
             <div>
               <div>
-                <h3>
+                <h3 className="text-center"> 
                   Select reason for contacting
                   <span className="text-[#FF8488]">*</span>
                 </h3>
               </div>
             </div>
-            <div className="grid grid-cols-1  tablet:grid-cols-2 gap-x-5 gap-y-8 w-full">
+            <div className="grid grid-cols-1 gap-y-6  tablet:grid-cols-2 gap-x-5 tablet:gap-y-8 w-full">
               <div 
               style={reasonSelected==0?{borderColor:"#693ED4",background:"#F7F5FF"}:{borderColor:"#D6DEE5",background:"#FFF"}}
                className=" flex justify-center items-center p-6 rounded-lg border-[1px] border-solid  w-full  ">
@@ -410,7 +411,7 @@ const dispatch =useDispatch()
             </div>
             <div>
               <button
-                 onClick={()=>{setActiveForm("inquiryActive")}}
+               onClick={()=>{dispatch(changeActiveForm({ reasonForm:false,inquiryFor:true, informationForm:false,}))}}
                 className="bg-[#693ED4] px-12 py-4 rounded-lg text-[#FFFDFA] text-base font-semibold"
               >
                 Next
@@ -418,7 +419,7 @@ const dispatch =useDispatch()
             </div>
           </div>
         )}
-        {activeForm==="inquiryActive"  && (
+        {inquiryActive && (
           <div className="flex flex-col gap-8 w-full justify-center items-center">
             <div>
               <h3>Subject of inquiry</h3>
@@ -436,14 +437,14 @@ const dispatch =useDispatch()
             </div>
             <div className="contact-inquiry-buttons flex gap-6">
               <button
-              onClick={()=>{setActiveForm("reasonActive")}}
+               onClick={()=>{dispatch(changeActiveForm({ reasonForm:true,inquiryFor:false, informationForm:false,}))}}
                 className="bg-[#F7F5FF] border-[1px] border-solid border-[#693ED4] px-12 py-4 rounded-lg text-[#693ED4] text-base font-semibold"
               >
                 Previous
               </button>
 
               <button
-                onClick={()=>{setActiveForm("informationActive")}}
+                 onClick={()=>{dispatch(changeActiveForm({ reasonForm:false,inquiryFor:false, informationForm:true,}))}}
                 className="bg-[#693ED4] px-12 py-4 rounded-lg text-[#FFFDFA] text-base font-semibold"
               >
                 Next
@@ -451,7 +452,7 @@ const dispatch =useDispatch()
             </div>
           </div>
         )}
-        {activeForm==="informationActive"  && (
+        {informationActive && (
           <div className="flex justify-center items-center w-full ">
             <div className="flex flex-col gap-12 w-full justify-center items-center">
               <div className="flex justify-start items-center w-full">
@@ -516,14 +517,14 @@ const dispatch =useDispatch()
               </div>
               <div className="contact-inquiry-buttons flex gap-6">
                 <button
-                       onClick={()=>{setActiveForm("inquiryActive")}}
+                        onClick={()=>{dispatch(changeActiveForm({ reasonForm:false,inquiryFor:true, informationForm:false,}))}}
                   className="bg-[#F7F5FF] border-[1px] border-solid border-[#693ED4] px-12 py-4 rounded-lg text-[#693ED4] text-base font-semibold"
                 >
                   Previous
                 </button>
 
                 <button
-                 onClick={()=>{dispatch(setData(fullName.current.value))}}
+                 onClick={()=>{dispatch(changeActiveForm({ reasonForm:true,inquiryFor:false, informationForm:false,}))}}
                   className="bg-[#693ED4] px-12 py-4 rounded-lg text-[#FFFDFA] text-base font-semibold"
                 >
                   Submit

@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const AccordionImage = ({ setImg ,showImage,imgSrc}) => {
-  console.log(setImg);
+
   const controls = useAnimation();
 
 useEffect(()=>{

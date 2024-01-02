@@ -6,7 +6,7 @@ const Accordion = ({
   hideAcc,
   keyBenefits,
 }) => {
-  console.log(keyBenefits);
+
 
   return (
     <div

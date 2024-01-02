@@ -15,7 +15,7 @@ const TechnologyPartners = () => {
   return (
     <div className="technology-partner-container flex justify-center items-center m-auto max-w-[1440px] w-[100%] py-20 px-6 tablet:px-14 laptop:px-[70px] bg-[#150c2a]">
       <div className="technology-partner-wrapper flex flex-col gap-12">
-        <div className="top flex justify-center items-center flex-col text-center gap-12 laptop:gap-0  laptop:flex-row  laptop:items-start laptop:justify-between laptop:text-left">
+        <div className="top flex justify-between  flex-col gap-12 laptop:gap-0  laptop:flex-row  items-start  text-left">
           <div className="left flex flex-col gap-2 text-white max-w-[800px]">
             <div className="title text-[#fffdfa]">
               <p className="text-[#fffdfa]">TECHNOLOGY PARTNERS</p>
@@ -38,7 +38,7 @@ const TechnologyPartners = () => {
           </div>
         </div>
         <div className="bottom">
-          <div className="all-partners grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 gap-x-6 gap-y-8">
+          <div className="all-partners grid grid-cols-2 gap-4 tablet:grid-cols-3 laptop:grid-cols-4 tablet:gap-x-6 tablet:gap-y-8">
             <div className="each-partner max-w-[360px]">
               <img className="w-[100%]" src={zendesk} />
             </div>

@@ -2,16 +2,17 @@ import "../css/startjourney.css";
 
 const StartJourney = (props) => {
   const { title, description, imageUsed } = props;
-  console.log(props);
+
   return (
     <div className="w-full max-w-[1440px] m-auto flex justify-center items-center py-20 px-6 laptop:px-[70px]   ">
       <div className="start-journey-wrapper w-full rounded-3xl flex flex-col laptop:flex-row">
         <div className="w-full laptop:w-[50%] flex  justify-center  items-center  px-6 py-12 laptop:p-[76px]  ">
-          <div className="flex flex-col gap-6 ">
-            <div className="relative">
+          <div className="flex flex-col gap-6 justify-center items-center text-center laptop:text-left relative">
+            <div className="">
               <h2 className="text-white">{title}</h2>
-              <div className="absolute bottom-[-12px]">
+              
                 <svg
+                 className="absolute left-0 right-0 mx-auto my-0 laptop:mx-0 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="192"
                   height="16"
@@ -24,8 +25,8 @@ const StartJourney = (props) => {
                     strokeWidth="3.47708"
                     strokeLinecap="round"
                   />
-                </svg>{" "}
-              </div>
+                </svg>
+            
             </div>
             <div>
               <p className="text-white">{description}</p>
@@ -34,7 +35,7 @@ const StartJourney = (props) => {
        
         </div>
         <div className="w-full laptop:w-[50%] flex items-end p-6 tablet:p-12">
-          <div className="h-[100%] bg-white p-8 rounded-2xl">
+          <div className="h-[100%] w-full bg-white p-8 rounded-2xl ">
           <form
           onSubmit={(e) => {
             e.preventDefault();

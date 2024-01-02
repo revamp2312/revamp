@@ -20,12 +20,12 @@ import { useEffect, useRef, useState } from "react";
 
 const TrustedCompany = () => {
   const heighRef = useRef(null);
-  console.log(heighRef);
 
-  console.log("home coponent rerendered");
+
+
   useEffect(() => {
     const handleScroll = () => {
-      console.log("eventlistener applied");
+   
       const offset = window.scrollY;
 
       // Adjust the offset value based on your requirements
@@ -42,14 +42,14 @@ const TrustedCompany = () => {
     // Cleanup the event listener when the component is unmounted
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      console.log("eventlistenr removed");
+   
     };
   }, []);
 
   return (
-    <div ref={heighRef} className="trusted-company-container">
-      <div className="trusted-company-slider">
-        <div className="title text-sm tablet:text-xl">
+    <div ref={heighRef} className="trusted-company-container px-6 py-12 tablet:px-0 tablet:py-14">
+      <div className="trusted-company-slider"> 
+        <div className="title text-base tablet:text-xl">
           Trusted by <span className="gradient">Industry Leading </span>
           Organizations
         </div>

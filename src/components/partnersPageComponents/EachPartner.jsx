@@ -3,10 +3,10 @@ import { cxright, tiltedArrow } from "../../constants/utils";
 
 const EachPartner = () => {
   return (
-    <div className="flex flex-col gap-16 justify-center items-center px-6 tablet:px-14  laptop:px-[70px] py-20 w-full max-w-[1440px] m-auto">
-    <div className="flex flex-col laptop:flex-row justify-center items-center">
+    <div className="flex flex-col gap-8 tablet:gap-16 justify-center items-center px-6 tablet:px-14  laptop:px-[70px] py-20 w-full max-w-[1440px] m-auto">
+    <div className="flex flex-col gap-2 laptop:flex-row justify-center items-center">
       <div className="w-full  laptop:w-5/12"><h1 className="text-[#333333]">Our Partnership Ecosystem</h1></div>
-      <div className="w-full laptop:w-7/12 text-justify"><p>Our partnership ecosystem is a dynamic blend of industry experts coming together to supercharge the customer experience (CX). These partnerships are the backbone of our innovative approach, making it a top-tier solution provider for our clients. By teaming up with these industry leaders, we equip our clients with a full suite of tools and expertise to enhance their customer experiences. Together with our partners, we amplify the capabilities of our clients, resulting in transformative and customer-centric outcomes.</p></div>
+      <div className="w-full laptop:w-7/12 text-left"><p>Our partnership ecosystem is a dynamic blend of industry experts coming together to supercharge the customer experience (CX). These partnerships are the backbone of our innovative approach, making it a top-tier solution provider for our clients. By teaming up with these industry leaders, we equip our clients with a full suite of tools and expertise to enhance their customer experiences. Together with our partners, we amplify the capabilities of our clients, resulting in transformative and customer-centric outcomes.</p></div>
     </div>
     <h2 className="w-full text-left">Our Partnerships</h2>
       <div className="flex flex-col gap-12 ">
@@ -40,12 +40,12 @@ const EachPartner = () => {
                 <div className="flex flex-col gap-2">
                   <div className="text-[31px] font-semibold text-[#333333]">{name}</div>
                   <div>
-                    <p className="text-sm tablet:text-lg"> {deliver}</p>
+                    <p className="text-base tablet:text-lg"> {deliver}</p>
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-4">
-                  <div className="flex flex-col laptop:flex-row gap-2 justify-center items-center laptop:justify-start">
+                  <div className="flex flex-col-reverse laptop:flex-row gap-2 justify-center items-center laptop:justify-start">
                  {bookademobtn?  <button
                       className="py-4 px-6 text-white text-[16px] w-full tablet:w-max font-bold rounded-lg"
                       style={{

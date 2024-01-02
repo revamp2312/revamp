@@ -7,7 +7,7 @@ import { Autoplay } from "swiper/modules";
 import { logoFrame } from "../../constants/utils";
 const PartnerHeroSlider = () => {
   return (
-    <div className="max-h-[500px] overflow-hidden bg-transparen">
+    <div className="max-h-[280px] tablet:max-h-[500px] overflow-hidden bg-transparen">
       <Swiper
        slidesPerView={"auto"}
         centeredSlides={true}

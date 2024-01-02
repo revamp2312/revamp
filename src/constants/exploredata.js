@@ -70,7 +70,7 @@ export const exploredata = [
     number: 0o3,
     title: "Blink CX Apps",
     content:
-      "Blink CX's Data Science Practice is your bridge to data-driven decision-making.",
+      "Blink CX's suite of developed apps where innovation meets seamless integration, shaping the future of customer experience.",
       deleverText:"What we developed ",
     whatwedeiver: [{
         data:"E-commerce Messaging App"
